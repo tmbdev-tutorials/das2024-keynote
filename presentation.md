@@ -7,6 +7,12 @@ footer: 'OCR and LLMs Presentation'
 headingDivider: 1
 ---
 
+<!--
+Notes:
+-- llms for training quality evaluation, post-correction
+-- vlms for image categorization, segmentation via backprop etc
+-->
+
 # OCR and LLMs
 
 # Overview
@@ -120,6 +126,8 @@ Ambitious all-in-one effort:
     - handles math and other special content
 - massive training and data management effort due to generality of model
 
+# FUTURE OF OCR AND LLMS
+
 # OCR Future
 
 Three different possible scenarios:
@@ -135,9 +143,21 @@ Three different possible scenarios:
 - conversion as input to LLM training
 - conversion as input to LLM inference
 
-# LLM Requirements
+# LLMs and Noise
 
-- LLMs are robust
+- traditional NLP was fragile: grammar, ambiguities, etc.
+- LLMs are robust to noise in training data and questions
+- robustness to OCR errors can be enhanced by augmenting training data with OCR errors
+- redundancy of training data likely partially responsible (facts are represented many times)
+
+# LLMs and Noise (2)
+
+- OCR is also used for LLM input, e.g.:
+    - data extraction from financial documents
+    - question answering from biomed papers
+- high accuracy (e.g., correct numbers) much more important
+- LLMs may still have some robustness to layout errors
+- LLM-related semantic errors may dominate
 
 # OCR for LLM training and inference
 

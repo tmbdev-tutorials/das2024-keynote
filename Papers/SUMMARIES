@@ -1,6 +1,214 @@
 
 ----------------------------------------
 
+# noise/2001.08361v1
+
+# ONE SENTENCE SUMMARY:
+Empirical scaling laws reveal that language model performance improves predictably with model size, dataset size, and compute power, highlighting the importance of optimal compute-efficient training strategies.
+
+# MAIN POINTS:
+1. Language model performance scales as a power-law with model size, dataset size, and compute used.
+2. Network width or depth have minimal effects within a wide range.
+3. Simple equations govern overfitting and training speed dependencies.
+4. Optimal compute-efficient training involves large models with moderate data, stopping before convergence.
+5. Larger models are significantly more sample-efficient.
+6. Overfitting depends predictably on the ratio of model size to dataset size.
+7. Training curves follow predictable power-laws, allowing loss prediction.
+8. Transfer performance correlates strongly with in-distribution validation results.
+9. Ideal batch size is roughly determined by the loss and gradient noise scale.
+10. Larger models require fewer samples and optimization steps to achieve the same performance.
+
+# TAKEAWAYS:
+1. Larger language models will continue to perform better and be more sample efficient.
+2. Optimal compute-efficient training involves using very large models and stopping short of convergence.
+3. Performance improvements are smooth and predictable across model size, dataset size, and compute.
+4. Overfitting can be managed by scaling dataset size sub-linearly with model size.
+5. Predictable power-law trends can guide the allocation of compute resources for optimal performance.
+
+----------------------------------------
+
+# noise/2005.14165v4
+
+# ONE SENTENCE SUMMARY:
+GPT-3, a 175 billion parameter autoregressive language model, significantly advances few-shot learning across numerous NLP tasks, demonstrating strong performance without task-specific fine-tuning.
+
+# MAIN POINTS:
+1. GPT-3 contains 175 billion parameters, 10x more than any previous non-sparse language model.
+2. It achieves strong performance in few-shot settings across multiple NLP tasks.
+3. GPT-3 can handle translation, question-answering, and cloze tasks effectively.
+4. The model shows proficiency in on-the-fly reasoning and domain adaptation tasks.
+5. GPT-3 can generate human-like news articles, often indistinguishable from those written by humans.
+6. It demonstrates limitations in some datasets and faces methodological issues with large web corpora training.
+7. Few-shot learning in GPT-3 involves providing examples in the model's context window without updating weights.
+8. The model exhibits biases related to gender, race, and religion inherent in its training data.
+9. GPT-3's performance scales smoothly with model size and the number of in-context examples.
+10. The study discusses broader impacts, including ethical considerations and energy usage.
+
+# TAKEAWAYS:
+1. GPT-3's few-shot learning ability allows it to perform tasks without extensive fine-tuning.
+2. The model’s large parameter size enables it to absorb a vast amount of information, improving task-agnostic performance.
+3. GPT-3’s text generation quality poses both beneficial and harmful potential applications.
+4. Biases in GPT-3 reflect those present in its training data, raising ethical concerns.
+5. The model’s training requires substantial computational resources, highlighting energy efficiency considerations.
+
+----------------------------------------
+
+# noise/2404.03602v1
+
+## ONE SENTENCE SUMMARY:
+The study introduces ReaLMistake, a benchmark for detecting diverse and realistic errors in LLM responses, revealing LLMs' low recall and unreliable error explanations.
+
+## MAIN POINTS:
+1. ReaLMistake is the first error detection benchmark with objective and diverse LLM errors.
+2. It includes tasks on reasoning correctness, instruction-following, context-faithfulness, and parameterized knowledge.
+3. GPT-4 and Llama 2 70B responses were annotated by experts.
+4. Evaluations show top LLMs detect errors with very low recall compared to humans.
+5. LLM-based error detectors' explanations are often unreliable.
+6. Error detection performance is sensitive to small prompt changes.
+7. Popular techniques like self-consistency and majority vote do not improve error detection.
+8. ReaLMistake includes 900 instances from three tasks: Math Word Problem Generation, Fine-grained Fact Verification, and Answerability Classification.
+9. The study highlights the need for further research to improve LLM-based error detectors.
+10. Detailed instructions ensure tasks are objectively evaluated without subjectivity.
+
+## TAKEAWAYS:
+1. LLMs struggle with error detection, often performing worse than random baselines.
+2. Explanations provided by LLMs for error detection lack reliability.
+3. Small changes in prompts significantly affect error detection recall.
+4. Existing popular techniques fail to enhance LLM-based error detection performance.
+5. ReaLMistake provides a comprehensive benchmark for advancing LLM error detection research.
+
+----------------------------------------
+
+# noise/2404.09754v1
+
+# ONE SENTENCE SUMMARY:
+The study evaluates the resilience of large language models (LLMs) to various types of noise in instructions and explores strategies for improving their performance.
+
+# MAIN POINTS:
+1. Large language models (LLMs) are tested for resilience against five common types of noise.
+2. Types of noise include ASR errors, OCR errors, grammatical mistakes, typographical errors, and distractive content.
+3. Over 40% of user inputs contain typographical errors, grammatical mistakes, or unrelated content.
+4. LLMs show higher resilience to grammatical mistakes due to their presence in training data.
+5. ASR and OCR errors pose significant challenges as they are less common in training datasets.
+6. Distractive content from past interactions can lead to deviations in responses.
+7. The "re-pass" strategy involves purifying noisy instructions before processing them with LLMs.
+8. ChatGPT shows a strong capability in correcting noisy instructions, unlike some open-source models.
+9. Performance declines with increasing word error rate (WER) in noisy instructions.
+10. The study emphasizes the need for further model development to handle noisy data effectively.
+
+# TAKEAWAYS:
+1. LLMs need improved strategies to handle ASR and OCR errors effectively.
+2. Grammatical mistakes are less detrimental to LLM performance compared to other noise types.
+3. The "re-pass" strategy can significantly improve the processing of noisy instructions.
+4. Models like ChatGPT are more effective in correcting noisy instructions than many open-source models.
+5. Developing LLMs that can filter out irrelevant content from past interactions is crucial.
+
+----------------------------------------
+
+# noise/2407.08989v1
+
+# ONE SENTENCE SUMMARY:
+Large language models (LLMs) show strong resilience to various text perturbations, challenging the assumption that clean data is essential for NLP tasks.
+
+# MAIN POINTS:
+1. Clean datasets are rare in real-world NLP scenarios.
+2. LLMs have achieved remarkable performance in many NLP tasks.
+3. Robustness of LLMs to text noise is crucial but sparsely studied.
+4. The study evaluates LLMs' resilience to corrupted text variations.
+5. Generative LLMs are quite robust to common text perturbations.
+6. LLMs achieved new state-of-the-art in grammar error correction.
+7. Human-annotated dataset for LLM vs. human-corrected outputs is released.
+8. Noise in datasets can originate from both human and machine errors.
+9. Lexical Semantic Change (LSC) detection is essential for understanding semantic shifts.
+10. Prompting techniques and various perturbations are used to test LLM robustness.
+
+# TAKEAWAYS:
+1. LLMs handle text perturbations well, maintaining semantic integrity.
+2. Generative LLMs can outperform humans in grammar error correction.
+3. Real-world noise in data does not significantly degrade LLM performance.
+4. LLMs' robustness suggests a future where language error correction may be unnecessary.
+5. Comprehensive evaluation of LLMs' performance on noisy data is essential for reliable NLP deployment.
+
+----------------------------------------
+
+# noise/Veninga_MA_EEMCS
+
+## ONE SENTENCE SUMMARY:
+This thesis explores the use of fine-tuned Large Language Models (LLMs) for improving the accuracy of Optical Character Recognition (OCR) outputs, showing significant character error rate reductions in modern documents.
+
+## MAIN POINTS:
+1. OCR post-correction improves text accuracy by fixing mistakes in OCR outputs from images/documents.
+2. Pretrained LLMs like ByT5 can enhance OCR accuracy but require fine-tuning.
+3. ByT5 models showed better performance than state-of-the-art methods for correcting OCR errors.
+4. Preprocessing techniques like lowercasing and removing strange characters improve model effectiveness.
+5. Optimal context length for ByT5 was found to be 50 characters.
+6. Few-shot learning was ineffective for teaching LLMs OCR correction without fine-tuning.
+7. The ByT5 model achieved up to 56% Character Error Rate (CER) reduction in modern documents.
+8. LLMs struggled with historic documents due to language differences in the pretraining data.
+9. The baseline method had higher precision but lower recall compared to ByT5 models.
+10. Larger LLMs and domain-specific pretraining could further enhance OCR post-correction.
+
+## TAKEAWAYS:
+1. Fine-tuned ByT5 models outperform state-of-the-art methods for modern OCR post-correction.
+2. Preprocessing techniques like lowercasing and strange character removal are crucial for improving LLM performance.
+3. Context length significantly impacts the effectiveness of LLMs in OCR correction, with 50 characters being optimal.
+4. Few-shot learning is insufficient for OCR correction tasks without model fine-tuning.
+5. Larger and domain-specific pretrained LLMs hold potential for further improvements in OCR post-correction.
+
+----------------------------------------
+
+# noise/s40537-024-00927-4
+
+# ONE SENTENCE SUMMARY:
+OCR2SEQ enhances OCR systems by leveraging multi-modal generative augmentation to improve accuracy in text extraction, especially in specialized domains.
+
+# MAIN POINTS:
+1. OCR2SEQ tackles traditional OCR limitations with multi-modal generative augmentation.
+2. It simulates realistic text extraction errors to improve training efficacy.
+3. Enhances data quality for sequence-to-sequence models in specialized vocabularies.
+4. Demonstrates significant accuracy improvements in healthcare and library sciences.
+5. Uses novel augmentation techniques to generate diverse and challenging data scenarios.
+6. Addresses OCR challenges with sparse character sets and unique vocabularies.
+7. Establishes a resilient pre-training mechanism adaptable to various noise levels.
+8. Integrates data augmentation with machine learning to correct OCR errors.
+9. Evaluates augmentation effectiveness using metrics like CER and WER.
+10. Future work includes broadening applications and enhancing algorithm efficiency.
+
+# TAKEAWAYS:
+1. OCR2SEQ significantly improves OCR accuracy and reliability in specialized domains.
+2. Augmentation techniques simulate common OCR errors, enhancing model robustness.
+3. It shows notable improvements in data processing for healthcare and library sciences.
+4. OCR2SEQ framework integrates data augmentation and machine learning for error correction.
+5. Future development will focus on expanding applications and ensuring data protection compliance.
+
+----------------------------------------
+
+# noise/tacl_a_00427
+
+# ONE SENTENCE SUMMARY:
+A semi-supervised learning method enhances OCR post-correction for endangered languages by combining self-training and lexically aware decoding, reducing error rates significantly.
+
+# MAIN POINTS:
+1. Vast textual data in endangered languages remain non-digitized.
+2. OCR systems produce digitized text but often contain errors.
+3. Neural post-correction models improve OCR outputs but need extensive curated data.
+4. Semi-supervised learning leverages raw images for better performance.
+5. Self-training iteratively enhances model accuracy using its outputs.
+6. Lexically aware decoding ensures consistency by using a count-based language model.
+7. Weighted finite-state automata (WFSA) facilitate efficient decoding.
+8. Experiments on four languages showed 15%–29% error reduction.
+9. The combined self-training and lexical decoding method was crucial for improvements.
+10. The approach uses minimal manually transcribed data and larger unannotated datasets.
+
+# TAKEAWAYS:
+1. Combining self-training with lexically aware decoding significantly improves OCR post-correction.
+2. The method reduces dependency on extensive manually curated data.
+3. Lexically aware decoding uses a count-based language model for efficient predictions.
+4. Self-training iteratively improves model performance with pseudo-training data.
+5. The approach is effective across multiple endangered languages, reducing error rates up to 29%.
+
+----------------------------------------
+
 # ocr/1908.07836v1
 
 # ONE SENTENCE SUMMARY:

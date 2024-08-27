@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for p in */*.pdf; do
+    dest="$(dirname $p)/$(basename $p .pdf)-summary.md"
+    test -f "$dest" && continue
+    echo "$p -> $dest"
+    mutool draw -F txt "$p" | fabric -p summarize > "$dest"
+done
+
+for f in */*-summary.md; do
+    base=$(echo $f | sed 's/-summary.md//')
+    echo
+    echo ----------------------------------------
+    echo
+    echo "# $base"
+    echo
+    cat "$f"
+done > SUMMARIES

@@ -9,6 +9,15 @@ headingDivider: 1
 
 # OCR and LLMs
 
+# Overview
+
+- LLMs/VLMs have replaced most NLP/vision models. OCR?
+- Objectives and uses of document analysis in this new world.
+- Low/high accuracy worlds.
+- Using low accuracy to bootstrap high accuracy.
+
+# REVOLUTION IN MACHINE LEARNING / AI
+
 # LLMs / VLMs Have been Eating Machine Learning
 
 - tasks that used to require extensive, specialized training...
@@ -22,9 +31,30 @@ headingDivider: 1
 - task specifications in natural language
 - generalization to new tasks and classes through natural language
 
-# Example: Abstract Categorization
+# Example: Zero-Shot Document Classification
 
-TODO
+```Python
+prompt = """
+### Instructions
+
+You are given the text of the first page of a PDF document. Please extract the title,
+author, year, and abstract. Then assign a category to the document
+from the following list of categories:
+
+- ocr: text recognition, layout analysis, page segmentation
+- handwriting: handwriting recognition, handwriting synthesis, etc.
+- scene-text: text recognition in natural images and scenes
+... more categories ...
+- other: anything else
+
+You must return only a JSON format dictionary with fields of
+title, author, abstract, year, and category. Your output
+will be parsed by machine.
+"""
+
+classifier = OpenAIClient(prompt)
+result = classifier.json_query(text)
+```
 
 # Zero/Few Shot with LLMs
 
@@ -51,16 +81,67 @@ TODO
 - 3D Pose Estimation for Articulated Objects
 - ...
 
-# Where does OCR Fit In?
+# FOUNDATION MODELS IN OCR
 
-# What is Happening in OCR
+# Traditional OCR
 
-- traditional conversion systems
-- "OCR-free" OCR systems
+- high accuracy scanned-to-text conversion
+- $<0.5%$ character error
+- high quality reading order, layout
+- ideally, recover markup (LaTeX, etc.)
 
-# More on OCR Developments
+# "OCR-Free" Transformers
+
+- text localization (receipts, etc)
+- page segmentation and reading order (PubLayNet, PubTables-1M)
+- visual question answering (VQA, DocVQA)
+- key information extraction (KIE on SROIE)
+- no widely used end-to-end OCR benchmarks
+
+# Transformer-Based "Traditional" OCR
+
+Some transformer-based systems capable of converting full page
+scans to text with bounding boxes:
+
+- UDOT (CER 2.56%, IOU 91.62%)
+- Nougat (CER 25.5%)
+- Kosmos 2.5 (CER 9.2%, IOU 82.1%)
+
+(Other systems run "on top of" traditional OCR.)
 
 # NVIDIA OCR Efforts and Foundation Models
+
+Ambitious all-in-one effort:
+
+- VLMs that handle vision, scenes, and documents
+- document capabilities:
+    - high accuracy image-to-text for books, articles
+    - outputs logical and physical markup (headers, footnotes, etc.)
+    - handles math and other special content
+- massive training and data management effort due to generality of model
+
+# OCR Future
+
+Three different possible scenarios:
+
+1. all in one models: vision+documents $\rightarrow$ text/structure
+2. traditional OCR + transformer for logical layout
+3. all-in-one transformer with post-processing/correction by specific models
+
+# What do we actually want?
+
+- high quality/accuracy conversions of traditional documents
+- high accuracy information extraction
+- conversion as input to LLM training
+- conversion as input to LLM inference
+
+# LLM Requirements
+
+- LLMs are robust
+
+# OCR for LLM training and inference
+
+- LLMs deal well with 
 
 # Required vs Actual Error Rates
 

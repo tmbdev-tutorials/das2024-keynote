@@ -15,6 +15,7 @@ improved recognition accuracy. We present experiments on several benchmark
 datasets, demonstrating the superiority of our method over existing approaches.
 The results indicate that the proposed model achieves state-of-the-art
 performance in recognizing text from challenging scenes.
+
 ---
 
 ## Towards End-to-End Unified Scene Text Detection and Layout Analysis
@@ -36,6 +37,7 @@ multiple well-designed baseline methods. Additionally, this model achieves
 state-of-the-art results on multiple scene text detection datasets without the
 need of complex post-processing. Dataset and code: https://github.com/google-
 research-datasets/hiertext.
+
 ---
 
 ## Levenshtein OCR
@@ -60,6 +62,7 @@ parallel decoding, dynamic length change and good interpretability. The
 quantitative experiments clearly demonstrate that LevOCR achieves state-of-the-
 art performances on standard benchmarks and the qualitative analyses verify the
 effectiveness and advantage of the proposed LevOCR algorithm.
+
 ---
 
 ## Visual-Semantic Transformer for Scene Text Recognition
@@ -87,6 +90,7 @@ transformer module obtaining the final text prediction. Experiments on seven
 public benchmarks including regular/irregular text recognition datasets verifies
 the effectiveness of our proposed model, reaching state of the art on four of
 the seven benchmarks.
+
 ---
 
 ## Visual-Semantic Transformer for Scene Text Recognition
@@ -114,6 +118,7 @@ transformer module obtaining the final text prediction. Experiments on seven
 public benchmarks including regular/irregular text recognition datasets verify
 the effectiveness of our proposed model, reaching state of the art on four of
 the seven benchmarks.
+
 ---
 
 ## Scene text detection and recognition: a survey
@@ -140,6 +145,7 @@ detection and recognition system. Also, we have described the methods that are
 robust in the detection and recognition of curved and vertical texts. Finally,
 we have presented some approaches to develop text detection and recognition
 systems as the future work.
+
 ---
 
 ## Data Augmentation for Scene Text Recognition
@@ -167,6 +173,7 @@ accuracy of STR models across regular and irregular test datasets by as much as
 and 0.89% on GCRNN. The diversity and simplicity of API provided by STRAug
 functions enable easy replication and validation of existing data augmentation
 methods for STR. STRAug is available at https://github.com/roatienza/straug.
+
 ---
 
 ## Utilizing Resource-Rich Language Datasets for End-to-End Scene Text Recognition in Resource-Poor Languages
@@ -195,6 +202,7 @@ resource-poor language’s dataset to make the decoder better suited to the
 resource-poor language. Experiments on Japanese scene text recognition using a
 small, publicly available dataset demonstrate the effectiveness of the proposed
 method.
+
 ---
 
 ## Text Recognition in the Wild: A Survey
@@ -218,6 +226,7 @@ resources, and (4) point out directions for future work. In summary, this
 literature review attempts to present an entire picture of the field of scene
 text recognition. It provides a comprehensive reference for people entering this
 field and could be helpful in inspiring future research.
+
 ---
 
 ## Vision Transformer for Fast and Efficient Scene Text Recognition
@@ -247,6 +256,7 @@ augmentation) at 2.3× the speed but requires 73.2% more parameters and 61.5%
 more FLOPS. In terms of trade-offs, nearly all ViTSTR configurations are at or
 near the frontiers to maximize accuracy, speed, and computational efficiency all
 at the same time.
+
 ---
 
 ## TRIG: Transformer-Based Text Recognizer with Initial Embedding Guidance
@@ -275,6 +285,7 @@ for text recognition, named TRansformer-based text recognizer with Initial
 embedding Guidance (TRIG), composed of three stages (transformation, feature
 extraction, and prediction). Extensive experiments show that our approach can
 achieve state-of-the-art on text recognition benchmarks.
+
 ---
 
 ## Utilizing Resource-Rich Language Datasets for End-to-End Scene Text Recognition in Resource-Poor Languages
@@ -303,6 +314,7 @@ resource-poor language’s dataset to make the decoder better suited to the
 resource-poor language. Experiments on Japanese scene text recognition using a
 small, publicly available dataset demonstrate the effectiveness of the proposed
 method.
+
 ---
 
 ## Vision Transformer for Fast and Efficient Scene Text Recognition
@@ -332,6 +344,7 @@ augmentation) at 2.3× the speed but requires 73.2% more parameters and 61.5%
 more FLOPS. In terms of trade-offs, nearly all ViTSTR configurations are at or
 near the frontiers to maximize accuracy, speed, and computational efficiency all
 at the same time.
+
 ---
 
 ## TRIG: Transformer-Based Text Recognizer with Initial Embedding Guidance
@@ -360,6 +373,7 @@ for text recognition, named TRansformer-based text recognizer with Initial
 embedding Guidance (TRIG), composed of three stages (transformation, feature
 extraction, and prediction). Extensive experiments show that our approach can
 achieve state-of-the-art on text recognition benchmarks.
+
 ---
 
 ## MASTER: Multi-Aspect Non-local Network for Scene Text Recognition
@@ -379,6 +393,7 @@ RNN-based methods have low efficiency due to poor parallelization. To overcome
 these problems, we propose the MASTER, a self-attention based scene text
 recognizer that not only encodes the input-output attention but also learns
 self-attention.
+
 ---
 
 ## Scene Text Detection and Recognition: The Deep Learning Era
@@ -403,6 +418,7 @@ the dramatic differences brought by deep learning and remaining grand
 challenges. We expect that this review paper would serve as a reference book for
 researchers in this field. Related resources are also collected in our Github
 repository.
+
 ---
 
 ## MASTER: Multi-Aspect Non-local Network for Scene Text Recognition
@@ -422,6 +438,7 @@ RNN-based methods have low efficiency due to poor parallelization. To overcome
 these problems, we propose the MASTER, a self-attention based scene text
 recognizer that (1) not only encodes the input-output attention but also learns
 self-attention which enables non-local operations.
+
 ---
 
 ## TRIG: Transformer-Based Text Recognizer with Initial Embedding Guidance
@@ -450,6 +467,7 @@ for text recognition, named TRansformer-based text recognizer with Initial
 embedding Guidance (TRIG), composed of three stages (transformation, feature
 extraction, and prediction). Extensive experiments show that our approach can
 achieve state-of-the-art on text recognition benchmarks.
+
 ---
 
 ## Data Augmentation for Scene Text Recognition
@@ -477,6 +495,7 @@ accuracy of STR models across regular and irregular test datasets by as much as
 and 0.89% on GCRNN. The diversity and simplicity of the API provided by STRAug
 functions enable easy replication and validation of existing data augmentation
 methods for STR. STRAug is available at https://github.com/roatienza/straug.
+
 ---
 
 ## TextSnake: A Flexible Representation for Detecting Text of Arbitrary Shapes
@@ -505,6 +524,7 @@ performance on Total-Text and SCUT-CTW1500, the two newly published benchmarks
 with special emphasis on curved text in natural images, as well as the widely-
 used datasets ICDAR 2015 and MSRA-TD500. Specifically, TextSnake outperforms the
 baseline on Total-Text by more than 40% in F-measure.
+
 ---
 
 ## Towards Accurate Scene Text Recognition with Semantic Reasoning Networks
@@ -531,6 +551,7 @@ state-of-the-art results on 7 public benchmarks, including regular text,
 irregular text and non-Latin long text, verify the effectiveness and robustness
 of the proposed method. In addition, the speed of SRN has significant advantages
 over the RNN based methods, demonstrating its value in practical use.
+
 ---
 
 ## Towards Accurate Scene Text Recognition with Semantic Reasoning Networks
@@ -557,6 +578,7 @@ state-of-the-art results on 7 public benchmarks, including regular text,
 irregular text and non-Latin long text, verify the effectiveness and robustness
 of the proposed method. In addition, the speed of SRN has significant advantages
 over the RNN-based methods, demonstrating its value in practical use.
+
 ---
 
 ## Real-time Scene Text Detection with Differentiable Binarization
@@ -584,6 +606,7 @@ improvements by DB are significant so that we can look for an ideal tradeoff
 between detection accuracy and efficiency. Specifically, with a backbone of
 ResNet-18, our detector achieves an F-measure of 82.8, running at 62 FPS, on the
 MSRA-TD500 dataset.
+
 ---
 
 ## Towards Accurate Scene Text Recognition with Semantic Reasoning Networks
@@ -610,6 +633,7 @@ state-of-the-art results on 7 public benchmarks, including regular text,
 irregular text and non-Latin long text, verify the effectiveness and robustness
 of the proposed method. In addition, the speed of SRN has significant advantages
 over the RNN based methods, demonstrating its value in practical use.
+
 ---
 
 ## What Is Wrong With Scene Text Recognition Model Comparisons? Dataset and Model Analysis
@@ -634,6 +658,7 @@ module-wise contributions to performance in terms of accuracy, speed, and memory
 demand, under one consistent set of training and evaluation datasets. Such
 analyses clean up the hindrance on the current comparisons to understand the
 performance gain of the existing modules.
+
 ---
 
 ## What Is Wrong With Scene Text Recognition Model Comparisons? Dataset and Model Analysis
@@ -658,6 +683,7 @@ module-wise contributions to performance in terms of accuracy, speed, and memory
 demand, under one consistent set of training and evaluation datasets. Such
 analyses clean up the hindrance on the current comparisons to understand the
 performance gain of the existing modules. Our code is publicly available.
+
 ---
 
 ## What Is Wrong With Scene Text Recognition Model Comparisons? Dataset and Model Analysis
@@ -682,6 +708,7 @@ module-wise contributions to performance in terms of accuracy, speed, and memory
 demand, under one consistent set of training and evaluation datasets. Such
 analyses clean up the hindrance on the current comparisons to understand the
 performance gain of the existing modules.
+
 ---
 
 ## Scene Text Recognition from Two-Dimensional Perspective
@@ -709,6 +736,7 @@ position of each character. Experiments demonstrate that the proposed algorithm
 outperforms previous methods on both regular and irregular text datasets.
 Moreover, it is proven to be more robust to imprecise localizations in the text
 detection phase, which are very common in practice.
+
 ---
 
 ## Scene Text Recognition with Sliding Convolutional Character Models
@@ -741,6 +769,7 @@ experiments on several challenging English and Chinese benchmarks, including the
 IIIT-5K, SVT, ICDAR03/13 and TRW15 datasets, demonstrate that the proposed
 method yields superior or comparable performance to state-of-the-art methods
 while the model size is relatively small.
+
 ---
 
 ## Robust Scene Text Recognition with Automatic Rectification
@@ -766,6 +795,7 @@ RARE is end-to-end trainable, requiring only images and associated text labels,
 making it convenient to train and deploy the model in practical systems. State-
 of-the-art or highly-competitive performance achieved on several benchmarks well
 demonstrates the effectiveness of the proposed model.
+
 ---
 
 ## Reading Scene Text in Deep Convolutional Sequences
@@ -792,6 +822,7 @@ essential to discriminate word strings; (iv) the model does not depend on pre-
 defined dictionary, and it can process unknown words and arbitrary strings. It
 achieves impressive results on several benchmarks, advancing the state-of-the-
 art substantially.
+
 ---
 
 ## An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition
@@ -820,6 +851,7 @@ experiments on standard benchmarks, including the IIIT-5K, Street View Text and
 ICDAR datasets, demonstrate the superiority of the proposed algorithm over the
 prior arts. Moreover, the proposed algorithm performs well in the task of image-
 based music score recognition, which evidently verifies the generality of it.
+
 ---
 
 ## ICDAR 2015 Competition on Robust Reading
@@ -842,6 +874,7 @@ in the first quarter of 2015, and received a total of 44 submissions. Only the
 tasks newly introduced in 2015 are reported on. The datasets, the ground truth
 specification, and the evaluation protocols are presented together with the
 results and a brief summary of the participating methods.
+
 ---
 
 ## Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks
@@ -877,6 +910,7 @@ reCAPTCHA puzzles. Our evaluations on both tasks, the street number recognition
 as well as reCAPTCHA puzzle transcription, indicate that at specific operating
 thresholds, the performance of the proposed system is comparable to, and in some
 cases exceeds, that of human operators.
+
 ---
 
 ## Reading Text in the Wild with Convolutional Neural Networks
@@ -904,6 +938,7 @@ image retrieval datasets, showing a large improvement over all previous methods.
 Finally, we demonstrate a real-world application of our text spotting system to
 allow thousands of hours of news footage to be instantly searchable via a text
 query.
+
 ---
 
 ## Scene Text Recognition using Higher Order Language Priors
@@ -920,6 +955,7 @@ models to enhance the accuracy of text recognition in natural scenes, providing
 improvements over traditional methods that rely primarily on visual appearance.
 The proposed system demonstrates significant performance gains, especially in
 challenging scenarios with complex backgrounds and varied text orientations.
+
 ---
 
 ## End-to-End Text Recognition with Convolutional Neural Networks
@@ -941,6 +977,7 @@ recognizer modules. Then, using only simple off-the-shelf methods, we integrate
 these two modules into a full end-to-end, lexicon-driven, scene text recognition
 system that achieves state-of-the-art performance on standard benchmarks, namely
 Street View Text and ICDAR 2003.
+
 ---
 
 ## End-to-End Scene Text Recognition

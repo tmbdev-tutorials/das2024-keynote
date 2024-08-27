@@ -18,6 +18,7 @@ only 5 points with respect to a model trained on gold data from all the
 languages. We additionally provide insights on the cross-lingual transfer of
 ByT5 and show how the model compares with respect to mT5 across all parameter
 sizes.
+
 ---
 
 ## CANINE: Pre-training an Efficient Tokenization-Free Encoder for Language Representation
@@ -42,6 +43,7 @@ combines downsampling, which reduces the input sequence length, with a deep
 transformer stack, which encodes context. CANINE outperforms a comparable mBERT
 model by 5.7 F1 on TYDI QA, a challenging multilingual benchmark, despite having
 fewer model parameters.
+
 ---
 
 ## RankT5: Fine-Tuning T5 for Text Ranking with Ranking Losses
@@ -66,6 +68,7 @@ different public text ranking datasets. Moreover, when fine-tuned with listwise
 ranking losses, the ranking model appears to have better zero-shot ranking
 performance on out-of-domain datasets compared to the model fine-tuned with
 classification losses.
+
 ---
 
 ## Efficient Few-Shot Learning Without Prompts
@@ -91,6 +94,7 @@ accuracy with orders of magnitude less parameters than existing techniques. Our
 experiments show that SETFIT obtains comparable results with PEFT and PET
 techniques, while being an order of magnitude faster to train. We also show that
 SETFIT can be applied in multilingual settings by simply switching the ST body.
+
 ---
 
 ## Context Limitations Make Neural Language Models More Human-Like
@@ -111,6 +115,7 @@ make LMs better simulate human reading behavior. Our analyses also showed that
 human-LM gaps in memory access are associated with specific syntactic
 constructions; incorporating additional syntactic factors into LMs’ context
 access could enhance their cognitive plausibility.
+
 ---
 
 ## Learning to summarize from human feedback
@@ -141,6 +146,7 @@ generalizes to new datasets, and that optimizing our reward model results in
 better summaries than optimizing ROUGE according to humans. We hope the evidence
 from our paper motivates machine learning researchers to pay closer attention to
 how their training loss affects the model behavior they actually want.
+
 ---
 
 ## Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference
@@ -162,6 +168,7 @@ soft labels to a large set of unlabeled examples. Finally, standard supervised
 training is performed on the resulting training set. For several tasks and
 languages, PET outperforms supervised training and strong semi-supervised
 approaches in low-resource settings by a large margin.
+
 ---
 
 ## Few-Shot Text Generation with Pattern-Exploiting Training
@@ -181,6 +188,7 @@ proposed few-shot approach, for finetuning generative language models on text
 generation tasks. On several text summarization and headline generation
 datasets, our proposed variant of PET gives consistent improvements over a
 strong baseline in few-shot settings.
+
 ---
 
 ## A Graph-Based Neural Model for End-to-End Frame Semantic Parsing
@@ -203,6 +211,7 @@ All predicates and roles are treated as graph nodes, and their relations are
 taken as graph edges. Experiment results on two benchmark datasets of frame
 semantic parsing show that our method is highly competitive, resulting in better
 performance than pipeline models.
+
 ---
 
 ## Boosting Search Engines with Interactive Agents
@@ -227,6 +236,7 @@ dynamically constrained actions that can learn interactive search strategies
 completely from scratch. In both cases, we obtain significant improvements over
 one-shot search with a strong information retrieval baseline. Finally, we
 provide an in-depth analysis of the learned search policies.
+
 ---
 
 ## Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in NLP
@@ -251,6 +261,7 @@ curated word lists, nor does it require any training data or changes to the
 model’s parameters. While our approach does by no means eliminate the issue of
 language models generating biased text, we believe it to be an important step in
 this direction.
+
 ---
 
 ## Learning to Reason for Text Generation from Scientific Tables
@@ -280,6 +291,7 @@ of proper automatic evaluation metrics. The data, code, and annotations for
 human evaluation will be available at https://github.com/UKPLab/SciGen. SciGen
 opens new avenues for future research in reasoning-aware text generation and
 evaluation.
+
 ---
 
 ## Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference
@@ -301,6 +313,7 @@ soft labels to a large set of unlabeled examples. Finally, standard supervised
 training is performed on the resulting training set. For several tasks and
 languages, PET outperforms supervised training and strong semi-supervised
 approaches in low-resource settings by a large margin.
+
 ---
 
 ## High-Precision Extraction of Emerging Concepts from Scientific Literature
@@ -324,6 +337,7 @@ From a corpus of computer science papers on arXiv, we find that our method
 achieves a Precision@1000 of 99%, compared to 86% for prior work, and a
 substantially better precision-yield trade-off across the top 15,000
 extractions. To stimulate research in this area, we release our code and data.
+
 ---
 
 ## Torch-Struct: Deep Structured Prediction Library
@@ -348,6 +362,7 @@ general-purpose optimizations to provide cross-algorithm efficiency. Experiments
 show significant performance gains over fast baselines and case-studies
 demonstrate the benefits of the library. Torch-Struct is available at
 https://github.com/harvardnlp/pytorch-struct.
+
 ---
 
 ## Acknowledgement Entity Recognition in CORD-19 Papers
@@ -371,6 +386,7 @@ that only up to 50–60% of named entities are actually acknowledged. We further
 analyze chronological trends of acknowledgement entities in CORD-19 papers. All
 codes and labeled data are publicly available at https://github.com/lamps-
 lab/ackextract.
+
 ---
 
 ## Document-Level Definition Detection in Scholarly Documents: Existing Models, Error Analyses, and Future Directions
@@ -399,6 +415,7 @@ in the standard evaluation approach, due to the necessity of incorporation of
 document structure as features. We discuss remaining challenges in document-
 level definition detection, ideas for improvements, and potential issues for the
 development of reading aid applications.
+
 ---
 
 ## Document-Level Definition Detection in Scholarly Documents: Existing Models, Error Analyses, and Future Directions
@@ -427,6 +444,7 @@ in the standard evaluation approach, due to the necessity of incorporation of
 document structure as features. We discuss remaining challenges in document-
 level definition detection, ideas for improvements, and potential issues for the
 development of reading aid applications.
+
 ---
 
 ## SCIREX: A Challenge Dataset for Document-Level Information Extraction
@@ -453,6 +471,7 @@ performance shows a significant gap between human performance and current
 baselines, inviting the community to use our dataset as a challenge to develop
 document-level IE models. Our data and code are publicly available at
 https://github.com/allenai/SciREX.
+
 ---
 
 ## Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks
@@ -477,6 +496,7 @@ simple data selection strategies is an effective alternative, especially when
 resources for domain-adaptive pretraining might be unavailable. Overall, we
 consistently find that multi-phase adaptive pretraining offers large gains in
 task performance.
+
 ---
 
 ## Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks
@@ -498,6 +518,7 @@ structures, which can also effectively produce embeddings for unseen words in
 the new document. Finally, the word nodes are incorporated as the document
 embedding. Extensive experiments on four benchmark datasets show that our method
 outperforms state-of-the-art text classification methods.
+
 ---
 
 ## Automatically Identifying Words That Can Serve as Labels for Few-Shot Text Classification
@@ -516,6 +537,7 @@ and an understanding of the language model’s abilities. To mitigate this issue
 we devise an approach that automatically finds such a mapping given small
 amounts of training data. For a number of tasks, the mapping found by our
 approach performs almost as well as hand-crafted label-to-word mappings.
+
 ---
 
 ## Dense Passage Retrieval for Open-Domain Question Answering
@@ -535,6 +557,7 @@ framework. When evaluated on a wide range of open-domain QA datasets, our dense
 retriever outperforms a strong Lucene-BM25 system greatly by 9%-19% absolute in
 terms of top-20 passage retrieval accuracy, and helps our end-to-end QA system
 establish new state-of-the-art on multiple open-domain QA benchmarks.
+
 ---
 
 ## Automatically Identifying Words That Can Serve as Labels for Few-Shot Text Classification
@@ -553,6 +576,7 @@ and an understanding of the language model’s abilities. To mitigate this issue
 we devise an approach that automatically finds such a mapping given small
 amounts of training data. For a number of tasks, the mapping found by our
 approach performs almost as well as hand-crafted label-to-word mappings.
+
 ---
 
 ## From Standard Summarization to New Tasks and Beyond: Summarization with Manifold Information
@@ -574,6 +598,7 @@ much manifold information to be summarized, such as the summary for a web page
 based on a query in the search engine, extreme long document (e.g., academic
 paper), dialog history and so on. In this paper, we focus on the survey of these
 new summarization tasks and approaches in the real-world application.
+
 ---
 
 ## Fact or Fiction: Verifying Scientific Claims
@@ -596,6 +621,7 @@ to verify claims related to COVID-19 by identifying evidence from the CORD-19
 corpus. Our experiments indicate that SCIFACT will provide a challenging testbed
 for the development of new systems designed to retrieve and reason over corpora
 containing specialized domain knowledge.
+
 ---
 
 ## S2ORC: The Semantic Scholar Open Research Corpus
@@ -616,6 +642,7 @@ academic publishers and digital archives into a unified source, and create the
 largest publicly-available collection of machine-readable academic text to date.
 We hope this resource will facilitate research and development of tools and
 tasks for text mining over academic text.
+
 ---
 
 ## TLDR: Extreme Summarization of Scientific Documents
@@ -638,6 +665,7 @@ for generating TLDRs that exploits titles as an auxiliary training signal. CATTS
 improves upon strong baselines under both automated metrics and human
 evaluations. Data and code are publicly available at
 https://github.com/allenai/scitldr.
+
 ---
 
 ## Stolen Probability: A Structural Weakness of Neural Language Models
@@ -658,6 +686,7 @@ structurally impoverishes some words at the expense of others when assigning
 probability. We present numerical, theoretical and empirical analyses showing
 that words on the interior of the convex hull in the embedding space have their
 probability bounded by the probabilities of the words on the hull.
+
 ---
 
 ## SCIREX: A Challenge Dataset for Document-Level Information Extraction
@@ -684,6 +713,7 @@ performance shows a significant gap between human performance and current
 baselines, inviting the community to use our dataset as a challenge to develop
 document-level IE models. Our data and code are publicly available at
 https://github.com/allenai/SciREX
+
 ---
 
 ## Tree-Structured Attention with Hierarchical Accumulation
@@ -707,6 +737,7 @@ translation task. It also yields improvements over Transformer and Tree-LSTM on
 three text classification tasks. We further demonstrate that using hierarchical
 priors can compensate for data shortage, and that our model prefers phrase-level
 attentions over token-level attentions.
+
 ---
 
 ## Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks
@@ -720,6 +751,7 @@ Year: 2020
 The abstract is not available on the provided page. However, based on the title,
 the paper likely discusses a method for inductive text classification using
 graph neural networks, emphasizing the structural uniqueness of each document.
+
 ---
 
 ## Natural Questions: a Benchmark for Question Answering Research
@@ -744,6 +776,7 @@ into human variability on the annotation task. We introduce robust metrics for
 the purposes of evaluating question answering systems; demonstrate high human
 upper bounds on these metrics; and establish baseline results using competitive
 methods drawn from related literature.
+
 ---
 
 ## BERT Rediscovers the Classical NLP Pipeline
@@ -763,6 +796,7 @@ sequence: POS tagging, parsing, NER, semantic roles, then coreference.
 Qualitative analysis reveals that the model can and often does adjust this
 pipeline dynamically, revising lower-level decisions on the basis of
 disambiguating information from higher-level representations.
+
 ---
 
 ## Entity, Relation, and Event Extraction with Contextualized Span Representations
@@ -785,6 +819,7 @@ relationships among entities in the same or adjacent sentences, while dynamic
 span graph updates model long-range cross-sentence relationships. For instance,
 propagating span representations via predicted coreference links can enable the
 model to disambiguate challenging entity mentions.
+
 ---
 
 ## Extractive Summarization of Long Documents by Combining Global and Local Context
@@ -805,6 +840,7 @@ benefits of our method become stronger as we apply it to longer documents.
 Rather surprisingly, an ablation study indicates that the benefits of our model
 seem to come exclusively from modeling the local context, even for the longest
 documents.
+
 ---
 
 ## FAIRSEQ: A Fast, Extensible Toolkit for Sequence Modeling
@@ -820,6 +856,7 @@ developers to train custom models for translation, summarization, language
 modeling, and other text generation tasks. The toolkit is based on PyTorch and
 supports distributed training across multiple GPUs and machines. We also support
 fast mixed-precision training and inference on modern GPUs.
+
 ---
 
 ## Neural Modular Control for Embodied Question Answering
@@ -845,6 +882,7 @@ policy to adapt to the sub-policies. On the challenging EQA benchmark in
 House3D, requiring navigating diverse realistic indoor environments, our
 approach outperforms prior work by a significant margin, both in terms of
 navigation and question answering.
+
 ---
 
 ## Federated Learning of N-gram Language Models
@@ -877,6 +915,7 @@ Results are presented for two languages, American English and Brazilian
 Portuguese. This work demonstrates that high-quality n-gram language models can
 be trained directly on client mobile devices without sensitive training data
 ever leaving the devices.
+
 ---
 
 ## Learned in Translation: Contextualized Word Vectors
@@ -898,6 +937,7 @@ and character vectors on a wide variety of common NLP tasks: sentiment analysis
 (SST, IMDb), question classification (TREC), entailment (SNLI), and question
 answering (SQuAD). For fine-grained sentiment analysis and entailment, CoVe
 improves performance of our baseline models to the state of the art.
+
 ---
 
 ## Deep contextualized word representations
@@ -919,6 +959,7 @@ including question answering, textual entailment, and sentiment analysis. We
 also present an analysis showing that exposing the deep internals of the pre-
 trained network is crucial, allowing downstream models to mix different types of
 semi-supervision signals.
+
 ---
 
 ## Efficient and Robust Question Answering from Minimal Context over Documents
@@ -942,6 +983,7 @@ reductions in training (up to 15 times) and inference times (up to 13 times),
 with accuracy comparable to or better than the state-of-the-art on SQuAD,
 NewsQA, TriviaQA, and SQuAD-Open. Furthermore, our experimental results and
 analyses show that our approach is more robust to adversarial inputs.
+
 ---
 
 ## SLING: A framework for frame semantic parsing
@@ -961,6 +1003,7 @@ directly without any intervening symbolic representation. The SLING framework
 includes an efficient and scalable frame store implementation as well as a
 neural network JIT compiler for fast inference during parsing. SLING is
 implemented in C++ and it is available for download on GitHub.
+
 ---
 
 ## A Generalised Quantifier Theory of Natural Language in Categorical Compositional Distributional Semantics with Bialgebras
@@ -983,6 +1026,7 @@ equivalence of the relational instantiation to the truth theoretic semantics of
 generalised quantifiers. The vector space instantiation formalises the
 statistical usages of words and enables us to, for the first time, reason about
 quantified phrases and sentences compositionally in distributional semantics.
+
 ---
 
 ## Character Models with Attention
@@ -1001,6 +1045,7 @@ model to directly learn character-level representations and alignments. Our
 results show that character-level models can perform translation at state-of-
 the-art levels on datasets of modest size, and are competitive on larger
 datasets when combined with word-level features.
+
 ---
 
 ## GloVe: Global Vectors for Word Representation
@@ -1024,6 +1069,7 @@ matrix or on individual context windows in a large corpus. The model produces a
 vector space with meaningful substructure, as evidenced by its performance of
 75% on a recent word analogy task. It also outperforms related models on
 similarity tasks and named entity recognition.
+
 ---
 
 ## A Convolutional Neural Network for Modelling Sentences
@@ -1041,6 +1087,7 @@ length and induces a feature graph over the sentence that is capable of
 explicitly capturing short and long-range relations. The model is applied to
 emotion prediction and sentiment prediction and achieves state-of-the-art
 results on multiple benchmarks.
+
 ---
 
 ## word2vec Explained: Deriving Mikolov et al.’s Negative-Sampling Word-Embedding Method
@@ -1061,6 +1108,7 @@ the rationale behind the equations. This note is an attempt to explain equation
 (4) (negative sampling) in “Distributed Representations of Words and Phrases and
 their Compositionality” by Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg
 Corrado, and Jeffrey Dean.
+
 ---
 
 ## Frame-Semantic Parsing
@@ -1088,6 +1136,7 @@ approach, along with a heuristic identifier of frame-evoking targets,
 outperforms the prior state of the art by significant margins. Additionally, we
 present experiments on the much larger FrameNet 1.5 data set. We have released
 our frame-semantic parser as open-source software.
+
 ---
 
 ## Efficient Estimation of Word Representations in Vector Space
@@ -1107,6 +1156,7 @@ computational cost, i.e., it takes less than a day to learn high quality word
 vectors from a 1.6 billion words data set. Furthermore, we show that these
 vectors provide state-of-the-art performance on our test set for measuring
 syntactic and semantic word similarities.
+
 ---
 
 ## Recurrent Neural Network Based Language Model
@@ -1121,6 +1171,7 @@ The document describes the use of recurrent neural networks (RNNs) for language
 modeling. It provides an overview of the model, ASR results, extensions, MT
 results, and comparisons with other models. Key outcomes and future work are
 also discussed.
+
 ---
 
 ## Bibliographic Meta-Data Extraction Using Probabilistic Finite State Transducers
@@ -1141,6 +1192,7 @@ measurements yields a word accuracy of 88.5%, a field accuracy of 82.6%, and an
 instance accuracy of 42.7%. Based on a comparison to other published results, we
 conclude that our system performs second best on the given data set using a
 conceptually simple approach and implementation.
+
 ---
 
 ## A Probabilistic Parsing Method for Sentence Disambiguation
@@ -1159,6 +1211,7 @@ of encoding all necessary syntactic, semantic, and pragmatic information for
 disambiguation. It proposes a probabilistic parsing method that considers
 statistics from past discourse, task domains, and speaker characteristics to aid
 in sentence disambiguation.
+
 ---
 
 ## Unsupervised Deep Learning for NLP

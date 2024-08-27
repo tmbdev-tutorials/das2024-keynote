@@ -20,6 +20,7 @@ weight matrix factorization and parameterization strategy through which we can
 bound matrix norms and therein control the degree of expansivity induced during
 backpropagation. We find that hard constraints on orthogonality can negatively
 affect the speed of convergence and model performance.
+
 ---
 
 ## Semantic Object Parsing with Local-Global Long Short-Term Memory
@@ -51,6 +52,7 @@ pixel to sense a much larger region for inference benefiting from the
 memorization of previous dependencies in all positions along all dimensions.
 Comprehensive evaluations on three public datasets well demonstrate the
 significant superiority of our LG-LSTM over other state-of-the-art methods.
+
 ---
 
 ## Unitary Evolution Recurrent Neural Networks
@@ -75,6 +77,7 @@ with this parameterization becomes feasible only when considering hidden states
 in the complex domain. We demonstrate the potential of this architecture by
 achieving state-of-the-art results in several hard tasks involving very long-
 term dependencies.
+
 ---
 
 ## Scene Labeling with LSTM Recurrent Neural Networks
@@ -105,6 +108,7 @@ equivalent or better than the compared state-of-the-art approaches which use a
 Graphics Processing Unit (GPU). Finally, our networks' ability to visualize
 feature maps from each layer supports the hypothesis that LSTM networks are
 overall suited for image processing tasks.
+
 ---
 
 ## Convolutional LSTM Network: A Machine Learning Approach for Precipitation Nowcasting

@@ -25,6 +25,7 @@ performance than the existing state-of-the-art approaches with the average
 precision of 89.4, 40.3, 83.4 and 93.3. This simple and flexible framework could
 serve as a promising baseline for instance-level recognition tasks in document
 images.
+
 ---
 
 ## OCR-free Document Understanding Transformer
@@ -53,6 +54,7 @@ state-of-the-art performances on various VDU tasks in terms of both speed and
 accuracy. In addition, we offer a synthetic data generator that helps the model
 pre-training to be flexible in various languages and domains. The code, trained
 model, and synthetic data are available at https://github.com/clovaai/donut.
+
 ---
 
 ## Extending TrOCR for Text Localization-Free OCR of Full-Page Scanned Receipt Images
@@ -85,6 +87,7 @@ the full image into 15 equally sized chunks, gives 87.8 F1-score and 4.98% CER
 with minimal additional pre or post-processing of the output. Moreover, the
 characters in the generated document-level sequences are arranged in the reading
 order, which is practical for real-world applications.
+
 ---
 
 ## Unifying Vision, Text, and Layout for Universal Document Processing
@@ -111,6 +114,7 @@ content customization. Our method sets the state-of-the-art on 9 Document AI
 tasks, e.g., document understanding and QA, across diverse data domains like
 finance reports, academic papers, and websites. UDOP ranks first on the
 leaderboard of the Document Understanding Benchmark (DUE).
+
 ---
 
 ## Reading and Writing: Discriminative and Generative Modeling for Self-Supervised Text Recognition
@@ -136,6 +140,7 @@ supervised text recognition methods on irregular scene text datasets by
 10.2%-20.2% and exceeds state-of-the-art methods by an average of 5.3% on 11
 benchmarks with similar model sizes. Furthermore, our pre-trained model
 demonstrates notable performance gains when applied to other text-related tasks.
+
 ---
 
 ## Transformer-Based Approach for Document Layout Understanding
@@ -161,6 +166,7 @@ study of employing a fully transformer-based framework in DLU tasks. We
 evaluated TRDLU on three different DLU benchmark datasets, each with strong
 baselines. TRDLU outperforms the current state-of-the-art methods on all of
 them.
+
 ---
 
 ## SwinDocSegmenter: An End-to-End Unified Domain Adaptive Transformer for Document Instance Segmentation
@@ -184,6 +190,7 @@ Japanese (HJ), and TableBank demonstrate that our model with SwinL backbone
 achieves better segmentation performance than the existing state-of-the-art
 approaches with the average precision of 93.72, 54.39, 84.65, and 98.04
 respectively under one billion parameters.
+
 ---
 
 ## An End-to-End OCR Text Re-organization Sequence Learning for Rich-text Detail Image Comprehension
@@ -207,6 +214,7 @@ Sinkhorn global optimization will reorder the OCR text into a proper sequence.
 Experimental results illustrate that our model outperforms the other baselines,
 and the real experiment of the blind users’ experience shows that our model
 improves their comprehension.
+
 ---
 
 ## Doc2Graph: a Task Agnostic Document Understanding Framework based on Graph Neural Networks
@@ -228,6 +236,7 @@ model, to solve different tasks given different types of documents. We evaluated
 our approach on two challenging datasets for key information extraction in form
 understanding, invoice layout analysis and table detection. Our code is freely
 accessible on https://github.com/andreagemelli/doc2graph.
+
 ---
 
 ## TRANSFORMER-BASED APPROACH FOR DOCUMENT LAYOUT UNDERSTANDING
@@ -253,6 +262,7 @@ study of employing a fully transformer-based framework in DLU tasks. We
 evaluated TRDLU on three different DLU benchmark datasets, each with strong
 baselines. TRDLU outperforms the current state-of-the-art methods on all of
 them.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -276,6 +286,7 @@ human-labeled datasets. Experiments show that the TrOCR model outperforms the
 current state-of-the-art models on the printed, handwritten and scene text
 recognition tasks. The TrOCR models and code are publicly available at
 https://aka.ms/trocr.
+
 ---
 
 ## DiT: Self-supervised Pre-training for Document Image Transformer
@@ -300,6 +311,7 @@ state-of-the-art results on these downstream tasks, e.g. document image
 classification (91.11 →92.69), document layout analysis (91.0 →94.9), table
 detection (94.23 →96.55) and text detection for OCR (93.07 →94.29). The code and
 pre-trained models are publicly available at https://aka.ms/msdit.
+
 ---
 
 ## LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
@@ -326,6 +338,7 @@ not only in text-centric tasks, including form understanding, receipt
 understanding, and document visual question answering, but also in image-centric
 tasks such as document image classification and document layout analysis. The
 code and models are publicly available at https://aka.ms/layoutlmv3.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -349,6 +362,7 @@ human-labeled datasets. Experiments show that the TrOCR model outperforms the
 current state-of-the-art models on the printed, handwritten and scene text
 recognition tasks. The TrOCR models and code are publicly available at
 https://aka.ms/trocr.
+
 ---
 
 ## LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
@@ -374,6 +388,7 @@ Experimental results show that LayoutLMv3 achieves state-of-the-art performance
 not only in text-centric tasks, including form understanding, receipt
 understanding, and document visual question answering, but also in image-centric
 tasks such as document image classification and document layout analysis.
+
 ---
 
 ## MaskOCR: Text Recognition with Masked Encoder-Decoder Pretraining
@@ -398,6 +413,7 @@ the decoder by randomly masking some text image patches occupied by characters
 input to the encoder and accordingly the representations input to the decoder.
 Experiments show that the proposed MaskOCR approach achieves superior results on
 the benchmark datasets, including Chinese and English text images.
+
 ---
 
 ## DiT: Self-supervised Pre-training for Document Image Transformer
@@ -422,6 +438,7 @@ state-of-the-art results on these downstream tasks, e.g. document image
 classification (91.11 →92.69), document layout analysis (91.0 →94.9), table
 detection (94.23 →96.55) and text detection for OCR (93.07 →94.29). The code and
 pre-trained models are publicly available at https://aka.ms/msdit.
+
 ---
 
 ## Optical Character Recognition with Transformers and CTC
@@ -449,6 +466,7 @@ possessing only 4.7 million parameters. CNN + Tr + CTC attained an F1 score of
 93.76% with 11 million parameters, which is almost 97% of the performance
 achieved by the TrOCR using 334 million parameters and more than 600 million
 synthetic images for pretraining.
+
 ---
 
 ## Transformer-Based Approach for Document Layout Understanding
@@ -474,6 +492,7 @@ study of employing a fully transformer-based framework in DLU tasks. We
 evaluated TRDLU on three different DLU benchmark datasets, each with strong
 baselines. TRDLU outperforms the current state-of-the-art methods on all of
 them.
+
 ---
 
 ## DocLayNet: A Large Human-Annotated Dataset for Document-Layout Analysis
@@ -505,6 +524,7 @@ evidence that DocLayNet is of sufficient size. Lastly, we compare models trained
 on PubLayNet, DocBank and DocLayNet, showing that layout predictions of the
 DocLayNet-trained models are more robust and thus the preferred choice for
 general-purpose document-layout analysis.
+
 ---
 
 ## OCR-free Document Understanding Transformer
@@ -533,6 +553,7 @@ state-of-the-art performances on various VDU tasks in terms of both speed and
 accuracy. In addition, we offer a synthetic data generator that helps the model
 pre-training to be flexible in various languages and domains. The code, trained
 model, and synthetic data are available at https://github.com/clovaai/donut.
+
 ---
 
 ## DocSegTr: An Instance-Level End-to-End Document Image Segmentation Transformer
@@ -561,6 +582,7 @@ performance than the existing state-of-the-art approaches with the average
 precision of 89.4, 40.3, 83.4 and 93.3. This simple and flexible framework could
 serve as a promising baseline for instance-level recognition tasks in document
 images.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -584,6 +606,7 @@ human-labeled datasets. Experiments show that the TrOCR model outperforms the
 current state-of-the-art models on the printed, handwritten and scene text
 recognition tasks. The TrOCR models and code are publicly available at
 https://aka.ms/trocr.
+
 ---
 
 ## DiT: Self-supervised Pre-training for Document Image Transformer
@@ -608,6 +631,7 @@ state-of-the-art results on these downstream tasks, e.g. document image
 classification (91.11 →92.69), document layout analysis (91.0 →94.9), table
 detection (94.23 →96.55) and text detection for OCR (93.07 →94.29). The code and
 pre-trained models are publicly available at https://aka.ms/msdit.
+
 ---
 
 ## MaskOCR: Text Recognition with Masked Encoder-Decoder Pretraining
@@ -632,6 +656,7 @@ the decoder by randomly masking some text image patches occupied by characters
 input to the encoder and accordingly the representations input to the decoder.
 Experiments show that the proposed MaskOCR approach achieves superior results on
 the benchmark datasets, including Chinese and English text images.
+
 ---
 
 ## DocBed: A Multi-Stage OCR Solution for Documents with Complex Layouts
@@ -657,6 +682,7 @@ of-the-art image segmentation models and several post-processing methods are
 explored for document layout segmentation; third, providing a thorough and
 structured evaluation protocol for isolated layout segmentation and end-to-end
 OCR.
+
 ---
 
 ## Graph Neural Networks and Representation Embedding for Table Extraction in PDF Documents
@@ -680,6 +706,7 @@ These representations help to better distinguish not only tables from the other
 parts of the paper, but also table cells from table headers. We experimentally
 evaluated the proposed approach on a new dataset obtained by merging the
 information provided in the PubLayNet and PubTables-1M datasets.
+
 ---
 
 ## LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
@@ -705,6 +732,7 @@ Experimental results show that LayoutLMv3 achieves state-of-the-art performance
 not only in text-centric tasks, including form understanding, receipt
 understanding, and document visual question answering, but also in image-centric
 tasks such as document image classification and document layout analysis.
+
 ---
 
 ## PubTables-1M: Towards comprehensive table extraction from unstructured documents
@@ -732,6 +760,7 @@ show that transformer-based object detection models trained on PubTables-1M
 produce excellent results for all three tasks of detection, structure
 recognition, and functional analysis without the need for any special
 customization for these tasks.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -755,6 +784,7 @@ human-labeled datasets. Experiments show that the TrOCR model outperforms the
 current state-of-the-art models on the printed, handwritten and scene text
 recognition tasks. The TrOCR models and code are publicly available at
 https://aka.ms/trocr.
+
 ---
 
 ## LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
@@ -781,6 +811,7 @@ not only in text-centric tasks, including form understanding, receipt
 understanding, and document visual question answering, but also in image-centric
 tasks such as document image classification and document layout analysis. The
 code and models are publicly available at https://aka.ms/layoutlmv3.
+
 ---
 
 ## DiT: Self-supervised Pre-training for Document Image Transformer
@@ -805,6 +836,7 @@ state-of-the-art results on these downstream tasks, e.g. document image
 classification (91.11 →92.69), document layout analysis (91.0 →94.9), table
 detection (94.23 →96.55) and text detection for OCR (93.07 →94.29). The code and
 pre-trained models are publicly available at https://aka.ms/msdit.
+
 ---
 
 ## LayoutXLM vs. GNN: An Empirical Evaluation of Relation Extraction for Documents
@@ -825,6 +857,7 @@ network: by merging all modalities thanks to additional pretraining (LayoutXLM),
 or in a cascaded way (ECN). We conclude by discussing some methodological issues
 that must be considered for new datasets and task definition in the domain of
 Information Extraction with complex documents.
+
 ---
 
 ## Optical Character Recognition
@@ -837,6 +870,7 @@ Year: 2022
 
 This document is a part of the 2022 Autumn Deep Learning School and discusses
 Optical Character Recognition (OCR) as presented by Thomas Breuel from NVIDIA.
+
 ---
 
 ## A Simple yet Effective Learnable Positional Encoding Method for Improving Document Transformer Model
@@ -859,6 +893,7 @@ understanding tasks in form, receipt, and invoice domains. Experimental results
 show our proposed method not only outperforms other baselines, but also
 demonstrates its robustness and stability on handling noisy data with incorrect
 order information.
+
 ---
 
 ## LayoutLMv2: Multi-modal Pre-training for Visually-rich Document Understanding
@@ -887,6 +922,7 @@ tasks, including FUNSD (0.7895 →0.8420), CORD (0.9493 →0.9601), SROIE (0.952
 →0.9781), Kleister-NDA (0.8340 →0.8520), RVL-CDIP (0.9443 →0.9564), and DocVQA
 (0.7295 →0.8672). We made our model and code publicly available at
 https://aka.ms/layoutlmv2.
+
 ---
 
 ## MaskOCR: Text Recognition with Masked Encoder-Decoder Pretraining
@@ -911,6 +947,7 @@ the decoder by randomly masking some text image patches occupied by characters
 input to the encoder and accordingly the representations input to the decoder.
 Experiments show that the proposed MaskOCR approach achieves superior results on
 the benchmark datasets, including Chinese and English text images.
+
 ---
 
 ## Doc2Graph: a Task Agnostic Document Understanding Framework based on Graph Neural Networks
@@ -931,6 +968,7 @@ Doc2Graph, a task-agnostic document understanding framework based on a GNN
 model, to solve different tasks given different types of documents. We evaluated
 our approach on two challenging datasets for key information extraction in form
 understanding, invoice layout analysis and table detection.
+
 ---
 
 ## MaskOCR: Text Recognition with Masked Encoder-Decoder Pretraining
@@ -955,6 +993,7 @@ the decoder by randomly masking some text image patches occupied by characters
 input to the encoder and accordingly the representations input to the decoder.
 Experiments show that the proposed MaskOCR approach achieves superior results on
 the benchmark datasets, including Chinese and English text images.
+
 ---
 
 ## Improving Document Understanding with Deep Learning
@@ -972,6 +1011,7 @@ meaningful information from documents. We compare traditional OCR methods with
 modern deep learning approaches, highlighting improvements in accuracy and
 efficiency. Our experiments demonstrate that deep learning models can achieve
 state-of-the-art performance in document layout analysis and text recognition.
+
 ---
 
 ## DiT: Self-supervised Pre-training for Document Image Transformer
@@ -996,6 +1036,7 @@ state-of-the-art results on these downstream tasks, e.g. document image
 classification (91.11 →92.69), document layout analysis (91.0 →94.9), table
 detection (94.23 →96.55) and text detection for OCR (93.07 →94.29). The code and
 pre-trained models are publicly available at https://aka.ms/msdit.
+
 ---
 
 ## MaskOCR: Text Recognition with Masked Encoder-Decoder Pretraining
@@ -1020,6 +1061,7 @@ the decoder by randomly masking some text image patches occupied by characters
 input to the encoder and accordingly the representations input to the decoder.
 Experiments show that the proposed MaskOCR approach achieves superior results on
 the benchmark datasets, including Chinese and English text images.
+
 ---
 
 ## Transformer-Based Approach for Document Layout Understanding
@@ -1045,6 +1087,7 @@ study of employing a fully transformer-based framework in DLU tasks. We
 evaluated TRDLU on three different DLU benchmark datasets, each with strong
 baselines. TRDLU outperforms the current state-of-the-art methods on all of
 them.
+
 ---
 
 ## MaskOCR: Text Recognition with Masked Encoder-Decoder Pretraining
@@ -1069,6 +1112,7 @@ the decoder by randomly masking some text image patches occupied by characters
 input to the encoder and accordingly the representations input to the decoder.
 Experiments show that the proposed MaskOCR approach achieves superior results on
 the benchmark datasets, including Chinese and English text images.
+
 ---
 
 ## DiT: Self-supervised Pre-training for Document Image Transformer
@@ -1093,6 +1137,7 @@ state-of-the-art results on these downstream tasks, e.g., document image
 classification (91.11 →92.69), document layout analysis (91.0 →94.9), table
 detection (94.23 →96.55) and text detection for OCR (93.07 →94.29). The code and
 pre-trained models are publicly available at https://aka.ms/msdit.
+
 ---
 
 ## A Detailed Review on Text Extraction Using Optical Character Recognition
@@ -1120,6 +1165,7 @@ forms of data and in addition to this, we have also illustrated on various OCR
 platforms. The current study is expected to advance OCR research, providing
 better understanding and assist researchers to determine which method is ideal
 for OCR.
+
 ---
 
 ## OCR-free Document Understanding Transformer
@@ -1148,6 +1194,7 @@ state-of-the-art performances on various VDU tasks in terms of both speed and
 accuracy. In addition, we offer a synthetic data generator that helps the model
 pre-training to be flexible in various languages and domains. The code, trained
 model, and synthetic data are available at https://github.com/clovaai/donut.
+
 ---
 
 ## LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking
@@ -1174,6 +1221,7 @@ not only in text-centric tasks, including form understanding, receipt
 understanding, and document visual question answering, but also in image-centric
 tasks such as document image classification and document layout analysis. The
 code and models are publicly available at https://aka.ms/layoutlmv3.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -1197,6 +1245,7 @@ human-labeled datasets. Experiments show that the TrOCR model outperforms the
 current state-of-the-art models on the printed, handwritten and scene text
 recognition tasks. The TrOCR models and code are publicly available at
 https://aka.ms/trocr.
+
 ---
 
 ## OCR-free Document Understanding Transformer
@@ -1225,6 +1274,7 @@ state-of-the-art performances on various VDU tasks in terms of both speed and
 accuracy. In addition, we offer a synthetic data generator that helps the model
 pre-training to be flexible in various languages and domains. The code, trained
 model, and synthetic data are available at https://github.com/clovaai/donut.
+
 ---
 
 ## ICDAR2019 Competition on Scanned Receipt OCR and Information Extraction
@@ -1261,6 +1311,7 @@ extraction is still very challenging and can be set for many other important
 document analysis applications. It is hoped that this competition will help draw
 more attention from the community and promote research and development efforts
 on SROIE.
+
 ---
 
 ## BART for Post-Correction of OCR Newspaper Text
@@ -1280,6 +1331,7 @@ the first to use sentence-level transformer models for OCR post-correction, and
 our best model achieves a 29.4% improvement in character accuracy over the
 original noisy OCR text. Our results demonstrate the utility of pretrained
 language models for dealing with noisy text.
+
 ---
 
 ## ICDAR 2021 Competition on Scientific Literature Parsing
@@ -1315,6 +1367,7 @@ B, Table Recognition, top submissions rely on methods to identify table
 components and post-processing methods to generate the table structure and
 content. Results from both tasks show an impressive performance and open the
 possibility for high-performance practical applications.
+
 ---
 
 ## LAYOUTLMV2: MULTI-MODAL PRE-TRAINING FOR VISUALLY-RICH DOCUMENT UNDERSTANDING
@@ -1342,6 +1395,7 @@ rich document understanding tasks, including FUNSD (0.7895 →0.8420), CORD
 (0.9493 →0.9601), SROIE (0.9524 →0.9781), Kleister-NDA (0.834 →0.852), RVL-CDIP
 (0.9443 →0.9564), and DocVQA (0.7295 →0.8672). The pre-trained LayoutLMv2 model
 is publicly available at https://aka.ms/layoutlmv2.
+
 ---
 
 ## Current Status and Performance Analysis of Table Recognition in Document Images with Deep Neural Networks
@@ -1371,6 +1425,7 @@ document images. Furthermore, the leading datasets and their intricacies have
 been elaborated along with the quantitative results. Moreover, a brief overview
 is given regarding the promising directions that can serve as a guide to further
 improve table analysis in document images.
+
 ---
 
 ## Donut: Document Understanding Transformer without OCR
@@ -1396,6 +1451,7 @@ of-the-art performance on various document understanding tasks in public
 benchmark datasets and private industrial service datasets. Through extensive
 experiments and analysis, we demonstrate the effectiveness of the proposed model
 especially with consideration for a real-world application.
+
 ---
 
 ## PAWLS: PDF Annotation With Labels and Structure
@@ -1419,6 +1475,7 @@ bounding boxes, all of which can be exported in convenient formats for training
 multi-modal machine learning models. A read-only PAWLS server is available at
 https://pawls.apps.allenai.org/ and the source code is available at
 https://github.com/allenai/pawls.
+
 ---
 
 ## DocParser: Hierarchical Document Structure Parsing from Renderings
@@ -1443,6 +1500,7 @@ structure parsing performance. Our experiments confirm the effectiveness of our
 proposed weak supervision: Compared to the baseline without weak supervision, it
 improves the mean average precision for detecting document entities by 39.1% and
 improves the F1 score of classifying hierarchical relations by 35.8%.
+
 ---
 
 ## Neural OCR Post-Hoc Correction of Historical Corpora
@@ -1467,6 +1525,7 @@ similarity, we propose a new loss function that rewards the model’s correcting
 behavior. Evaluation on a historical book corpus in German language shows that
 our models are robust in capturing diverse OCR transcription errors and reduce
 the word error rate of 32.3% by more than 89%.
+
 ---
 
 ## DocFormer: End-to-End Transformer for Document Understanding
@@ -1488,6 +1547,7 @@ modalities which makes it easy for the model to correlate text to visual tokens
 and vice versa. DocFormer is evaluated on 4 different datasets each with strong
 baselines. DocFormer achieves state-of-the-art results on all of them, sometimes
 beating models 4x its size (in no. of parameters).
+
 ---
 
 ## LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment
@@ -1519,6 +1579,7 @@ final structure, in which we also effectively solve the problems of empty cells
 locating and division. Experimental results show that the proposed method
 achieves competitive and even new state-of-the-art performance on several public
 benchmarks.
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -1544,6 +1605,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. We will
 release the dataset and model at https://aka.ms/layoutreader.
+
 ---
 
 ## ICDAR 2021 Competition on Scientific Literature Parsing
@@ -1579,6 +1641,7 @@ B, Table Recognition, top submissions rely on methods to identify table
 components and post-processing methods to generate the table structure and
 content. Results from both tasks show an impressive performance and open the
 possibility for high-performance practical applications.
+
 ---
 
 ## A Survey of Deep Learning Approaches for OCR and Document Understanding
@@ -1599,6 +1662,7 @@ understanding systems. In this survey paper, we review different techniques for
 document understanding for documents written in English and consolidate
 methodologies present in literature to act as a jumping-off point for
 researchers exploring this area.
+
 ---
 
 ## Rethinking Text Line Recognition Models
@@ -1628,6 +1692,7 @@ expose the limitations of current public datasets in evaluating the accuracy of
 line recognizers, as the relatively narrow image width and sequence length
 distributions do not allow to observe the quality degradation of the Transformer
 approach when applied to the transcription of long lines.
+
 ---
 
 ## LGPMA: Complicated Table Structure Recognition with Local and Global Pyramid Mask Alignment
@@ -1659,6 +1724,7 @@ final structure, in which we also effectively solve the problems of empty cells
 locating and division. Experimental results show that the proposed method
 achieves competitive and even new state-of-the-art performance on several public
 benchmarks.
+
 ---
 
 ## MC-OCR Challenge 2021: Simple approach for receipt information extraction and quality evaluation
@@ -1678,6 +1744,7 @@ score of 0.219 and ranking 1st. Our methodology for task 1 involved
 preprocessing techniques and CNNs to measure text image quality, while for task
 2, we utilized object detection to identify and recognize important information
 fields in text images. Our code is publicly available.
+
 ---
 
 ## BART for Post-Correction of OCR Newspaper Text
@@ -1697,6 +1764,7 @@ the first to use sentence-level transformer models for OCR post-correction, and
 our best model achieves a 29.4% improvement in character accuracy over the
 original noisy OCR text. Our results demonstrate the utility of pretrained
 language models for dealing with noisy text.
+
 ---
 
 ## A Survey of Deep Learning Approaches for OCR and Document Understanding
@@ -1717,6 +1785,7 @@ understanding systems. In this survey paper, we review different techniques for
 document understanding for documents written in English and consolidate
 methodologies present in literature to act as a jumping-off point for
 researchers exploring this area.
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -1742,6 +1811,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. The dataset
 and models are publicly available at https://aka.ms/layoutreader.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -1765,6 +1835,7 @@ fine-tuned with human-labeled datasets. Experiments show that the TrOCR model
 outperforms the current state-of-the-art models on both printed and handwritten
 text recognition tasks. The code and models will be publicly available at
 https://aka.ms/TrOCR.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -1788,6 +1859,7 @@ fine-tuned with human-labeled datasets. Experiments show that the TrOCR model
 outperforms the current state-of-the-art models on both printed and handwritten
 text recognition tasks. The code and models will be publicly available at
 https://aka.ms/TrOCR.
+
 ---
 
 ## Document Visual Question Answering Challenge 2020
@@ -1808,6 +1880,7 @@ images. For the task 1 a new dataset is introduced comprising 50,000 questions-
 answer(s) pairs defined over 12,767 document images. For task 2 another dataset
 has been created comprising 20 questions over 14,362 document images which share
 the same document template.
+
 ---
 
 ## VSR: A Unified Framework for Document Layout Analysis combining Vision, Semantics and Relations
@@ -1836,6 +1909,7 @@ information. Finally, given component candidates, a relation module based on
 graph neural network is incorporated to model relations between components and
 output final results. On three popular benchmarks, VSR outperforms previous
 models by large margins. Code will be released soon.
+
 ---
 
 ## ICDAR 2021 Competition on Scientific Literature Parsing
@@ -1871,6 +1945,7 @@ B, Table Recognition, top submissions rely on methods to identify table
 components and post-processing methods to generate the table structure and
 content. Results from both tasks show impressive performance and open the
 possibility for high-performance practical applications.
+
 ---
 
 ## Current Status and Performance Analysis of Table Recognition in Document Images with Deep Neural Networks
@@ -1900,6 +1975,7 @@ document images. Furthermore, the leading datasets and their intricacies have
 been elaborated along with the quantitative results. Moreover, a brief overview
 is given regarding the promising directions that can serve as a guide to further
 improve table analysis in document images.
+
 ---
 
 ## DocFormer: End-to-End Transformer for Document Understanding
@@ -1921,6 +1997,7 @@ modalities which makes it easy for the model to correlate text to visual tokens
 and vice versa. DocFormer is evaluated on 4 different datasets each with strong
 baselines. DocFormer achieves state-of-the-art results on all of them, sometimes
 beating models 4x its size (in no. of parameters).
+
 ---
 
 ## A Survey of Deep Learning Approaches for OCR and Document Understanding
@@ -1941,6 +2018,7 @@ understanding systems. In this survey paper, we review different techniques for
 document understanding for documents written in English and consolidate
 methodologies present in literature to act as a jumping-off point for
 researchers exploring this area.
+
 ---
 
 ## TabLeX: A Benchmark Dataset for Structure and Content Information Extraction from Scientific Tables
@@ -1964,6 +2042,7 @@ that they fail on even simple table images. Towards the end, we experiment with
 a transformer-based existing baseline to report performance scores. In contrast
 to the static benchmarks, we plan to augment this dataset with more complex and
 diverse tables at regular intervals.
+
 ---
 
 ## Split, embed and merge: An accurate table structure recognizer
@@ -1996,6 +2075,7 @@ margin. We also won the first place in the complex table and third place in all
 tables in ICDAR 2021 Competition on Scientific Literature Parsing, Task-B.
 Extensive experiments on other publicly available datasets demonstrate that our
 model achieves state-of-the-art.
+
 ---
 
 ## TabLeX: A Benchmark Dataset for Structure and Content Information Extraction from Scientific Tables
@@ -2019,6 +2099,7 @@ that they fail on even simple table images. Towards the end, we experiment with
 a transformer-based existing baseline to report performance scores. In contrast
 to the static benchmarks, we plan to augment this dataset with more complex and
 diverse tables at regular intervals.
+
 ---
 
 ## PingAn-VCGroup's Solution for ICDAR 2021 Competition on Scientific Literature Parsing Task B: Table Recognition to HTML
@@ -2042,6 +2123,7 @@ fill the recognized content of the text line into the corresponding item. Our
 proposed method achieves a 96.84% TEDS score on 9,115 validation samples in the
 development phase, and a 96.32% TEDS score on 9,064 samples in the final
 evaluation phase.
+
 ---
 
 ## VSR: A Unified Framework for Document Layout Analysis combining Vision, Semantics and Relations
@@ -2070,6 +2152,7 @@ information. Finally, given component candidates, a relation module based on
 graph neural network is incorporated to model relations between components and
 output final results. On three popular benchmarks, VSR outperforms previous
 models by large margins. Code will be released soon.
+
 ---
 
 ## Rethinking Text Line Recognition Models
@@ -2099,6 +2182,7 @@ expose the limitations of current public datasets in evaluating the accuracy of
 line recognizers, as the relatively narrow image width and sequence length
 distributions do not allow to observe the quality degradation of the Transformer
 approach when applied to the transcription of long lines.
+
 ---
 
 ## Rethinking Text Line Recognition Models
@@ -2128,6 +2212,7 @@ expose the limitations of current public datasets in evaluating the accuracy of
 line recognizers, as the relatively narrow image width and sequence length
 distributions do not allow to observe the quality degradation of the Transformer
 approach when applied to the transcription of long lines.
+
 ---
 
 ## PubTables-1M: Towards Comprehensive Table Extraction from Unstructured Documents
@@ -2156,6 +2241,7 @@ produce excellent results for all three tasks of detection, structure
 recognition, and functional analysis without the need for any special
 customization for these tasks. Data and code will be released at
 https://github.com/microsoft/table-transformer.
+
 ---
 
 ## LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding
@@ -2178,6 +2264,7 @@ Portuguese), with manually labeled key-value pairs for each language. Experiment
 results show that the LayoutXLM model significantly outperformed existing SOTA
 cross-lingual pre-trained models on the XFUND dataset. The pre-trained LayoutXLM
 model and the XFUND dataset are publicly available at https://aka.ms/layoutxlm.
+
 ---
 
 ## Current Status and Performance Analysis of Table Recognition in Document Images with Deep Neural Networks
@@ -2207,6 +2294,7 @@ document images. Furthermore, the leading datasets and their intricacies have
 been elaborated along with the quantitative results. Moreover, a brief overview
 is given regarding the promising directions that can serve as a guide to further
 improve table analysis in document images.
+
 ---
 
 ## PINGAN-VCGROUP’S SOLUTION FOR ICDAR 2021 COMPETITION ON SCIENTIFIC LITERATURE PARSING TASK B: TABLE RECOGNITION TO HTML
@@ -2230,6 +2318,7 @@ fill the recognized content of the text line into the corresponding item. Our
 proposed method achieves a 96.84% TEDS score on 9,115 validation samples in the
 development phase, and a 96.32% TEDS score on 9,064 samples in the final
 evaluation phase.
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -2255,6 +2344,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. We will
 release the dataset and model at https://aka.ms/layoutreader.
+
 ---
 
 ## Current Status and Performance Analysis of Table Recognition in Document Images with Deep Neural Networks
@@ -2284,6 +2374,7 @@ document images. Furthermore, the leading datasets and their intricacies have
 been elaborated along with the quantitative results. Moreover, a brief overview
 is given regarding the promising directions that can serve as a guide to further
 improve table analysis in document images.
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -2309,6 +2400,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. We will
 release the dataset and model at https://aka.ms/layoutreader.
+
 ---
 
 ## LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding
@@ -2332,6 +2424,7 @@ each language. Experiment results show that the LayoutXLM model has
 significantly outperformed the existing state-of-the-art cross-lingual pre-
 trained models on the XFUND dataset. The pre-trained LayoutXLM model and the
 XFUND dataset are publicly available at https://aka.ms/layoutxlm.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -2354,6 +2447,7 @@ simple but effective, and can be pre-trained with large-scale synthetic data and
 fine-tuned with human-labeled datasets. Experiments show that the TrOCR model
 outperforms the current state-of-the-art models on both printed and handwritten
 text recognition tasks.
+
 ---
 
 ## Graph-based Deep Generative Modelling for Document Layout Generation
@@ -2374,6 +2468,7 @@ document interpretation systems, in this case, specially in digital mailroom
 applications. It is also the first graph-based approach for document layout
 generation task experimented on administrative document images, in this case,
 invoices.
+
 ---
 
 ## Split, embed and merge: An accurate table structure recognizer
@@ -2406,6 +2501,7 @@ margin. We also won the first place in the complex table and third place in all
 tables in ICDAR 2021 Competition on Scientific Literature Parsing, Task-B.
 Extensive experiments on other publicly available datasets demonstrate that our
 model achieves state-of-the-art.
+
 ---
 
 ## LAYOUTLMV2: MULTI-MODAL PRE-TRAINING FOR VISUALLY-RICH DOCUMENT UNDERSTANDING
@@ -2433,6 +2529,7 @@ rich document understanding tasks, including FUNSD (0.7895 →0.8420), CORD
 (0.9493 →0.9601), SROIE (0.9524 →0.9781), Kleister-NDA (0.834 →0.852), RVL-CDIP
 (0.9443 →0.9564), and DocVQA (0.7295 →0.8672). The pre-trained LayoutLMv2 model
 is publicly available at https://aka.ms/layoutlmv2.
+
 ---
 
 ## MC-OCR Challenge 2021: Simple approach for receipt information extraction and quality evaluation
@@ -2449,6 +2546,7 @@ information extraction (KIE) of required fields, our team came up with a
 solution based on extracting image patches for task 1 and Yolov5 + VietOCR for
 task 2. Our solution achieved 0.149 of the RMSE score for task 1 (rank 7) and
 0.219 of the CER score for task 2 (rank 1).
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -2474,6 +2572,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. We will
 release the dataset and model at https://aka.ms/layoutreader.
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -2499,6 +2598,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. We will
 release the dataset and model at https://aka.ms/layoutreader.
+
 ---
 
 ## Probabilistic homogeneity for document image segmentation
@@ -2528,6 +2628,7 @@ text and non-text classification of CCs preceding any grouping process, which is
 currently absent in document segmentation. Experimental results show that our
 segmentation method based on the proposed PLTH model improves upon the state-of-
 the-art.
+
 ---
 
 ## LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding
@@ -2551,6 +2652,7 @@ labeled for each language. Experiment results show that the LayoutXLM model has
 significantly outperformed the existing SOTA cross-lingual pre-trained models on
 the XFUND dataset. The pre-trained LayoutXLM model and the XFUND dataset are
 publicly available at https://aka.ms/layoutxlm.
+
 ---
 
 ## Donut: Document Understanding Transformer without OCR
@@ -2576,6 +2678,7 @@ of-the-art performance on various document understanding tasks in public
 benchmark datasets and private industrial service datasets. Through extensive
 experiments and analysis, we demonstrate the effectiveness of the proposed model
 especially with consideration for a real-world application.
+
 ---
 
 ## TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models
@@ -2598,6 +2701,7 @@ simple but effective, and can be pre-trained with large-scale synthetic data and
 fine-tuned with human-labeled datasets. Experiments show that the TrOCR model
 outperforms the current state-of-the-art models on both printed and handwritten
 text recognition tasks.
+
 ---
 
 ## LayoutReader: Pre-training of Text and Layout for Reading Order Detection
@@ -2623,6 +2727,7 @@ prediction using the seq2seq model. It performs almost perfectly in reading
 order detection and significantly improves both open-source and commercial OCR
 engines in ordering text lines in their results in our experiments. We will
 release the dataset and model at https://aka.ms/layoutreader.
+
 ---
 
 ## Text Content Based Layout Analysis
@@ -2647,6 +2752,7 @@ historical document complex paragraph classification task using both a classical
 Hidden Markov Model approach and Deep Neural Networks. The results are
 encouraging, showcasing the positive impact text content-based features can have
 on the Document Layout Analysis research field.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -2673,6 +2779,7 @@ downstream tasks, including form understanding (from 70.72 to 79.27), receipt
 understanding (from 94.02 to 95.24) and document image classification (from
 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available
 at https://aka.ms/layoutlm.
+
 ---
 
 ## Image-based table recognition: data, model, and evaluation
@@ -2703,6 +2810,7 @@ cell misalignment and OCR errors than the pre-established metric. The
 experiments demonstrate that the EDD model can accurately recognize complex
 tables solely relying on the image representation, outperforming the state-of-
 the-art by 9.7% absolute TEDS score.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -2729,6 +2837,7 @@ downstream tasks, including form understanding (from 70.72 to 79.27), receipt
 understanding (from 94.02 to 95.24), and document image classification (from
 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available
 at https://aka.ms/layoutlm.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -2755,6 +2864,7 @@ downstream tasks, including form understanding (from 70.72 to 79.27), receipt
 understanding (from 94.02 to 95.24) and document image classification (from
 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available
 at https://aka.ms/layoutlm.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -2781,6 +2891,7 @@ downstream tasks, including form understanding (from 70.72 to 79.27), receipt
 understanding (from 94.02 to 95.24) and document image classification (from
 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available
 at https://aka.ms/layoutlm.
+
 ---
 
 ## GFTE: Graph-based Financial Table Extraction
@@ -2803,6 +2914,7 @@ representation in JSON. In addition, we propose a novel graph-based
 convolutional neural network model named GFTE as a baseline for future
 comparison. GFTE integrates image features, position features, and textual
 features together for precise edge prediction and reaches overall good results.
+
 ---
 
 ## Table Extraction and Understanding for Scientific and Enterprise Applications
@@ -2818,6 +2930,7 @@ and understanding table data from scientific and enterprise documents. Emphasis
 is placed on both the technical and practical aspects of table extraction,
 including the handling of complex table structures and the integration of
 extracted data into broader data processing workflows.
+
 ---
 
 ## GFTE: Graph-based Financial Table Extraction
@@ -2840,6 +2953,7 @@ representation in JSON. In addition, we propose a novel graph-based
 convolutional neural network model named GFTE as a baseline for future
 comparison. GFTE integrates image feature, position feature, and textual feature
 together for precise edge prediction and reaches overall good results.
+
 ---
 
 ## Image-based table recognition: data, model, and evaluation
@@ -2870,6 +2984,7 @@ cell misalignment and OCR errors than the pre-established metric. The
 experiments demonstrate that the EDD model can accurately recognize complex
 tables solely relying on the image representation, outperforming the state-of-
 the-art by 9.7% absolute TEDS score.
+
 ---
 
 ## Image-based table recognition: data, model, and evaluation
@@ -2900,6 +3015,7 @@ cell misalignment and OCR errors than the pre-established metric. The
 experiments demonstrate that the EDD model can accurately recognize complex
 tables solely relying on the image representation, outperforming the state-of-
 the-art by 9.7% absolute TEDS score.
+
 ---
 
 ## Global Table Extractor (GTE): A Framework for Joint Table Identification and Cell Structure Recognition Using Visual Context
@@ -2931,6 +3047,7 @@ ICDAR 2013 and ICDAR 2019 table competition in both table detection and cell
 structure recognition. Further experiments demonstrate a greater than 45%
 improvement in cell structure recognition when compared to a vanilla RetinaNet
 object detection model in our new out-of-domain FinTabNet.
+
 ---
 
 ## Synthetic vs. Real Reference Strings for Citation Parsing, and the Importance of Re-training and Out-Of-Sample Data for Meaningful Evaluations: Experiments with GROBID, GIANT and Cora
@@ -2959,6 +3076,7 @@ conclude that synthetic data is suitable for training (deep) citation parsing
 models. We further suggest that in future evaluations of reference parsers both
 evaluation data similar and dissimilar to the training data should be used for
 more meaningful evaluations.
+
 ---
 
 ## TableBank: A Benchmark Dataset for Table Detection and Recognition
@@ -2979,6 +3097,7 @@ strong baselines using state-of-the-art models with deep neural networks. We
 make TableBank publicly available and hope it will empower more deep learning
 approaches in the table detection and recognition task. The dataset and models
 are available at https://github.com/doc-analysis/TableBank.
+
 ---
 
 ## CDeC-Net: Composite Deformable Cascade Network for Table Detection in Document Images
@@ -3004,6 +3123,7 @@ higher, thresholds of IoU; (iii) by following the same protocol of the recent
 papers for each of the benchmarks, we consistently demonstrate the superior
 quantitative performance. Our code and models will be publicly released for
 enabling the reproducibility of the results.
+
 ---
 
 ## Image-based table recognition: data, model, and evaluation
@@ -3034,6 +3154,7 @@ cell misalignment and OCR errors than the pre-established metric. The
 experiments demonstrate that the EDD model can accurately recognize complex
 tables solely relying on the image representation, outperforming the state-of-
 the-art by 9.7% absolute TEDS score.
+
 ---
 
 ## Learn to Augment: Joint Data Augmentation and Network Optimization for Text Recognition
@@ -3062,6 +3183,7 @@ text, irregular scene text, and handwritten text, show that the proposed
 augmentation and the joint learning methods significantly boost the performance
 of the recognition networks. A general toolkit for geometric augmentation is
 available.
+
 ---
 
 ## Kleister: A Novel Task for Information Extraction Involving Long Documents with Complex Layout
@@ -3087,6 +3209,7 @@ Named Entity Recognition architectures (Flair, BERT, RoBERTa). Moreover, we
 checked the most popular PDF processing tools for text extraction (pdf2djvu,
 Tesseract and Textract) in order to analyze the behavior of the IE system in the
 presence of errors introduced by these tools.
+
 ---
 
 ## Image-based table recognition: data, model, and evaluation
@@ -3117,6 +3240,7 @@ cell misalignment and OCR errors than the pre-established metric. The
 experiments demonstrate that the EDD model can accurately recognize complex
 tables solely relying on the image representation, outperforming the state-of-
 the-art by 9.7% absolute TEDS score.
+
 ---
 
 ## GFTE: Graph-based Financial Table Extraction
@@ -3139,6 +3263,7 @@ representation in JSON. In addition, we propose a novel graph-based
 convolutional neural network model named GFTE as a baseline for future
 comparison. GFTE integrates image feature, position feature, and textual feature
 together for precise edge prediction and reaches overall good results.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -3165,6 +3290,7 @@ downstream tasks, including form understanding (from 70.72 to 79.27), receipt
 understanding (from 94.02 to 95.24) and document image classification (from
 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available
 at https://aka.ms/layoutlm.
+
 ---
 
 ## DocBank: A Benchmark Dataset for Document Layout Analysis
@@ -3189,6 +3315,7 @@ baselines and manually split train/dev/test sets for evaluation. Experiment
 results show that models trained on DocBank accurately recognize the layout
 information for a variety of documents. The DocBank dataset is publicly
 available at https://github.com/doc-analysis/DocBank.
+
 ---
 
 ## Global Table Extractor (GTE): A Framework for Joint Table Identification and Cell Structure Recognition Using Visual Context
@@ -3220,6 +3347,7 @@ ICDAR 2013 and ICDAR 2019 table competition in both table detection and cell
 structure recognition. Further experiments demonstrate a greater than 45%
 improvement in cell structure recognition when compared to a vanilla RetinaNet
 object detection model in our new out-of-domain FinTabNet.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -3243,6 +3371,7 @@ that text and layout are jointly learned in a single framework for document-
 level pre-training. It achieves new state-of-the-art results in several
 downstream tasks, including form understanding, receipt understanding, and
 document image classification.
+
 ---
 
 ## DocBank: A Benchmark Dataset for Document Layout Analysis
@@ -3267,6 +3396,7 @@ baselines and manually split train/dev/test sets for evaluation. Experiment
 results show that models trained on DocBank accurately recognize the layout
 information for a variety of documents. The DocBank dataset is publicly
 available at https://github.com/doc-analysis/DocBank.
+
 ---
 
 ## LayoutLM: Pre-training of Text and Layout for Document Image Understanding
@@ -3293,6 +3423,7 @@ downstream tasks, including form understanding (from 70.72 to 79.27), receipt
 understanding (from 94.02 to 95.24) and document image classification (from
 93.07 to 94.42). The code and pre-trained LayoutLM models are publicly available
 at https://aka.ms/layoutlm.
+
 ---
 
 ## OCR4all—An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings
@@ -3335,6 +3466,7 @@ Character Error Rates (CERs) below 0.5%. The architecture of OCR4all allows the
 easy integration (or substitution) of newly developed tools for its main
 components by standardized interfaces like PageXML, thus aiming at continual
 higher automation for historical printings.
+
 ---
 
 ## Text Line Segmentation in Historical Document Images Using an Adaptive U-Net Architecture
@@ -3361,6 +3493,7 @@ using a large number of historical document images collected from the Tunisian
 national archives and different recent benchmarking datasets provided in the
 context of ICDAR and ICFHR competitions. Moreover, the results achieved are
 compared with those obtained using the state-of-the-art methods.
+
 ---
 
 ## Text Line Segmentation in Historical Document Images Using an Adaptive U-Net Architecture
@@ -3387,6 +3520,7 @@ using a large number of historical document images collected from the Tunisian
 national archives and different recent benchmarking datasets provided in the
 context of ICDAR and ICFHR competitions. Moreover, the results achieved are
 compared with those obtained using the state-of-the-art methods.
+
 ---
 
 ## Efficient, Lexicon-Free OCR using Deep Learning
@@ -3412,6 +3546,7 @@ language modeling, we examine the capabilities of both recurrent and
 convolutional neural networks in modeling the interactions between input
 elements. The proposed OCR system surpasses the accuracy of leading commercial
 and open-source engines on distorted text samples.
+
 ---
 
 ## FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents
@@ -3433,6 +3568,7 @@ publicly available dataset with comprehensive annotations to address FoUn task.
 We also present a set of baselines and introduce metrics to evaluate performance
 on the FUNSD dataset, which can be downloaded at
 https://guillaumejaume.github.io/FUNSD/
+
 ---
 
 ## Efficient, Lexicon-Free OCR using Deep Learning
@@ -3458,6 +3594,7 @@ language modeling, we examine the capabilities of both recurrent and
 convolutional neural networks in modeling the interactions between input
 elements. The proposed OCR system surpasses the accuracy of leading commercial
 and open-source engines on distorted text samples.
+
 ---
 
 ## Table Understanding in Structured Documents
@@ -3484,6 +3621,7 @@ representation and propose multiple baselines to solve this labeling problem. We
 then propose a novel neural network model that achieves strong, practical
 results on the presented dataset and analyze the model performance and effects
 of graph convolutions and self-attention in detail.
+
 ---
 
 ## ICDAR2019 Competition on Recognition of Documents with Complex Layouts – RDCL2019
@@ -3506,6 +3644,7 @@ taken up by all participants. The results indicate that an innovative approach
 has a clear advantage but there is still a considerable need to develop robust
 methods that deal with layout challenges, especially with the non-textual
 content.
+
 ---
 
 ## PubLayNet: largest dataset ever for document layout analysis
@@ -3533,6 +3672,7 @@ the layout of scientific articles. The pre-trained models also serve as a more
 effective base for transfer learning on different document domains. We release
 the dataset (https://github.com/ibm-aur-nlp/PubLayNet) to support the
 development and evaluation of more advanced models for document layout analysis.
+
 ---
 
 ## Accurate, Data-Efficient, Unconstrained Text Recognition with Convolutional Neural Networks
@@ -3560,6 +3700,7 @@ datasets, covering a wide spectrum of text recognition tasks, namely:
 Handwriting Recognition, CAPTCHA recognition, OCR, License Plate Recognition,
 and Scene Text Recognition. Our proposed architecture has won the ICFHR2018
 Competition on Automated Text Recognition on a READ Dataset.
+
 ---
 
 ## A two-stage method for text line detection in historical documents
@@ -3583,6 +3724,7 @@ arbitrarily oriented text lines. It substantially outperforms current state-of-
 the-art approaches. For example, for the complex track of the cBAD: ICDAR2017
 Competition on Baseline Detection, the F value is increased from 0.859 to 0.922.
 The framework to train and run the ARU-Net is open source.
+
 ---
 
 ## PubLayNet: largest dataset ever for document layout analysis
@@ -3611,6 +3753,7 @@ the layout of scientific articles. The pre-trained models are also a more
 effective base mode for transfer learning on a different document domain. We
 release the dataset (https://github.com/ibm-aur-nlp/PubLayNet) to support
 development and evaluation of more advanced models for document layout analysis.
+
 ---
 
 ## Chargrid-OCR: End-to-end Trainable Optical Character Recognition through Semantic Segmentation and Object Detection
@@ -3630,6 +3773,7 @@ computer vision. We demonstrate experimentally that our method outperforms
 previous state-of-the-art approaches in accuracy while being easily
 parallelizable on GPU (therefore being significantly faster), as well as easier
 to train.
+
 ---
 
 ## Text and non-text separation in offline document images: a survey
@@ -3652,6 +3796,7 @@ techniques are explained wherever possible. Along with the evaluation protocols,
 benchmark databases, this paper also presents a performance comparison of
 different methods. Finally, this article highlights the future research
 challenges and directions in this domain.
+
 ---
 
 ## Fully Convolutional Neural Networks for Page Segmentation of Historical Document Images
@@ -3675,6 +3820,7 @@ The major advantage of this metric is that it enables researchers to compare
 different segmentation methods on their ability to successfully segment text or
 pictures and not on their ability to learn and possibly overfit the
 peculiarities of an ambiguous hand-made ground truth segmentation.
+
 ---
 
 ## dhSegment: A Generic Deep-Learning Approach for Document Segmentation
@@ -3698,6 +3844,7 @@ architecture can be used across tasks with competitive results. Moreover, most
 of the task-specific post-processing steps can be decomposed into a small number
 of simple and standard reusable operations, adding to the flexibility of our
 approach.
+
 ---
 
 ## DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images
@@ -3721,6 +3868,7 @@ images, making it suitable for both born-digital PDFs and scanned documents. The
 system is evaluated on the publicly available ICDAR 2013 table competition
 dataset and a closed dataset from a major European aviation company,
 demonstrating high detection accuracy and generalization capabilities.
+
 ---
 
 ## Robust Document Image Dewarping Method using Text-lines and Line Segments
@@ -3747,6 +3895,7 @@ designed in an iterative manner. At each step, we remove text components and
 line segments that are not well aligned, and then minimize the cost function
 with the updated information. Experimental results show that the proposed method
 is robust to the variety of page layouts.
+
 ---
 
 ## Convolutional Neural Networks for Page Segmentation of Historical Document Images
@@ -3768,6 +3917,7 @@ simple CNN with only one convolution layer. We show that the simple architecture
 achieves competitive results against other deep architectures on different
 public datasets. Experiments also demonstrate the effectiveness and superiority
 of the proposed method compared to previous methods.
+
 ---
 
 ## Robust Document Image Dewarping Method using Text-lines and Line Segments
@@ -3794,6 +3944,7 @@ designed in an iterative manner. At each step, we remove text components and
 line segments that are not well aligned, and then minimize the cost function
 with the updated information. Experimental results show that the proposed method
 is robust to the variety of page layouts.
+
 ---
 
 ## A comprehensive survey of mostly textual document segmentation algorithms since 2008
@@ -3812,6 +3963,7 @@ segmentation since 2008. It provides a clear typology of documents and of
 document image segmentation algorithms. We also discuss the technical
 limitations of these algorithms, the way they are evaluated and the general
 trends of the community.
+
 ---
 
 ## High Performance Text Recognition using a Hybrid Convolutional-LSTM Implementation
@@ -3834,6 +3986,7 @@ outperform 1D LSTM networks with geometric normalization, deep hybrid networks
 with geometric text line normalization still outperform all other networks. The
 best networks achieve a throughput of more than 100 lines per second and test
 set error rates on UW3 of 0.25%.
+
 ---
 
 ## A comprehensive survey of mostly textual document segmentation algorithms since 2008
@@ -3852,6 +4005,7 @@ segmentation since 2008. It provides a clear typology of documents and of
 document image segmentation algorithms. We also discuss the technical
 limitations of these algorithms, the way they are evaluated and the general
 trends of the community.
+
 ---
 
 ## Gated Recurrent Convolution Neural Network for OCR
@@ -3875,6 +4029,7 @@ with BLSTM to recognize text in natural images. The entire GRCNN-BLSTM model can
 be trained end-to-end. Experiments show that the proposed model outperforms
 existing methods on several benchmark datasets including the IIIT-5K, Street
 View Text (SVT) and ICDAR.
+
 ---
 
 ## DeepDeSRT: Deep Learning for Detection and Structure Recognition of Tables in Document Images
@@ -3900,6 +4055,7 @@ makes it equally suitable for born-digital PDFs as well as scanned documents. To
 gauge the performance of DeepDeSRT, the system is evaluated on the publicly
 available ICDAR 2013 table competition dataset and a closed dataset from a real
 use case of a major European aviation company.
+
 ---
 
 ## GROBID - Information Extraction from Scientific Publications
@@ -3915,6 +4071,7 @@ facilitating the transformation of documents into structured data. It is used to
 parse and process scholarly articles, extracting metadata, bibliographic
 references, and other essential information, thus aiding in scientific data
 sharing and reuse.
+
 ---
 
 ## A comprehensive survey of mostly textual document segmentation algorithms since 2008
@@ -3933,6 +4090,7 @@ segmentation since 2008. It provides a clear typology of documents and of
 document image segmentation algorithms. We also discuss the technical
 limitations of these algorithms, the way they are evaluated and the general
 trends of the community.
+
 ---
 
 ## Historical Document Digitization through Layout Analysis and Deep Content Classification
@@ -3954,6 +4112,7 @@ classified by means of features extracted from a Convolutional Neural Network
 merged in a Random Forest classifier. Experiments are conducted on the first
 volume of the 'Enciclopedia Treccani', a large dataset containing 999 manually
 annotated pages from the historical Italian encyclopedia.
+
 ---
 
 ## A Survey on Optical Character Recognition System
@@ -3975,6 +4134,7 @@ research on Character Recognition has increased dramatically. This research aims
 at summarizing the research so far done in the field of OCR. It provides an
 overview of different aspects of OCR and discusses corresponding proposals aimed
 at resolving issues of OCR.
+
 ---
 
 ## Historical Document Digitization through Layout Analysis and Deep Content Classification
@@ -3996,6 +4156,7 @@ classified by means of features extracted from a Convolutional Neural Network
 merged in a Random Forest classifier. Experiments are conducted on the first
 volume of the 'Enciclopedia Treccani', a large dataset containing 999 manually
 annotated pages from the historical Italian encyclopedia.
+
 ---
 
 ## GROBID - Information Extraction from Scientific Publications
@@ -4012,6 +4173,7 @@ structured documents. GROBID is designed to process header metadata,
 bibliographic references, and full-text content from PDF documents to facilitate
 information extraction and improve data sharing and re-use in scientific
 research.
+
 ---
 
 ## ICDAR 2013 Robust Reading Competition
@@ -4032,6 +4194,7 @@ received a total of 42 submissions over the different tasks offered. This report
 describes the datasets and ground truth specification, details the performance
 evaluation protocols used, and presents the final results along with a brief
 summary of the participating methods.
+
 ---
 
 ## High-Performance OCR for Printed English and Fraktur using LSTM Networks
@@ -4061,6 +4224,7 @@ in Fraktur (not part of the training set), the system achieves error rates of
 0.15% (Fontane) and 1.47% (Ersch-Gruber). These recognition accuracies were
 found without using any language modelling or any other post-processing
 techniques.
+
 ---
 
 ## Coupled snakelets for curled text-line segmentation from warped document images
@@ -4087,6 +4251,7 @@ overlapping pairs is considered as a segmented text-line. Our algorithm has
 achieved curled text-line segmentation accuracy of above 95% on the DFKI-I
 (CBDAR 2007 dewarping contest) dataset, which is significantly better than
 previously reported results on this dataset.
+
 ---
 
 ## High-Performance OCR for Printed English and Fraktur using LSTM Networks
@@ -4116,6 +4281,7 @@ in Fraktur (not part of the training set), the system achieves error rates of
 0.15% (Fontane) and 1.47% (Ersch-Gruber). These recognition accuracies were
 found without using any language modelling or any other post-processing
 techniques.
+
 ---
 
 ## Coupled snakelets for curled text-line segmentation from warped document images
@@ -4142,6 +4308,7 @@ is considered as a segmented text-line. Our algorithm has achieved curled text-
 line segmentation accuracy of above 95% on the DFKI-I (CBDAR 2007 dewarping
 contest) dataset, which is significantly better than previously reported results
 on this dataset.
+
 ---
 
 ## An evaluation of HMM-based Techniques for the Recognition of Screen Rendered Text
@@ -4156,6 +4323,7 @@ The document evaluates Hidden Markov Model (HMM) based techniques for the
 recognition of text that is rendered on screens. The study involves analyzing
 the effectiveness of HMMs in recognizing text from screen-based sources, which
 can include digital displays, computer screens, and other similar mediums.
+
 ---
 
 ## Combined Orientation and Skew Detection Using Geometric Text-Line Modeling
@@ -4184,6 +4352,7 @@ necessary, text-line extraction in one step. The effectiveness of our
 orientation detection approach is demonstrated on the UW-I dataset, and on
 publicly available test images from OCRopus. Our method achieves an accuracy of
 99% on the UW-I dataset and 100% on test images from OCRopus.
+
 ---
 
 ## Scanning Neural Network for Text Line Recognition
@@ -4208,6 +4377,7 @@ recognition. In evaluations on a subset of UNLV-ISRI document collection, we
 achieve 98.4% character recognition accuracy that is statistically significantly
 better in comparison with character recognition accuracies obtained from state-
 of-the-art open source OCR systems.
+
 ---
 
 ## A Realistic Dataset for Performance Evaluation of Document Layout Analysis
@@ -4228,6 +4398,7 @@ efficiently created using a new semi-automated tool and stored in a new
 comprehensive XML representation, the PAGE format. The dataset can be browsed
 and searched via a web-based front end to the underlying database and suitable
 subsets (relevant to specific evaluation goals) can be selected and downloaded.
+
 ---
 
 ## Applying the OCRopus OCR System to Scholarly Sanskrit Literature
@@ -4250,6 +4421,7 @@ linguistics applications is the consistent use of probability estimates
 throughout the system and the use of weighted finite state transducers to
 represent both alternative recognition hypotheses and statistical language
 models.
+
 ---
 
 ## The Effect of Border Noise on the Performance of Projection Based Page Segmentation Methods
@@ -4278,6 +4450,7 @@ Our results show that although projection methods can achieve the accuracy of
 other state-of-the-art algorithms on the cleaned document images, existing
 border noise removal techniques cannot clean up documents captured under a
 variety of scanning conditions to the degree required to achieve that accuracy.
+
 ---
 
 ## Performance Evaluation and Benchmarking of Six-Page Segmentation Algorithms
@@ -4303,6 +4476,7 @@ smearing, whitespace analysis, constrained text-line finding, docstrum, and
 Voronoi) on the UW-III database and demonstrate that the new evaluation scheme
 permits the identification of several specific flaws in individual segmentation
 methods.
+
 ---
 
 ## Structural Mixtures for Statistical Layout Analysis
@@ -4327,6 +4501,7 @@ matching algorithm is presented that gives multiple interpretations of input
 layout with associated probabilities. First experiments on documents from the
 publicly available MARG dataset achieved below 5% error rate for geometric
 layout analysis.
+
 ---
 
 ## Document cleanup using page frame detection
@@ -4360,6 +4535,7 @@ characters outside the computed page frame, the OCR error rate is reduced from
 4.3 to 1.7% on the UW-III dataset. The use of page frame detection in layout-
 based document image retrieval application decreases the retrieval error rates
 by 30%.
+
 ---
 
 ## Document Image Dewarping Contest
@@ -4384,6 +4560,7 @@ measure, and the dataset used in the contest. We report the performance of all
 participating methods. The evaluation shows that none of the participating
 methods was statistically significantly better than any other participating
 method.
+
 ---
 
 ## Document Image Dewarping Contest
@@ -4408,6 +4585,7 @@ measure, and the dataset used in the contest. We report the performance of all
 participating methods. The evaluation shows that none of the participating
 methods was statistically significantly better than any other participating
 method.
+
 ---
 
 ## The OCRopus Open Source OCR System
@@ -4423,6 +4601,7 @@ extensibility, and reuse, aimed at both the research community and large scale
 commercial document conversions. This paper describes the current status of the
 system, its general architecture, as well as the major algorithms currently
 being used for layout analysis and text line recognition.
+
 ---
 
 ## Document Image Dewarping Contest
@@ -4447,6 +4626,7 @@ measure, and the dataset used in the contest. We report the performance of all
 participating methods. The evaluation shows that none of the participating
 methods was statistically significantly better than any other participating
 method.
+
 ---
 
 ## An Overview of the Tesseract OCR Engine
@@ -4462,6 +4642,7 @@ Annual Test of OCR Accuracy, is described in a comprehensive overview. Emphasis
 is placed on aspects that are novel or at least unusual in an OCR engine,
 including in particular the line finding, features/classification methods, and
 the adaptive classifier.
+
 ---
 
 ## Document Image Dewarping using Robust Estimation of Curled Text Lines
@@ -4486,6 +4667,7 @@ approaches, and allows for flexible ad hoc document capture. Results are
 presented showing that the algorithm produces visually pleasing output and
 increases OCR accuracy, thus having the potential to become a general purpose
 preprocessing tool for camera based document capture.
+
 ---
 
 ## Document Capture using Stereo Vision
@@ -4507,6 +4689,7 @@ techniques like structured lighting, shading, or side-imaging for obtaining 3D
 shape. This paper describes a system for handheld camera-based document capture
 using general purpose stereo vision methods followed by a new document dewarping
 technique. Examples of shape modeling and dewarping of book images is shown.
+
 ---
 
 ## Classification using a Hierarchical Bayesian Approach

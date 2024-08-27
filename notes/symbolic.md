@@ -31,6 +31,7 @@ solvers) to achieve diversified tasks in both digital and physical domains. As a
 position paper, we will present our vision of how to build such an ecosystem,
 explain each key component, and use study cases to illustrate both the
 feasibility of this vision and the main challenges we need to address next.
+
 ---
 
 ## Neural Theorem Proving in Lean using Proof Artifact Co-training and Language Models
@@ -45,6 +46,7 @@ The paper presents a method for neural theorem proving in the Lean interactive
 theorem prover by leveraging proof artifact co-training and language models. The
 approach aims to improve the efficiency and accuracy of theorem proving tasks by
 utilizing state-of-the-art deep learning techniques.
+
 ---
 
 ## PLASMA: Making Small Language Models Better Procedural Knowledge Models for (Counterfactual) Planning
@@ -72,6 +74,7 @@ Planning, that requires a revision of a plan to cope with a counterfactual
 situation. In both the original and counterfactual setting, we show that orders-
 of-magnitude smaller models (770M-11B parameters) can compete and often surpass
 their larger teacher models’ capabilities.
+
 ---
 
 ## Learning to Generate Novel Scientific Directions with Contextualized Literature-based Discovery
@@ -97,6 +100,7 @@ relations, and create a new dataset derived from papers. In automated and human
 evaluations, our models improve over baselines, including powerful large
 language models (LLMs), but also reveal challenges on the road to building
 machines that generate new scientific knowledge.
+
 ---
 
 ## On Suspicious Coincidences and Pointwise Mutual Information
@@ -119,6 +123,7 @@ mutual information is used extensively in some research communities for flagging
 suspicious coincidences. We discuss the pros and cons of using it in this way,
 bearing in mind the sensitivity of the PMI to the marginals, with increased
 scores for sparser events.
+
 ---
 
 ## Consistent ultrafinitist logic
@@ -139,6 +144,7 @@ also try to present some well-known theorems that stop being true in such
 systems, whereas opposite statements become provable. This approach presents
 certain impossibility results as logical paradoxes stemming from a profligate
 use of transfinite reasoning.
+
 ---
 
 ## Learning Neural Causal Models with Active Interventions
@@ -162,6 +168,7 @@ targeting and is applicable for both discrete and continuous optimization
 formulations of learning the underlying directed acyclic graph (DAG) from data.
 We examine the proposed method across a wide range of settings and demonstrate
 superior performance on multiple benchmarks from simulated to real-world data.
+
 ---
 
 ## Symbolic Knowledge Distillation: from General Language Models to Commonsense Models
@@ -191,6 +198,7 @@ results in a neural commonsense model that surpasses the teacher model’s
 commonsense capabilities despite its 100x smaller size. We apply this to the
 ATOMIC resource, and share our new symbolic knowledge graph and commonsense
 models.
+
 ---
 
 ## WikiGraphs: A Wikipedia Text - Knowledge Graph Paired Dataset
@@ -216,6 +224,7 @@ results on our dataset for 3 tasks: graph → text generation, graph → text
 retrieval, and text → graph retrieval. We show that better conditioning on the
 graph provides gains in generation and retrieval quality but there is still
 large room for improvement.
+
 ---
 
 ## Causality for Machine Learning
@@ -232,6 +241,7 @@ field of machine learning. This article discusses where links have been and
 should be established, introducing key concepts along the way. It argues that
 the hard open problems of machine learning and AI are intrinsically related to
 causality, and explains how the field is beginning to understand them.
+
 ---
 
 ## Causal Induction from Visual Observations for Goal Directed Tasks
@@ -254,6 +264,7 @@ incrementally generate the causal graph from the agent’s visual observations a
 to selectively use the induced graph for determining actions. Our experiments
 show that our method effectively generalizes towards completing new tasks in
 novel environments with previously unseen causal structures.
+
 ---
 
 ## Discovering Symbolic Models from Deep Learning with Inductive Biases
@@ -278,6 +289,7 @@ expressions extracted from the GNN using our technique also generalized to out-
 of-distribution data better than the GNN itself. Our approach offers alternative
 directions for interpreting neural networks and discovering novel physical
 principles from the representations they learn.
+
 ---
 
 ## Well-tempered ZX and ZH calculi
@@ -304,6 +316,7 @@ simpler. We also present a similar renormalised version of the ZH calculus. We
 obtain these results by an analysis of conditions under which various
 “idealised” rewrites are sound, leveraging the existing presentations of the ZX
 and ZH calculi.
+
 ---
 
 ## DualSMC: Tunneling Differentiable Filtering and Planning under Continuous POMDPs
@@ -328,6 +341,7 @@ dependent policy. Crucially, not only can DualSMC handle complex observations
 such as image input but also it remains highly interpretable. It is shown to be
 effective in three continuous POMDP domains: the floor positioning domain, the
 3D light-dark navigation domain, and a modified Reacher domain.
+
 ---
 
 ## Language Models are Open Knowledge Graphs
@@ -352,6 +366,7 @@ We demonstrate the quality of the constructed KGs by comparing to two KGs
 (Wikidata, TAC KBP) created by humans. Our KGs also provide open factual
 knowledge that is new in the existing KGs. Our code and KGs will be made
 publicly available.
+
 ---
 
 ## Tensor Network Rewriting Strategies for Satisfiability and Counting
@@ -381,6 +396,7 @@ corresponding rewrite rules introduce hyperedges to the diagrams, in numbers
 which are not easily bounded above by a polynomial. This diagrammatic approach
 unifies the diagnosis of the complexity of CSPs and #CSPs and shows promise in
 aiding tensor network contraction-based algorithms.
+
 ---
 
 ## Web Table Extraction, Retrieval and Augmentation: A Survey
@@ -400,6 +416,7 @@ extraction, table interpretation, table search, question answering, knowledge
 base augmentation, and table augmentation. For each of these tasks, we identify
 and describe seminal approaches, present relevant resources, and point out
 interdependencies among the different tasks.
+
 ---
 
 ## Tensor Network Rewriting Strategies for Satisfiability and Counting
@@ -429,6 +446,7 @@ corresponding rewrite rules introduce hyperedges to the diagrams, in numbers
 which are not easily bounded above by a polynomial. This diagrammatic approach
 unifies the diagnosis of the complexity of CSPs and #CSPs and shows promise in
 aiding tensor network contraction-based algorithms.
+
 ---
 
 ## Tensor Network Rewriting Strategies for Satisfiability and Counting
@@ -458,6 +476,7 @@ corresponding rewrite rules introduce hyperedges to the diagrams, in numbers
 which are not easily bounded above by a polynomial. This diagrammatic approach
 unifies the diagnosis of the complexity of CSPs and #CSPs and shows promise in
 aiding tensor network contraction-based algorithms.
+
 ---
 
 ## The Structure of Concurrent Process Histories
@@ -472,6 +491,7 @@ We identify the algebraic structure of the material histories generated by
 concurrent processes. Specifically, we extend existing categorical theories of
 resource convertibility to capture concurrent interaction. Our formalism admits
 an intuitive graphical presentation via string diagrams for proarrow equipments.
+
 ---
 
 ## AI-KG: an Automatically Generated Knowledge Graph of Artificial Intelligence
@@ -489,6 +509,7 @@ research papers. The resulting knowledge graph provides a structured
 representation of the concepts and relationships within the AI domain,
 facilitating various applications such as information retrieval, question
 answering, and knowledge discovery.
+
 ---
 
 ## Discovering Symbolic Models from Deep Learning with Inductive Biases
@@ -513,6 +534,7 @@ expressions extracted from the GNN using our technique also generalized to out-
 of-distribution-data better than the GNN itself. Our approach offers alternative
 directions for interpreting neural networks and discovering novel physical
 principles from the representations they learn.
+
 ---
 
 ## Quantum Tensor Networks, Stochastic Processes, and Weighted Automata
@@ -540,6 +562,7 @@ hidden quantum Markov models from the stochastic process literature, and (iii)
 stochastic weighted automata, probabilistic automata and quadratic automata from
 the formal languages literature. Such connections may open the door for results
 and methods developed in one area to be applied in another.
+
 ---
 
 ## The game semantics of game theory
@@ -562,6 +585,7 @@ ideas to build a compact closed category of 'computable open games' by replacing
 the underlying dialectica category with a wave-style geometry of interaction
 category, specifically the Int-construction applied to the traced cartesian
 category of directed-complete partial orders.
+
 ---
 
 ## Random Walks: A Review of Algorithms and Applications
@@ -590,6 +614,7 @@ introduce their applications in the field of computer science. Finally, we
 discuss the open issues from the perspectives of efficiency, main-memory volume,
 and computing time of existing algorithms. This study aims to contribute to this
 growing area of research by exploring random walks and quantum walks together.
+
 ---
 
 ## Tensor Network Rewriting Strategies for Satisfiability and Counting
@@ -619,6 +644,7 @@ corresponding rewrite rules introduce hyperedges to the diagrams, in numbers
 which are not easily bounded above by a polynomial. This diagrammatic approach
 unifies the diagnosis of the complexity of CSPs and #CSPs and shows promise in
 aiding tensor network contraction-based algorithms.
+
 ---
 
 ## Fonduer: Knowledge Base Construction from Richly Formatted Data
@@ -650,6 +676,7 @@ We also conduct a user study to assess the usability of Fonduer's new
 programming model. We show that after using Fonduer for only 30 minutes, non-
 domain experts are able to design KBC systems that achieve on average 23 F1
 points higher quality than traditional machine-learning-based KBC approaches.
+
 ---
 
 ## What’s the Over/Under? Probabilistic Bounds on Information Leakage
@@ -671,6 +698,7 @@ baseline technique with sampling and symbolic execution. We prove that our
 approach never underestimates a query’s leakage (it is sound), and detailed
 experimental results show that we can match the precision of the baseline
 technique but with orders of magnitude better performance.
+
 ---
 
 ## World of Bits: An Open-Domain Platform for Web-Based Agents
@@ -696,6 +724,7 @@ how to answer the question on real websites using keyboard and mouse; HTTP
 traffic is cached to create a reproducible offline approximation of the website.
 Finally, we show that agents trained via behavioral cloning and reinforcement
 learning can complete a range of web-based tasks.
+
 ---
 
 ## Knowledge Representation in Bicategories of Relations
@@ -724,6 +753,7 @@ Although we make extensive use of categorical language, this paper is designed
 to be self-contained and has considerable expository content. The only
 prerequisites are knowledge of first-order logic and the rudiments of category
 theory.
+
 ---
 
 ## Formalizing Mathematical Knowledge as a Biform Theory Graph: A Case Study
@@ -748,6 +778,7 @@ different formalisms to do this, which we describe and compare. The first is
 realized in cttuqe, a version of Church’s type theory with quotation and
 evaluation, and the second is realized in Agda, a dependently typed programming
 language.
+
 ---
 
 ## Planning for Change in a Formal Verification of the Raft Consensus Protocol
@@ -774,6 +805,7 @@ lemmas that show any property proved about a particular component implies
 analogous properties about related components, and makes proofs robust to change
 using structural tactics. We also discuss how our methodology may be applied to
 systems verification more broadly.
+
 ---
 
 ## In Search of an Understandable Consensus Algorithm (Extended Version)
@@ -794,6 +826,7 @@ a stronger degree of coherency to reduce the number of states that must be
 considered. Results from a user study demonstrate that Raft is easier for
 students to learn than Paxos. Raft also includes a new mechanism for changing
 the cluster membership, which uses overlapping majorities to guarantee safety.
+
 ---
 
 ## Propositions as Types
@@ -852,6 +885,7 @@ dubbed Girard-Reynolds. Curry-Howard is a double-barrelled name that ensures the
 existence of other double-barrelled names. Those of us that design and use
 programming languages may often feel they are arbitrary, but Propositions as
 Types assures us some aspects of programming are absolute.
+
 ---
 
 ## Raft Reﬂoated: Do We Have Consensus?
@@ -873,6 +907,7 @@ on experimental topologies. We propose several optimizations to the Raft
 protocol and demonstrate their effectiveness under contention. Finally, we
 empirically validate the correctness of the Raft protocol invariants and
 evaluate Raft’s understandability claims.
+
 ---
 
 ## Propositions as Types
@@ -931,6 +966,7 @@ dubbed Girard-Reynolds. Curry-Howard is a double-barrelled name that ensures the
 existence of other double-barrelled names. Those of us that design and use
 programming languages may often feel they are arbitrary, but Propositions as
 Types assures us some aspects of programming are absolute.
+
 ---
 
 ## Efficient Parallel GPU Algorithms for BDD Manipulation
@@ -946,6 +982,7 @@ optimized for efficient execution on Graphics Processing Units (GPUs). Compared
 to a sequential CPU-based BDD package with the same capabilities, our GPU
 implementation achieves at least 5 orders of magnitude speedup. To the best of
 our knowledge, this is the first work on using GPUs to accelerate a BDD package.
+
 ---
 
 ## Causality, Conditional Independence, and Graphical Separation in Settable Systems
@@ -968,6 +1005,7 @@ prove the conditional Reichenbach principle of common cause, obtaining the
 classical Reichenbach principle as a corollary. Finally, we relate our results
 to notions of graphical separation such as d-separation and D-separation in the
 artificial intelligence and machine learning literature.
+
 ---
 
 ## Regression by dependence minimization and its application to causal inference in additive noise models
@@ -993,6 +1031,7 @@ observational data for more than two variables. The required number of
 regressions and independence tests is quadratic in the number of variables,
 which is a significant improvement over the simple method that tests all
 possible DAGs.
+
 ---
 
 ## Typed Tagless Final Interpreters
@@ -1019,6 +1058,7 @@ impossible pattern-matching. We develop the approach further, to type-safe cast,
 run-time-type representation, Dynamics, and type reconstruction. We finish with
 telling examples of type-directed partial evaluation and encodings of type-and-
 effect systems and linear lambda-calculus.
+
 ---
 
 ## Physics, Topology, Logic and Computation: A Rosetta Stone
@@ -1042,6 +1082,7 @@ network of analogies between physics, topology, logic, and computation. In this
 expository paper, we make some of these analogies precise using the concept of
 ‘closed symmetric monoidal category’. We assume no prior knowledge of category
 theory, proof theory or computer science.
+
 ---
 
 ## Physical constraints on hypercomputation
@@ -1060,6 +1101,7 @@ of actualized rather than potential infinities of physical resources, or of
 physical representations of real numbers to arbitrary precision. Here, we argue
 that such bases for hypercomputation are not materially realizable and so cannot
 constitute new forms of effective calculability.
+
 ---
 
 ## Zeno machines and hypercomputation
@@ -1079,6 +1121,7 @@ reasonable computational model is emphasised. It is suggested that claims to
 have 'broken the Turing barrier' could be toned down and that the important and
 well-founded role of Turing computability in the mathematical sciences stands
 unchallenged.
+
 ---
 
 ## Model Theory of Ultrafinitism I: Fuzzy Initial Segments of Arithmetic
@@ -1099,6 +1142,7 @@ semantics for ultrafinitism through which feasibly consistent theories can be
 treated on the same footing as their classically consistent counterparts. We
 conclude with a brief sketch of a foundational program, that aims at reproducing
 the transfinite within the finite realm.
+
 ---
 
 ## Model Theory of Ultrafinitism I: Fuzzy Initial Segments of Arithmetic (Preliminary Draft)
@@ -1119,6 +1163,7 @@ semantics for ultrafinitism through which feasibly consistent theories can be
 treated on the same footing as their classically consistent counterparts. We
 conclude with a brief sketch of a foundational program that aims at reproducing
 the transfinite within the finite realm.
+
 ---
 
 ## Formalising Sylow’s theorems in Coq
@@ -1133,6 +1178,7 @@ The document discusses the formalization of Sylow's theorems using the Coq proof
 assistant. Sylow's theorems are fundamental results in group theory, and
 formalizing them in Coq provides a rigorous foundation for their application in
 computational contexts.
+
 ---
 
 ## Light Affine Set Theory: A Naive Set Theory of Polynomial Time
@@ -1149,6 +1195,7 @@ Affine Logic (ILAL), a simplification of Light Linear Logic (LLL) introduced by
 us to rigorously verify its polytime character. In particular, we prove that a
 function over {0, 1}* is computable in polynomial time if and only if it is
 provably total in LAST.
+
 ---
 
 ## From max-plus algebra to nonexpansive mappings: a nonlinear theory for discrete event systems
@@ -1170,6 +1217,7 @@ nonexpansive in the '∞ norm. This has its origins in linear algebra over the
 max-plus semiring but extends to a nonlinear theory that encompasses a variety
 of problems arising in other mathematical disciplines. We concentrate on the
 mathematical aspects and set out several open problems.
+
 ---
 
 ## Computational Mechanics: Pattern and Prediction, Structure and Simplicity
@@ -1187,6 +1235,7 @@ accurate prediction. We establish several results on 𝜖-machine optimality and
 uniqueness and on how 𝜖-machines compare to alternative representations. Further
 results relate measures of randomness and structural complexity obtained from
 𝜖-machines to those from ergodic and information theories.
+
 ---
 
 ## Computational Mechanics: Pattern and Prediction, Structure and Simplicity
@@ -1204,6 +1253,7 @@ accurate prediction. We establish several results on ǫ-machine optimality and
 uniqueness and on how ǫ-machines compare to alternative representations. Further
 results relate measures of randomness and structural complexity obtained from
 ǫ-machines to those from ergodic and information theories.
+
 ---
 
 ## An Introduction to Computational Group Theory
@@ -1224,6 +1274,7 @@ generators and relators, along with representation theory. Specialized
 algorithms exist for specific classes of groups, including nilpotent and
 solvable groups. This survey introduces key ideas and the capabilities of
 current systems in each subarea of CGT.
+
 ---
 
 ## Towards a proof theory of rewriting: The simply typed 22-calculus
@@ -1245,6 +1296,7 @@ strong form of confluence and a classification of the long-βη-normal forms in
 terms of their rewrites. Finally, we use these properties as the basic
 definitions of a theory of categorical rewriting, and find that the expected
 relationships between confluence, strong normalisation and normal forms hold.
+
 ---
 
 ## An information-maximisation approach to blind separation and blind deconvolution
@@ -1271,6 +1323,7 @@ deconvolution (cancellation of unknown echoes and reverberation in a speech
 signal). Finally, we derive dependencies of information transfer on time delays.
 We suggest that information maximisation provides a unifying framework for
 problems in 'blind' signal processing.
+
 ---
 
 ## Conservative Logic
@@ -1282,6 +1335,7 @@ Keywords: Conservative logic, Fredkin gate, reversible computing
 Year: 1975
 
 Abstract is not available on the first page.
+
 ---
 
 ## Combinatory Logic in Programming

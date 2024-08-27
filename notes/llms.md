@@ -22,6 +22,7 @@ five-shot MMLU. We also publicly release Flan-T5 checkpoints, which achieve
 strong few-shot performance even compared to much larger models, such as PaLM
 62B. Overall, instruction finetuning is a general method for improving the
 performance and usability of pretrained language models.
+
 ---
 
 ## Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond
@@ -54,6 +55,7 @@ for working with LLMs, thereby enabling the successful implementation of these
 models in a wide range of NLP tasks. A curated list of practical guide resources
 of LLMs, regularly updated, can be found at
 https://github.com/Mooler0410/LLMsPracticalGuide.
+
 ---
 
 ## LLMMaps - A Visual Metaphor for Stratified Evaluation of Large Language Models
@@ -85,6 +87,7 @@ state-of-the-art LLMs, such as BLOOM, GPT-2, GPT-3, ChatGPT and LLaMa-13B, as
 well as two qualitative user evaluations. All necessary source code and data for
 generating LLMMaps to be used in scientific publications and elsewhere will be
 available on GitHub: https://github.com/******
+
 ---
 
 ## StructGPT: A General Framework for Large Language Model to Reason over Structured Data
@@ -110,6 +113,7 @@ Extensive experiments conducted on three types of structured data demonstrate
 the effectiveness of our approach, which can significantly boost the performance
 of ChatGPT and achieve comparable performance against the full-data supervised-
 tuning baselines.
+
 ---
 
 ## ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models
@@ -142,6 +146,7 @@ model parameters. Our illustrative work offloads reasoning ability from 175B
 GPT3.5 into 7B LLaMA, demonstrating the significant potential for truly
 efficient and scalable ALM systems. Full code, model, and data are released for
 reproduction.
+
 ---
 
 ## LLaMA: Open and Efficient Foundation Language Models
@@ -159,6 +164,7 @@ exclusively, without resorting to proprietary and inaccessible datasets. In
 particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B
 is competitive with the best models, Chinchilla-70B and PaLM-540B. We release
 all our models to the research community.
+
 ---
 
 ## PaLM 2 Technical Report
@@ -184,6 +190,7 @@ tasks. PaLM 2 exhibits stable performance on a suite of responsible AI
 evaluations, and enables inference-time control over toxicity without additional
 overhead or impact on other capabilities. Overall, PaLM 2 achieves state-of-the-
 art performance across a diverse set of tasks and capabilities.
+
 ---
 
 ## GPT-4 Technical Report
@@ -206,6 +213,7 @@ was developing infrastructure and optimization methods that behave predictably
 across a wide range of scales. This allowed us to accurately predict some
 aspects of GPT-4’s performance based on models trained with no more than
 1/1,000th the compute of GPT-4.
+
 ---
 
 ## Generate Rather Than Retrieve: Large Language Models are Strong Context Generators
@@ -237,6 +245,7 @@ and +3.9, without retrieving any documents from any external knowledge source.
 Lastly, we demonstrate the model performance can be further improved by
 combining retrieval and generation. Our code and generated documents can be
 found at https://github.com/wyu97/GenRead.
+
 ---
 
 ## LLaMA: Open and Efficient Foundation Language Models
@@ -254,6 +263,7 @@ exclusively, without resorting to proprietary and inaccessible datasets. In
 particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B
 is competitive with the best models, Chinchilla-70B and PaLM-540B. We release
 all our models to the research community.
+
 ---
 
 ## GPT-4 Technical Report
@@ -276,6 +286,7 @@ was developing infrastructure and optimization methods that behave predictably
 across a wide range of scales. This allowed us to accurately predict some
 aspects of GPT-4’s performance based on models trained with no more than
 1/1,000th the compute of GPT-4.
+
 ---
 
 ## Reﬂexion: an autonomous agent with dynamic memory and self-reﬂection
@@ -306,6 +317,7 @@ to complete decision-making tasks in AlfWorld environments and knowledge-
 intensive, search-based question-and-answer tasks in HotPotQA environments. We
 observe success rates of 97% and 51%, respectively, and provide a discussion on
 the emergent property of self-reflection.
+
 ---
 
 ## Large Language Models Can Self-Improve
@@ -329,6 +341,7 @@ approach improves the general reasoning ability of a 540B-parameter LLM
 63.4%→67.9% on ANLI-A3) and achieves state-of-the-art-level performance, without
 any ground truth label. We conduct ablation studies and show that fine-tuning on
 reasoning is critical for self-improvement.
+
 ---
 
 ## FACTSCORE: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
@@ -356,6 +369,7 @@ error rate. Finally, we use this automated metric to evaluate 6,500 generations
 from a new set of 13 recent LMs that would have cost $26K if evaluated by
 humans, with various findings: GPT-4 and ChatGPT are more factual than public
 models, and Vicuna and Alpaca are some of the best public models.
+
 ---
 
 ## Language Models can Solve Computer Tasks
@@ -384,6 +398,7 @@ specific reward function. Furthermore, we demonstrate RCI prompting’s
 effectiveness in enhancing LLMs’ reasoning abilities on a suite of natural
 language reasoning tasks, outperforming chain of thought (CoT) prompting. We
 find that RCI combined with CoT performs better than either separately.
+
 ---
 
 ## The Application of Large Language Models in Automated Text Generation
@@ -400,6 +415,7 @@ and discuss their potential applications in various domains, including creative
 writing, content creation, and educational tools. Our findings indicate that
 LLMs can significantly enhance the efficiency and quality of text generation,
 but also present challenges related to bias and ethical considerations.
+
 ---
 
 ## LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention
@@ -427,6 +443,7 @@ also evaluate the zero-initialized attention mechanism for fine-tuning other
 pre-trained models (ViT, RoBERTa) on traditional vision and language tasks,
 demonstrating the superior generalization capacity of our approach. Code is
 released at https://github.com/OpenGVLab/LLaMA-Adapter.
+
 ---
 
 ## Scaling Instruction-Finetuned Language Models
@@ -452,6 +469,7 @@ five-shot MMLU. We also publicly release Flan-T5 checkpoints, which achieve
 strong few-shot performance even compared to much larger models, such as PaLM
 62B. Overall, instruction finetuning is a general method for improving the
 performance and usability of pretrained language models.
+
 ---
 
 ## Gorilla: Large Language Model Connected with Massive APIs
@@ -480,6 +498,7 @@ potential for LLMs to use tools more accurately, keep up with frequently updated
 documentation, and consequently increase the reliability and applicability of
 their outputs. Gorilla’s code, model, data, and demo are available at
 https://gorilla.cs.berkeley.edu
+
 ---
 
 ## CodeT5+: Open Code Large Language Models for Code Understanding and Generation
@@ -516,6 +535,7 @@ generation and completion, math programming, and text-to-code retrieval tasks.
 Particularly, our instruction-tuned CodeT5+ 16B achieves new SoTA results of
 35.0% pass@1 and 54.5% pass@10 on the HumanEval code generation task against
 other open code LLMs, even surpassing the OpenAI code-cushman-001 model.
+
 ---
 
 ## Memory Augmented Large Language Models are Computationally Universal
@@ -538,6 +558,7 @@ key aspect of the finding is that it does not require any modification of the
 language model weights. Instead, the construction relies solely on designing a
 form of stored instruction computer that can subsequently be programmed with a
 specific set of prompts.
+
 ---
 
 ## Sparks of Artificial General Intelligence: Early experiments with GPT-4
@@ -569,6 +590,7 @@ the challenges ahead for advancing towards deeper and more comprehensive
 versions of AGI, including the possible need for pursuing a new paradigm that
 moves beyond next-word prediction. We conclude with reflections on societal
 influences of the recent technological leap and future research directions.
+
 ---
 
 ## Large Language Models as Tool Makers
@@ -602,6 +624,7 @@ effectiveness of our approach across a variety of complex reasoning tasks,
 including Big-Bench tasks. With GPT-4 as the tool maker and GPT-3.5 as the tool
 user, LATM can achieve performance that is on par with using GPT-4 for both tool
 making and tool using, while the inference cost is significantly reduced.
+
 ---
 
 ## ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models
@@ -634,6 +657,7 @@ model parameters. Our illustrative work offloads reasoning ability from 175B
 GPT3.5 into 7B LLaMA, demonstrating the significant potential for truly
 efficient and scalable ALM systems. Full code, model, and data are released for
 reproduction.
+
 ---
 
 ## Scaling Data-Constrained Language Models
@@ -660,6 +684,7 @@ Finally, we experiment with approaches mitigating data scarcity, including
 augmenting the training dataset with code data or removing commonly used
 filters. Models and datasets from our 400 training runs are freely available at
 https://github.com/huggingface/datablations.
+
 ---
 
 ## GPT-4 Technical Report
@@ -682,6 +707,7 @@ was developing infrastructure and optimization methods that behave predictably
 across a wide range of scales. This allowed us to accurately predict some
 aspects of GPT-4’s performance based on models trained with no more than
 1/1,000th the compute of GPT-4.
+
 ---
 
 ## Sparks of Artificial General Intelligence: Early experiments with GPT-4
@@ -714,6 +740,7 @@ challenges ahead for advancing towards deeper and more comprehensive versions of
 AGI, including the possible need for pursuing a new paradigm that moves beyond
 next-word prediction. We conclude with reflections on societal influences of the
 recent technological leap and future research directions.
+
 ---
 
 ## Improving Factuality and Reasoning in Language Models through Multiagent Debate
@@ -741,6 +768,7 @@ prompts for all tasks we investigate. Overall, our findings suggest that such
 'society of minds' approach has the potential to significantly advance the
 capabilities of LLMs and pave the way for further breakthroughs in language
 generation and understanding.
+
 ---
 
 ## Language Is Not All You Need: Aligning Perception with Language Models
@@ -756,6 +784,7 @@ perceiving multimodal input, following instructions, and performing in-context
 learning for not only language tasks but also multimodal tasks. In this work, we
 align vision with large language models (LLMs), advancing the trend of going
 from LLMs to MLLMs.
+
 ---
 
 ## Faith and Fate: Limits of Transformers on Compositionality
@@ -783,6 +812,7 @@ necessarily developing systematic problem-solving skills. To round off our
 empirical study, we provide theoretical arguments on abstract multi-step
 reasoning problems that highlight how Transformers’ performance will rapidly
 decay with increased task complexity.
+
 ---
 
 ## The False Promise of Imitating Proprietary LLMs
@@ -815,6 +845,7 @@ using more capable base LMs. In turn, we argue that the highest leverage action
 for improving open-source models is to tackle the difficult challenge of
 developing better base LMs, rather than taking the shortcut of imitating
 proprietary systems.
+
 ---
 
 ## The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning
@@ -840,6 +871,7 @@ resulting in an improvement of +2.97% and +2.37% on 4 domain-specific tasks over
 Flan-T5 (3B & 11B), respectively. We make our COT COLLECTION data and our
 trained models publicly available at https://github.com/kaist-lklab/CoT-
 Collection.
+
 ---
 
 ## Efficient Large Scale Language Modeling with Mixtures of Experts
@@ -863,6 +895,7 @@ Overall, this performance gap varies greatly across tasks and domains,
 suggesting that MoE and dense models generalize differently in ways that are
 worthy of future study. We make our code and models publicly available for
 research use.
+
 ---
 
 ## The Larger They Are, the Harder They Fail: Language Models do not Recognize Identifier Swaps in Python
@@ -887,6 +920,7 @@ indicate that, despite their astonishing typical-case performance, LLMs still
 lack a deep, abstract understanding of the content they manipulate, making them
 unsuitable for tasks that statistically deviate from their training data, and
 that mere scaling is not enough to achieve such capability.
+
 ---
 
 ## A Survey of Large Language Models
@@ -929,6 +963,7 @@ and capacity evaluation. Besides, we also summarize the available resources for
 developing LLMs and discuss the remaining issues for future directions. This
 survey provides an up-to-date review of the literature on LLMs, which can be a
 useful resource for both researchers and engineers.
+
 ---
 
 ## BLOOM: A 176B-Parameter Open-Access Multilingual Language Model
@@ -945,6 +980,7 @@ open-access and multilingual. It was developed by the BigScience Workshop with
 contributions from numerous researchers. The full list of contributions and
 details about the model's development, dataset, tokenization, and prompt
 engineering are available in the document.
+
 ---
 
 ## Sparks of Artificial General Intelligence: Early experiments with GPT-4
@@ -977,6 +1013,7 @@ and more comprehensive versions of AGI, including the possible need for pursuing
 a new paradigm that moves beyond next-word prediction. We conclude with
 reflections on societal influences of the recent technological leap and future
 research directions.
+
 ---
 
 ## Direct Preference Optimization: Your Language Model is Secretly a Reward Model
@@ -1009,6 +1046,7 @@ better than existing methods. Notably, fine-tuning with DPO exceeds RLHF’s
 ability to control sentiment of generations and improves response quality in
 summarization and single-turn dialogue while being substantially simpler to
 implement and train.
+
 ---
 
 ## HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face
@@ -1037,6 +1075,7 @@ abundant AI models in Hugging Face, HuggingGPT is able to cover numerous
 sophisticated AI tasks in different modalities and domains and achieve
 impressive results in language, vision, speech, and other challenging tasks,
 which paves a new way towards advanced artificial intelligence.
+
 ---
 
 ## Dissecting Recall of Factual Associations in Auto-Regressive Language Models
@@ -1066,6 +1105,7 @@ is typically done via attention heads, which often encode subject-attribute
 mappings in their parameters. Overall, our findings introduce a comprehensive
 view of how factual associations are stored and extracted internally in LMs,
 facilitating future research on knowledge localization and editing.
+
 ---
 
 ## Locating and Editing Factual Associations in GPT
@@ -1093,6 +1133,7 @@ layer feed-forward modules in storing factual associations and suggest that
 direct manipulation of computational mechanisms may be a feasible approach for
 model editing. The code, dataset, visualizations, and an interactive demo
 notebook are available at https://rome.baulab.info.
+
 ---
 
 ## GRIPS: Gradient-free, Edit-based Instruction Search for Prompting Large Language Models
@@ -1122,6 +1163,7 @@ purely example-based prompts while controlling for the available compute and
 data budget. Further, performance of GRIPS is comparable to select gradient-
 based tuning approaches. Qualitatively, we show our edits can simplify
 instructions and at times make them incoherent but nonetheless improve accuracy.
+
 ---
 
 ## Generative Agents: Interactive Simulacra of Human Behavior
@@ -1147,6 +1189,7 @@ generative agents to populate an interactive sandbox environment inspired by The
 Sims, where end users can interact with a small town of twenty-five agents using
 natural language. In an evaluation, these generative agents produce believable
 individual and emergent social behaviors.
+
 ---
 
 ## KOSMOS-2: Grounding Multimodal Large Language Models to the World
@@ -1174,6 +1217,7 @@ This work lays out the foundation for the development of Embodiment AI and sheds
 light on the big convergence of language, multimodal perception, action, and
 world modeling, which is a key step toward artificial general intelligence. Code
 and pretrained models are available at https://aka.ms/kosmos-2.
+
 ---
 
 ## DERA: Enhancing Large Language Model Completions with Dialog-Enabled Resolving Agents
@@ -1201,6 +1245,7 @@ expert preference evaluations and quantitative metrics. In a new finding, we
 also show that GPT-4’s performance (70%) on an open-ended version of the MedQA
 question-answering (QA) dataset (Jin et al. (2021), USMLE) is well above the
 passing level (60%), with DERA showing similar performance.
+
 ---
 
 ## SPRING: GPT-4 Out-performs RL Algorithms by Studying Papers and Reasoning
@@ -1230,6 +1275,7 @@ with consistent chain-of-thought, have great potential in completing
 sophisticated high-level trajectories. Quantitatively, SPRING with GPT-4
 outperforms all state-of-the-art RL baselines, trained for 1M steps, without any
 training. Finally, we show the potential of games as a test bed for LLMs.
+
 ---
 
 ## SWIFTSAGE: A Generative Agent with Fast and Slow Thinking for Complex Interactive Tasks
@@ -1254,6 +1300,7 @@ efficient and robust problem-solving process. In 30 tasks from the ScienceWorld
 benchmark, SWIFTSAGE significantly outperforms other methods such as SayCan,
 ReAct, and Reflexion, demonstrating its effectiveness in solving complex real-
 world tasks.
+
 ---
 
 ## Federated Large Language Model: A Position Paper
@@ -1278,6 +1325,7 @@ propose specific engineering strategies for implementation. Furthermore, we
 explore the novel challenges introduced by the integration of FL and LLM. We
 analyze existing solutions and identify potential obstacles faced by these
 solutions within the context of federated LLM.
+
 ---
 
 ## GPT-4 Technical Report
@@ -1300,6 +1348,7 @@ was developing infrastructure and optimization methods that behave predictably
 across a wide range of scales. This allowed us to accurately predict some
 aspects of GPT-4’s performance based on models trained with no more than
 1/1,000th the compute of GPT-4.
+
 ---
 
 ## SELF-INSTRUCT: Aligning Language Model with Self Generated Instructions
@@ -1328,6 +1377,7 @@ public instruction datasets by a large margin, leaving only a 5% absolute gap
 behind InstructGPT001. SELF-INSTRUCT provides an almost annotation-free method
 for aligning pretrained language models with instructions, and we release our
 large synthetic dataset to facilitate future studies on instruction tuning.
+
 ---
 
 ## DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining
@@ -1353,6 +1403,7 @@ The Pile’s default domain weights and reaches the baseline accuracy with 2.6x
 fewer training steps. On the GLaM dataset, DoReMi, which has no knowledge of
 downstream tasks, even matches the performance of using domain weights tuned on
 downstream tasks.
+
 ---
 
 ## SpikeGPT: Generative Pre-trained Language Model with Spiking Neural Networks
@@ -1383,6 +1434,7 @@ experiments show that SpikeGPT remains competitive with non-spiking models on
 tested benchmarks, while maintaining 5× less energy consumption when processed
 on neuromorphic hardware that can leverage sparse, event-driven activations. Our
 code implementation is available at https://github.com/ridgerchu/SpikeGPT.
+
 ---
 
 ## Scaling Instruction-Finetuned Language Models
@@ -1408,6 +1460,7 @@ five-shot MMLU. We also publicly release Flan-T5 checkpoints, which achieve
 strong few-shot performance even compared to much larger models, such as PaLM
 62B. Overall, instruction finetuning is a general method for improving the
 performance and usability of pretrained language models.
+
 ---
 
 ## CodeCompose: A Large-Scale Industrial Deployment of AI-assisted Code Authoring
@@ -1440,6 +1493,7 @@ feedback indicates an overwhelming 91.5% positive reception for CodeCompose. In
 addition to assisting with code authoring, CodeCompose is also introducing other
 positive side effects such as encouraging developers to generate more in-code
 documentation, helping them with the discovery of new APIs, etc.
+
 ---
 
 ## FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance
@@ -1465,6 +1519,7 @@ the performance of the best individual LLM (e.g. GPT-4) with up to 98% cost
 reduction or improve the accuracy over GPT-4 by 4% with the same cost. The ideas
 and findings presented here lay a foundation for using LLMs sustainably and
 efficiently.
+
 ---
 
 ## LLMMaps - A Visual Metaphor for Stratified Evaluation of Large Language Models
@@ -1496,6 +1551,7 @@ state-of-the-art LLMs, such as BLOOM, GPT-2, GPT-3, ChatGPT and LLaMa-13B, as
 well as two qualitative user evaluations. All necessary source code and data for
 generating LLMMaps to be used in scientific publications and elsewhere will be
 available on GitHub: https://github.com/******
+
 ---
 
 ## Toolformer: Language Models Can Teach Themselves to Use Tools
@@ -1520,6 +1576,7 @@ search engine, a translation system, and a calendar. Toolformer achieves
 substantially improved zero-shot performance across a variety of downstream
 tasks, often competitive with much larger models, without sacrificing its core
 language modeling abilities.
+
 ---
 
 ## Language Is Not All You Need: Aligning Perception with Language Models
@@ -1535,6 +1592,7 @@ perceiving multimodal input, following instructions, and performing in-context
 learning for not only language tasks but also multimodal tasks. In this work, we
 align vision with large language models (LLMs), advancing the trend of going
 from LLMs to MLLMs.
+
 ---
 
 ## LLaMA: Open and Efficient Foundation Language Models
@@ -1552,6 +1610,7 @@ exclusively, without resorting to proprietary and inaccessible datasets. In
 particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B
 is competitive with the best models, Chinchilla-70B and PaLM-540B. We release
 all our models to the research community.
+
 ---
 
 ## Self-Edit: Fault-Aware Code Editor for Code Generation
@@ -1577,6 +1636,7 @@ average of pass@1 by 89% on APPS-dev, 31% on APPS-test, and 48% on HumanEval
 over nine popular code generation LLMs with parameter sizes ranging from 110M to
 175B. Compared to other post-processing methods, our method demonstrates
 superior accuracy and efficiency.
+
 ---
 
 ## GLaM: Efficient Scaling of Language Models with Mixture-of-Experts
@@ -1599,6 +1659,7 @@ has 1.2 trillion parameters, which is approximately 7x larger than GPT-3. It
 consumes only 1/3 of the energy used to train GPT-3 and requires half of the
 computation flops for inference, while still achieving better overall zero, one
 and few-shot performance across 29 NLP tasks.
+
 ---
 
 ## Unifying Language Learning Paradigms
@@ -1631,6 +1692,7 @@ question answering, commonsense reasoning, long text reasoning, structured
 knowledge grounding and information retrieval. Our model also achieves strong
 results at in-context learning, outperforming 175B GPT-3 on zero-shot SuperGLUE
 and tripling the performance of T5-XXL on one-shot summarization.
+
 ---
 
 ## Meta-learning via Language Model In-context Tuning
@@ -1658,6 +1720,7 @@ raw LM), in-context tuning meta-trains the model to learn from in-context
 examples. On BinaryClfs, ICT improves the average AUC-ROC score by an absolute
 10%, and reduces the variance due to example ordering by 6x and example choices
 by 2x.
+
 ---
 
 ## Holistic Evaluation of Language Models
@@ -1696,6 +1759,7 @@ publicly for further analysis, as well as a general modular toolkit for easily
 adding new scenarios, models, metrics, and prompting strategies. We intend for
 HELM to be a living benchmark for the community, continuously updated with new
 scenarios, metrics, and models.
+
 ---
 
 ## PaLM: Scaling Language Modeling with Pathways
@@ -1727,6 +1791,7 @@ benchmarks. We additionally provide a comprehensive analysis on bias and
 toxicity, and study the extent of training data memorization with respect to
 model scale. Finally, we discuss the ethical considerations related to large
 language models and discuss potential mitigation strategies.
+
 ---
 
 ## Training language models to follow instructions with human feedback
@@ -1756,6 +1821,7 @@ having minimal performance regressions on public NLP datasets. Even though
 InstructGPT still makes simple mistakes, our results show that fine-tuning with
 human feedback is a promising direction for aligning language models with human
 intent.
+
 ---
 
 ## Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models
@@ -1771,6 +1837,7 @@ evaluating the capabilities of language models in a wide range of tasks. This
 document outlines the breadth and depth of tasks included in BIG-bench and
 discusses the potential of extrapolating the capabilities of language models
 beyond current benchmarks.
+
 ---
 
 ## LaMDA: Language Models for Dialog Applications
@@ -1801,6 +1868,7 @@ groundedness metric, and we find that our approach enables the model to generate
 responses grounded in known sources, rather than responses that merely sound
 plausible. Finally, we explore the use of LaMDA in the domains of education and
 content recommendations, and analyze their helpfulness and role consistency.
+
 ---
 
 ## Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model
@@ -1829,6 +1897,7 @@ that MT-NLG achieves superior zero-, one-, and few-shot learning accuracies on
 several NLP benchmarks and establishes new state-of-the-art results. We believe
 that our contributions will help further the development of large-scale training
 infrastructures, large-scale language models, and natural language generations.
+
 ---
 
 ## Improving language models by retrieving from trillions of tokens
@@ -1851,6 +1920,7 @@ is typically consumed during training. We typically train Retro from scratch,
 yet can also rapidly Retrofit pre-trained transformers with retrieval and still
 achieve good performance. Our work opens up new avenues for improving language
 models through explicit memory at unprecedented scale.
+
 ---
 
 ## Galactica: A Large Language Model for Science
@@ -1878,6 +1948,7 @@ despite not being trained on a general corpus, Galactica outperforms BLOOM and
 OPT-175B on BIG-bench. We believe these results demonstrate the potential for
 language models as a new interface for science. We open source the model for the
 benefit of the scientific community.
+
 ---
 
 ## Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in NLP
@@ -1902,6 +1973,7 @@ curated word lists, nor does it require any training data or changes to the
 model’s parameters. While our approach does by no means eliminate the issue of
 language models generating biased text, we believe it to be an important step in
 this direction.
+
 ---
 
 ## Evaluating Large Language Models Trained on Code
@@ -1925,6 +1997,7 @@ reveals its limitations, including difficulty with docstrings describing long
 chains of operations and with binding operations to variables. Finally, we
 discuss the potential broader impacts of deploying powerful code generation
 technologies, covering safety, security, and economics.
+
 ---
 
 ## Dynamic Language Models for Continuously Evolving Content
@@ -1955,6 +2028,7 @@ superiority of our methods is validated using two downstream tasks. We
 demonstrate significant improvements when incrementally evolving the model from
 a particular base year, on the task of Country Hashtag Prediction, as well as on
 the OffensEval 2019 task.
+
 ---
 
 ## Evaluating Large Language Models Trained on Code
@@ -1978,6 +2052,7 @@ reveals its limitations, including difficulty with docstrings describing long
 chains of operations and with binding operations to variables. Finally, we
 discuss the potential broader impacts of deploying powerful code generation
 technologies, covering safety, security, and economics.
+
 ---
 
 ## Evaluating Large Language Models Trained on Code
@@ -2001,6 +2076,7 @@ reveals its limitations, including difficulty with docstrings describing long
 chains of operations and with binding operations to variables. Finally, we
 discuss the potential broader impacts of deploying powerful code generation
 technologies, covering safety, security, and economics.
+
 ---
 
 ## It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners
@@ -2022,6 +2098,7 @@ textual inputs into cloze questions that contain a task description, combined
 with gradient-based optimization; exploiting unlabeled data gives further
 improvements. We identify key factors required for successful natural language
 understanding with small language models.
+
 ---
 
 ## Training Language Models with Memory Augmentation
@@ -2048,6 +2125,7 @@ model architecture or incorporating extra context (e.g., 18.70 → 17.76 on
 WikiText-103). We further augment language models with long-range contexts and
 external knowledge and demonstrate significant gains over previous memory-
 augmented approaches.
+
 ---
 
 ## It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners
@@ -2069,6 +2147,7 @@ textual inputs into cloze questions that contain a task description, combined
 with gradient-based optimization; exploiting unlabeled data gives further
 improvements. We identify key factors required for successful natural language
 understanding with small language models.
+
 ---
 
 ## Generating Datasets with Pretrained Language Models
@@ -2090,6 +2169,7 @@ generative abilities of PLMs to generate entire datasets of labeled text pairs
 from scratch, which can then be used for regular fine-tuning of much smaller
 models. Our fully unsupervised approach outperforms strong baselines on several
 English semantic textual similarity datasets.
+
 ---
 
 ## Extracting Training Data from Large Language Models
@@ -2114,6 +2194,7 @@ comprehensively evaluate our extraction attack to understand the factors that
 contribute to its success. Worryingly, we find that larger models are more
 vulnerable than smaller models. We conclude by drawing lessons and discussing
 possible safeguards for training large language models.
+
 ---
 
 ## Generating Datasets with Pretrained Language Models
@@ -2135,6 +2216,7 @@ generative abilities of PLMs to generate entire datasets of labeled text pairs
 from scratch, which can then be used for regular finetuning of much smaller
 models. Our fully unsupervised approach outperforms strong baselines on several
 English semantic textual similarity datasets.
+
 ---
 
 ## It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners
@@ -2156,6 +2238,7 @@ textual inputs into cloze questions that contain a task description, combined
 with gradient-based optimization; exploiting unlabeled data gives further
 improvements. We identify key factors required for successful natural language
 understanding with small language models.
+
 ---
 
 ## It’s Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners
@@ -2177,6 +2260,7 @@ textual inputs into cloze questions that contain a task description, combined
 with gradient-based optimization; exploiting unlabeled data gives further
 improvements. We identify key factors required for successful natural language
 understanding with small language models.
+
 ---
 
 ## Scaling Federated Learning for Fine-tuning of Large Language Models
@@ -2206,6 +2290,7 @@ averaging to a varying degree. Most notably, DistilBERT converges significantly
 slower with larger numbers of clients, and under some circumstances, even
 collapses to chance level performance. Investigating this issue presents an
 interesting perspective for future research.
+
 ---
 
 ## Language Models are Few-Shot Learners
@@ -2240,6 +2325,7 @@ web corpora. Finally, we find that GPT-3 can generate samples of news articles
 which human evaluators have difficulty distinguishing from articles written by
 humans. We discuss broader societal impacts of this finding and of GPT-3 in
 general.
+
 ---
 
 ## Scaling Laws for Neural Language Models
@@ -2261,6 +2347,7 @@ allocation of a fixed compute budget. Larger models are significantly more
 sample-efficient, such that optimally compute-efficient training involves
 training very large models on a relatively modest amount of data and stopping
 significantly before convergence.
+
 ---
 
 ## Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism
@@ -2293,6 +2380,7 @@ GPT-2 model we achieve SOTA results on the WikiText103 (10.8 compared to SOTA
 perplexity of 15.8) and LAMBADA (66.5% compared to SOTA accuracy of 63.2%)
 datasets. Our BERT model achieves SOTA results on the RACE dataset (90.9%
 compared to SOTA accuracy of 89.4%).
+
 ---
 
 ## Language Models are Few-Shot Learners
@@ -2327,6 +2415,7 @@ web corpora. Finally, we find that GPT-3 can generate samples of news articles
 which human evaluators have difficulty distinguishing from articles written by
 humans. We discuss broader societal impacts of this finding and of GPT-3 in
 general.
+
 ---
 
 ## Few-Shot Text Generation with Pattern-Exploiting Training
@@ -2346,6 +2435,7 @@ proposed few-shot approach, for finetuning generative language models on text
 generation tasks. On several text summarization and headline generation
 datasets, our proposed variant of PET gives consistent improvements over a
 strong baseline in few-shot settings.
+
 ---
 
 ## Language Models are Few-Shot Learners
@@ -2380,6 +2470,7 @@ web corpora. Finally, we find that GPT-3 can generate samples of news articles
 which human evaluators have difficulty distinguishing from articles written by
 humans. We discuss broader societal impacts of this finding and of GPT-3 in
 general.
+
 ---
 
 ## Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism
@@ -2412,6 +2503,7 @@ GPT-2 model we achieve SOTA results on the WikiText103 (10.8 compared to SOTA
 perplexity of 15.8) and LAMBADA (66.5% compared to SOTA accuracy of 63.2%)
 datasets. Our BERT model achieves SOTA results on the RACE dataset (90.9%
 compared to SOTA accuracy of 89.4%).
+
 ---
 
 ## Language Models are Few-Shot Learners
@@ -2446,6 +2538,7 @@ web corpora. Finally, we find that GPT-3 can generate samples of news articles
 which human evaluators have difficulty distinguishing from articles written by
 humans. We discuss broader societal impacts of this finding and of GPT-3 in
 general.
+
 ---
 
 ## How Much Knowledge Can You Pack Into the Parameters of a Language Model?
@@ -2464,6 +2557,7 @@ any external context or knowledge. We show that this approach scales with model
 size and outperforms models that explicitly look up knowledge on the open-domain
 variants of WebQuestions and TriviaQA. To facilitate reproducibility and future
 work, we release our code and trained models.
+
 ---
 
 ## Language Models are Unsupervised Multitask Learners
@@ -2490,6 +2584,7 @@ setting but still underfits WebText. Samples from the model reflect these
 improvements and contain coherent paragraphs of text. These findings suggest a
 promising path towards building language processing systems which learn to
 perform tasks from their naturally occurring demonstrations.
+
 ---
 
 ## SCIBERT: A Pretrained Language Model for Scientific Text
@@ -2511,6 +2606,7 @@ from a variety of scientific domains. We demonstrate statistically significant
 improvements over BERT and achieve new state-of-the-art results on several of
 these tasks. The code and pretrained models are available at
 https://github.com/allenai/scibert/.
+
 ---
 
 ## Language Models are Unsupervised Multitask Learners
@@ -2537,6 +2633,7 @@ setting but still underfits WebText. Samples from the model reflect these
 improvements and contain coherent paragraphs of text. These findings suggest a
 promising path towards building language processing systems which learn to
 perform tasks from their naturally occurring demonstrations.
+
 ---
 
 ## Language Models are Unsupervised Multitask Learners
@@ -2563,6 +2660,7 @@ setting but still underfits WebText. Samples from the model reflect these
 improvements and contain coherent paragraphs of text. These findings suggest a
 promising path towards building language processing systems which learn to
 perform tasks from their naturally occurring demonstrations.
+
 ---
 
 ## Improving Language Understanding by Generative Pre-Training
@@ -2590,6 +2688,7 @@ each task, significantly improving upon the state of the art in 9 out of the 12
 tasks studied. For instance, we achieve absolute improvements of 8.9% on
 commonsense reasoning (Stories Cloze Test), 5.7% on question answering (RACE),
 and 1.5% on textual entailment (MultiNLI).
+
 ---
 
 ## Improving Language Understanding by Generative Pre-Training
@@ -2617,6 +2716,7 @@ each task, significantly improving upon the state of the art in 9 out of the 12
 tasks studied. For instance, we achieve absolute improvements of 8.9% on
 commonsense reasoning (Stories Cloze Test), 5.7% on question answering (RACE),
 and 1.5% on textual entailment (MultiNLI).
+
 ---
 
 ## Improving Language Understanding by Generative Pre-Training

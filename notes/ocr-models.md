@@ -1,4 +1,4 @@
-A Review On Table Recognition Based On Deep Learning
+# A Review On Table Recognition Based On Deep Learning
 
 Shi Jiyuan, Shi chunqi
 
@@ -29,6 +29,8 @@ this paper also discusses the possible development direction and trend of form
 processing in the future, to provide some ideas for researchers in the field of
 table recognition. (Resource will be released at https://github.com/Wa1den-
 jy/Topic-on-Table-Recognition .)
+
+
 ---
 
 Nougat: Neural Optical Understanding for Academic Documents
@@ -48,6 +50,7 @@ offers a promising solution to enhance the accessibility of scientific knowledge
 in the digital age, by bridging the gap between human-readable documents and
 machine-readable text. We release the models and code to accelerate future work
 on scientific text recognition.
+
 ---
 
 DocILE Benchmark for Document Information Localization and Extraction
@@ -72,6 +75,7 @@ baselines, including RoBERTa, LayoutLMv3 and DETR-based Table Transformer;
 applied to both tasks of the DocILE benchmark, with results shared in this
 paper, offering a quick starting point for future work. The dataset, baselines
 and supplementary material are available at https://github.com/rossumai/docile.
+
 ---
 
 Unifying Vision, Text, and Layout for Universal Document Processing
@@ -96,6 +100,7 @@ content customization. Our method sets the state-of-the-art on 8 Document AI
 tasks, e.g., document understanding and QA, across diverse data domains like
 finance reports, academic papers, and websites. UDOP ranks first on the
 leaderboard of the Document Understanding Benchmark.
+
 ---
 
 Knowing Where and What: Unified Word Block Pretraining for Document Understanding
@@ -121,6 +126,7 @@ performance. Extensive experimental results show UTel learns better joint
 representations and achieves superior performance than previous methods on
 various downstream tasks, though requiring no image modality. Code is available
 at \url{https://github.com/taosong2019/UTel}.
+
 ---
 
 TGRNet: A Table Graph Reconstruction Network for Table Structure Recognition
@@ -148,6 +154,7 @@ location of different cells. Experimental results on three popular table
 recognition datasets and a new dataset with table graph annotations
 (TableGraph-350K) demonstrate the effectiveness of the proposed TGRNet for table
 structure recognition. Code and annotations will be made publicly available.
+
 ---
 
 Learning to Extract Semantic Structure from Documents Using Multimodal Fully Convolutional Neural Network
@@ -167,6 +174,7 @@ trained on a large set of synthetic documents, we fine-tune the network on
 unlabeled real documents using a semi-supervised approach. We systematically
 study the optimum network architecture and show that both our multimodal
 approach and the synthetic data pretraining significantly boost the performance.
+
 ---
 
 TableFormer: Table Structure Understanding with Transformers
@@ -192,6 +200,7 @@ content extraction and allows us to tackle non-english tables. Second, we
 replace the LSTM decoders with transformer based decoders. This upgrade improves
 significantly the previous state-of-the-art tree-editing-distance-score (TEDS)
 from 91% to 98.5% on simple tables and from 88.7% to 95% on complex tables.
+
 ---
 
 ViBERTgrid: A Jointly Trained Multi-Modal 2D Document Representation for Key Information Extraction from Documents
@@ -215,6 +224,7 @@ jointly. Our experimental results demonstrate that this joint training strategy
 improves significantly the representation ability of ViBERTgrid. Consequently,
 our ViBERTgrid-based key information extraction approach has achieved state-of-
 the-art performance on real-world datasets.
+
 ---
 
 PEaCE: A Chemistry-Oriented Dataset for Optical Character Recognition on Scientific Documents
@@ -240,6 +250,7 @@ training, and our proposed transformations, ultimately finding that models with
 a small patch size trained on multiple domains using the proposed
 transformations yield the best performance. Our dataset and code is available at
 https://github.com/ZN1010/PEaCE.
+
 ---
 
 Page Layout Analysis of Text-heavy Historical Documents: a Comparison of Textual and Visual Approaches
@@ -260,6 +271,7 @@ and an objection-detection network (YOLOv5). If results show a clear advantage
 in favor of the latter, we also list several caveats to this finding. In
 addition to our experiments, we release a dataset of ca. 300 annotated pages
 sampled from 19th century commentaries.
+
 ---
 
 Chargrid-OCR: End-to-end Trainable Optical Character Recognition for Printed Documents using Instance Segmentation
@@ -279,6 +291,7 @@ demonstrate experimentally that our method, trained on the combination of these
 datasets, (i) outperforms previous state-of-the-art approaches in accuracy (ii)
 is easily parallelizable on GPU and is, therefore, significantly faster and
 (iii) is easy to train and adapt to a new domain.
+
 ---
 
 Modelling the semantics of text in complex document layouts using graph transformer networks
@@ -298,6 +311,7 @@ representation of the structured text, and we demonstrate that not only can we
 retrieve semantically similar information across documents but also that the
 embedding space we generate captures useful semantic information, similar to
 language models that work only on text sequences.
+
 ---
 
 RegCLR: A Self-Supervised Framework for Tabular Representation Learning in the Wild
@@ -326,6 +340,7 @@ representations learned from this new framework, with detection average-
 precision (AP) improving relatively by 4.8% for Table, 11.8% for Column, and
 11.1% for GUI objects over a previous fully supervised baseline on real-world
 EHR screen images.
+
 ---
 
 QueryForm: A Simple Zero-shot Form Entity Query Framework
@@ -349,6 +364,7 @@ layouts, leading to better generalization to target document types without the
 need for target-specific training data. QueryForm sets new state-of-the-art
 average F1 score on both the XFUND (+4.6%~10.1%) and the Payment (+3.2%~9.5%)
 zero-shot benchmark, with a smaller model size and no additional image input.
+
 ---
 
 Position Masking for Improved Layout-Aware Document Understanding
@@ -366,6 +382,7 @@ embeddings that incorporate 2-D position embeddings. We compare models pre-
 trained with only language masking against models pre-trained with both language
 masking and position masking, and we find that position masking improves
 performance by over 5% on a form understanding task.
+
 ---
 
 TDeLTA: A Light-weight and Robust Table Detection Method based on Learning Text Arrangement
@@ -392,6 +409,7 @@ results with only 3.1M model parameters on the large-scale public datasets.
 Moreover, when faced with the cross-domain data under the 0-shot setting, TDeLTA
 outperforms baselines by a large margin of nearly 7%, which shows the strong
 robustness and transferability of the proposed model.
+
 ---
 
 Rethinking Table Recognition using Graph Neural Networks
@@ -417,6 +435,7 @@ deep learning research for structure analysis and present a new large scale
 synthetic dataset for the problem of table recognition. Finally, we open-source
 our implementation of dataset generation and the training framework of our graph
 networks to promote reproducible research in this direction.
+
 ---
 
 RDU: A Region-based Approach to Form-style Document Understanding
@@ -449,6 +468,7 @@ four types of form-style documents show that our proposed method can achieve
 impressive results. In addition, our RDU model can be trained with different
 document types seamlessly, which is especially helpful over low-resource
 documents.
+
 ---
 
 Vision-Enhanced Semantic Entity Recognition in Document Images via Visually-Asymmetric Consistency Learning
@@ -473,6 +493,7 @@ LayoutLM series baseline, demonstrating the effectiveness of our approach.
 Additionally, we investigate the effects of different color schemes on our
 approach, providing insights for optimizing model performance. We believe our
 work will inspire future research on multimodal information extraction.
+
 ---
 
 Tag, Copy or Predict: A Unified Weakly-Supervised Learning Framework for Visual Information Extraction using Sequences
@@ -498,6 +519,7 @@ predicting one in each time step, and the other (Tag Mode) is to directly tag
 the input sequence in a single forward pass. Our method shows new state-of-the-
 art performance on several public benchmarks, which fully proves its
 effectiveness.
+
 ---
 
 Improving Information Extraction on Business Documents with Specific Pre-Training Tasks
@@ -522,6 +544,7 @@ performs better with complex entities. Our method significantly improves
 extraction performance on both public (from 93.88 to 95.50 F1 score) and private
 (from 84.35 to 84.84 F1 score) datasets composed of expense receipts, invoices,
 and purchase orders.
+
 ---
 
 Information Redundancy and Biases in Public Document Information Extraction Benchmarks
@@ -546,6 +569,7 @@ generalization ability of models. We showed that models not suited for document
 analysis struggle on the adjusted splits dropping on average 10,5% F1 score on
 SROIE and 3.5% on FUNSD compared to multi-modal models dropping only 7,5% F1 on
 SROIE and 0.5% F1 on FUNSD.
+
 ---
 
 Layout and Task Aware Instruction Prompt for Zero-shot Document Image Question Answering
@@ -579,6 +603,7 @@ respectively. LATIN-Tuning improves the performance of Alpaca on DocVQA by
 87.7%. Quantitative and qualitative analyses demonstrate the effectiveness of
 LATIN-Prompt and LATIN-Tuning. We provide the code in supplementary and will
 release it to facilitate future research.
+
 ---
 
 ICDAR 2021 Competition on Scientific Table Image Recognition to LaTeX
@@ -606,6 +631,7 @@ to the development of fully automated table recognition systems by challenging
 practitioners to solve problems under specific constraints and sharing their
 approaches; the platform will remain available for post-challenge submissions at
 https://competitions.codalab.org/competitions/26979 .
+
 ---
 
 FormNet: Structural Encoding beyond Sequential Modeling in Form Document Information Extraction
@@ -627,6 +653,7 @@ information that may have been lost during serialization. In experiments,
 FormNet outperforms existing methods with a more compact model size and less
 pre-training data, establishing new state-of-the-art performance on CORD, FUNSD
 and Payment benchmarks.
+
 ---
 
 GroupLink: An End-to-end Multitask Method for Word Grouping and Relation Extraction in Form Understanding
@@ -650,6 +677,7 @@ build an end-to-end model through multitask training to combine word grouping
 and relation extraction to enhance performance on each task. We validate our
 proposed method on a real-world, fully-annotated, noisy-scanned benchmark,
 FUNSD, and extensive experiments demonstrate the effectiveness of our method.
+
 ---
 
 Document Layout Analysis on BaDLAD Dataset: A Comprehensive MViTv2 Based Approach
@@ -672,6 +700,7 @@ dual-pass inference to uncover missed text-boxes. Through these explorations, we
 observe a spectrum of outcomes, where some modifications result in tangible
 performance improvements, while others offer unique insights for future
 endeavors.
+
 ---
 
 Multi-Type-TD-TSR -- Extracting Tables from Document Images using a Multi-stage Pipeline for Table Detection and Table Structure Recognition: from OCR to Structured Table Representations
@@ -705,6 +734,7 @@ table types. We additionally present two algorithms. One for unbordered tables
 and one for bordered tables, which are the base of the used table structure
 recognition algorithm. We evaluate Multi-Type-TD-TSR on the ICDAR 2019 table
 structure recognition dataset and achieve a new state-of-the-art.
+
 ---
 
 PingAn-VCGroup's Solution for ICDAR 2021 Competition on Scientific Table Image Recognition to Latex
@@ -724,6 +754,7 @@ pre-trained model, resolution of input image, data augmentation, and model
 ensemble. Our method achieves 0.7444 Exact Match and 0.8765 Exact Match @95\% on
 the TSR task, and obtains 0.5586 Exact Match and 0.7386 Exact Match 95\% on the
 TCR task.
+
 ---
 
 ExTTNet: A Deep Learning Algorithm for Extracting Table Texts from Invoice Images
@@ -742,6 +773,7 @@ result of OCR is a table element or not. In this study, a multilayer artificial
 neural network model is used. The training has been carried out with an Nvidia
 RTX 3090 graphics card and taken $162$ minutes. As a result of the training, the
 F1 score is $0.92$.
+
 ---
 
 TLGAN: document Text Localization using Generative Adversarial Nets
@@ -762,6 +794,7 @@ on Scanned Receipts OCR and Information Extraction (SROIE), TLGAN achieved
 99.83% precision and 99.64% recall for SROIE test data. Our TLGAN is a practical
 text localization solution requiring minimal effort for data labeling and model
 training and producing a state-of-art performance.
+
 ---
 
 FUNSD: A Dataset for Form Understanding in Noisy Scanned Documents
@@ -781,6 +814,7 @@ publicly available dataset with comprehensive annotations to address FoUn task.
 We also present a set of baselines and introduce metrics to evaluate performance
 on the FUNSD dataset, which can be downloaded at
 https://guillaumejaume.github.io/FUNSD/.
+
 ---
 
 Post-OCR Paragraph Recognition by Graph Convolutional Networks
@@ -799,6 +833,7 @@ is 3~4 orders of magnitude smaller compared to R-CNN based models, while
 achieving comparable or better accuracies on PubLayNet and other datasets.
 Furthermore, the GCN models show good generalization from synthetic training
 data to real-world images, and good adaptivity for variable document styles.
+
 ---
 
 Value Retrieval with Arbitrary Queries for Form-like Documents
@@ -818,6 +853,7 @@ previous designs significantly and the SimpleDLM further improves our
 performance on value retrieval by around 17% F1 score compared with the state-
 of-the-art pre-training method. Code is available at
 https://github.com/salesforce/QVR-SimpleDLM.
+
 ---
 
 Chargrid: Towards Understanding 2D Documents
@@ -834,6 +870,7 @@ fully convolutional encoder-decoder network that predicts a segmentation mask
 and bounding boxes. We demonstrate its capabilities on an information extraction
 task from invoices and show that it significantly outperforms approaches based
 on sequential text or document images.
+
 ---
 
 Multimodal Tree Decoder for Table of Contents Extraction in Document Images
@@ -861,6 +898,7 @@ both the metric of tree-edit-distance similarity (TEDS) and F1-Measure are
 adopted. Finally, our MTD approach achieves an average TEDS of 87.2% and an
 average F1-Measure of 88.1% on the test set of HierDoc. The code and dataset
 will be released at: https://github.com/Pengfei-Hu/MTD.
+
 ---
 
 Unveiling Document Structures with YOLOv5 Layout Detection
@@ -893,6 +931,7 @@ diverse sources, such as audio data.   This study lays the foundation for future
 investigations into the wider applicability of YOLOv5 in managing various types
 of unstructured data, offering potential for novel applications across multiple
 domains.
+
 ---
 
 DocStruct: A Multimodal Method to Extract Hierarchy Structure in Document for General Form Understanding
@@ -917,6 +956,7 @@ heterogeneous features and provide an informative joint representation. We adopt
 an asymmetric algorithm and negative sampling in our model as well. We validate
 our method on two benchmarks, MedForm and FUNSD, and extensive experiments
 demonstrate the effectiveness of our method.
+
 ---
 
 OrigamiNet: Weakly-Supervised, Segmentation-Free, One-Step, Full Page Text Recognition by learning to unfold
@@ -945,6 +985,7 @@ recognition, surpassing all other methods in the literature. On IAM we even
 surpass single line methods that use accurate localization information during
 training. Our code is available online at
 \url{https://github.com/IntuitionMachines/OrigamiNet}.
+
 ---
 
 A Graphical Approach to Document Layout Analysis
@@ -970,6 +1011,7 @@ outperforms the leading 140M+ parameter computer vision-based model on 5 of the
 achieves a new state-of-the-art on DocLayNet, increasing mAP from 76.8 to 80.8.
 Overall, GLAM is over 5 times more efficient than SOTA models, making GLAM a
 favorable engineering choice for DLA tasks.
+
 ---
 
 Transformer-Based UNet with Multi-Headed Cross-Attention Skip Connections to Eliminate Artifacts in Scanned Documents
@@ -997,6 +1039,7 @@ easily adapted to new artifacts. The cross-attention skip connections allow to
 integrate textual information extracted from the encoder or in form of commands
 to more selectively control the models outcome. The latter is shown by means of
 an example application.
+
 ---
 
 You Actually Look Twice At it (YALTAi): using an object detection approach instead of region segmentation within the Kraken engine
@@ -1019,6 +1062,7 @@ YOLOv5 in terms of segmentation and show that the later severely outperforms the
 first on small datasets (1110 samples and below). We release two datasets for
 training and evaluation on historical documents as well as a new package,
 YALTAi, which injects YOLOv5 in the segmentation pipeline of Kraken 4.1.
+
 ---
 
 End-to-End Information Extraction by Character-Level Embedding and Multi-Stage Attentional U-Net
@@ -1040,6 +1084,7 @@ datasets show that our model outperforms the baseline U-Net architecture by a
 large margin while using 40\% fewer parameters. Moreover, it also significantly
 improved the baseline in erroneous OCR and limited training data scenario, thus
 becomes practical for real-world applications.
+
 ---
 
 Document Domain Randomization for Deep Learning Document Layout Extraction
@@ -1063,6 +1108,7 @@ label semantic classes but style mismatch between train and test can lower model
 accuracy. Using smaller training samples had a slightly detrimental effect.
 Finally, network models still achieved high test accuracy when correct labels
 are diluted towards confusing labels; this behavior hold across several classes.
+
 ---
 
 ICDAR2019 Competition on Scanned Receipt OCR and Information Extraction
@@ -1085,6 +1131,7 @@ receipt images and annotations is created for the competition. In this report we
 will presents the motivation, competition datasets, task definition, evaluation
 protocol, submission statistics, performance of submitted methods and results
 analysis.
+
 ---
 
 DeepErase: Weakly Supervised Ink Artifact Removal in Document Text Images
@@ -1115,6 +1162,7 @@ distribution datasets (NIST SDB) of scanned IRS tax return forms and achieve
 double-digit improvements in accuracy. All experiments are performed on both
 printed and handwritten text. Code for all experiments is available at
 https://github.com/yikeqicn/DeepErase
+
 ---
 
 VRDSynth: Synthesizing Programs for Multilingual Visually Rich Document Information Extraction
@@ -1144,5 +1192,6 @@ XLMRoberta(Large). VRDSynth(Table) outperforms these baselines in 4 out of 8
 languages and in average F1 score. VRDSynth also significantly reduces memory
 footprint (1M and 380MB vs. 1.48GB and 3GB for LayoutXLM) while maintaining
 similar time efficiency.
+
 ---
 

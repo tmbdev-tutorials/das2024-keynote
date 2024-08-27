@@ -23,6 +23,7 @@ closely follows scaling laws observed in large-compute settings. Through the
 lens of scaling laws, we categorize a range of recent improvements to training
 and architecture and discuss their merit and practical applicability (or lack
 thereof) for the limited compute setting.
+
 ---
 
 ## Language Is Not All You Need: Aligning Perception with Language Models
@@ -38,6 +39,7 @@ perceiving multimodal input, following instructions, and performing in-context
 learning for not only language tasks but also multimodal tasks. In this work, we
 align vision with large language models (LLMs), advancing the trend of going
 from LLMs to MLLMs.
+
 ---
 
 ## Hyena Hierarchy: Towards Larger Convolutional Language Models
@@ -65,6 +67,7 @@ standard datasets (WikiText103 and The Pile), reaching Transformer quality with
 a 20% reduction in training compute required at sequence length 2K. Hyena
 operators are twice as fast as highly optimized attention at sequence length 8K,
 and 100× faster at sequence length 64K.
+
 ---
 
 ## Unlimiformer: Long-Range Transformers with Unlimited Length Input
@@ -89,6 +92,7 @@ token-long inputs from the BookSum dataset, without any input truncation at test
 time. Unlimiformer improves pretrained models such as BART and Longformer by
 extending them to unlimited inputs without additional learned weights and
 without modifying their code. We make our code and models publicly available.
+
 ---
 
 ## Hyena Hierarchy: Towards Larger Convolutional Language Models
@@ -116,6 +120,7 @@ standard datasets (WikiText103 and The Pile), reaching Transformer quality with
 a 20% reduction in training compute required at sequence length 2K. Hyena
 operators are twice as fast as highly optimized attention at sequence length 8K,
 and 100× faster at sequence length 64K.
+
 ---
 
 ## Foundation Transformers
@@ -140,6 +145,7 @@ its superior performance and better stability than the de facto Transformer
 variants designed for various applications, including language modeling (i.e.,
 BERT, and GPT), machine translation, vision pretraining (i.e., BEiT), speech
 recognition, and multimodal pretraining (i.e., BEiT-3).
+
 ---
 
 ## Language Is Not All You Need: Aligning Perception with Language Models
@@ -155,6 +161,7 @@ perceiving multimodal input, following instructions, and performing in-context
 learning for not only language tasks but also multimodal tasks. In this work, we
 align vision with large language models (LLMs), advancing the trend of going
 from LLMs to MLLMs.
+
 ---
 
 ## Hyena Hierarchy: Towards Larger Convolutional Language Models
@@ -182,6 +189,7 @@ standard datasets (WikiText103 and The Pile), reaching Transformer quality with
 a 20% reduction in training compute required at sequence length 2K. Hyena
 operators are twice as fast as highly optimized attention at sequence length 8K,
 and 100× faster at sequence length 64K.
+
 ---
 
 ## The Impact of Positional Encoding on Length Generalization in Transformers
@@ -212,6 +220,7 @@ Finally, we find that scratchpad is not always helpful to solve length
 generalization and its format highly impacts the model’s performance. Overall,
 our work suggests that explicit position encodings are not essential for
 decoder-only Transformers to generalize well to longer sequences.
+
 ---
 
 ## Hyena Hierarchy: Towards Larger Convolutional Language Models
@@ -239,6 +248,7 @@ standard datasets (WikiText103 and The Pile), reaching Transformer quality with
 a 20% reduction in training compute required at sequence length 2K. Hyena
 operators are twice as fast as highly optimized attention at sequence length 8K,
 and 100× faster at sequence length 64K.
+
 ---
 
 ## Hungry Hungry Hippos: Towards Language Modeling with State Space Models
@@ -274,6 +284,7 @@ H3-attention language models up to 2.7B parameters on the Pile and find
 promising initial results, achieving lower perplexity than Transformers and
 outperforming Transformers in zero- and few-shot learning on a majority of tasks
 in the SuperGLUE benchmark.
+
 ---
 
 ## Long Range Language Modeling via Gated State Spaces
@@ -295,6 +306,7 @@ Transformer-based baselines and exhibits zero-shot generalization to longer
 inputs while being straightforward to implement. Finally, we show that
 leveraging self-attention to model local dependencies improves the performance
 of GSS even further.
+
 ---
 
 ## RWKV: Reinventing RNNs for the Transformer Era
@@ -322,6 +334,7 @@ similarly sized Transformers, suggesting that future work can leverage this
 architecture to create more efficient models. This work presents a significant
 step towards reconciling the trade-offs between computational efficiency and
 model performance in sequence processing tasks.
+
 ---
 
 ## AttentionViz: A Global View of Transformer Attention
@@ -345,6 +358,7 @@ these joint query-key embeddings, and use it to study attention mechanisms in
 both language and vision transformers. We demonstrate the utility of our
 approach in improving model understanding and offering new insights about query-
 key interactions through several application scenarios and expert feedback.
+
 ---
 
 ## Faith and Fate: Limits of Transformers on Compositionality
@@ -372,6 +386,7 @@ necessarily developing systematic problem-solving skills. To round off our
 empirical study, we provide theoretical arguments on abstract multi-step
 reasoning problems that highlight how Transformers’ performance will rapidly
 decay with increased task complexity.
+
 ---
 
 ## BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models
@@ -396,6 +411,7 @@ methods. For example, our model outperforms Flamingo80B by 8.7% on zero-shot
 VQAv2 with 54x fewer trainable parameters. We also demonstrate the model’s
 emerging capabilities of zero-shot image-to-text generation that can follow
 natural language instructions.
+
 ---
 
 ## PaLM-E: An Embodied Multimodal Language Model
@@ -424,6 +440,7 @@ Our largest model, PaLM-E-562B with 562B parameters, in addition to being
 trained on robotics tasks, is a visual-language generalist with state-of-the-art
 performance on OK-VQA, and retains generalist language capabilities with
 increasing scale.
+
 ---
 
 ## TORCHSCALE: Transformers at Scale
@@ -444,6 +461,7 @@ capability, as well as training stability and efficiency. Experimental results
 on language modeling and neural machine translation demonstrate that TORCHSCALE
 can successfully scale Transformers to different sizes without tears. The
 library is available at https://aka.ms/torchscale.
+
 ---
 
 ## FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
@@ -476,6 +494,7 @@ models (0.7 better perplexity on GPT-2 and 6.4 points of lift on long-document
 classification) and entirely new capabilities: the first Transformers to achieve
 better-than-chance performance on the Path-X challenge (seq. length 16K, 61.4%
 accuracy) and Path-256 (seq. length 64K, 63.1% accuracy).
+
 ---
 
 ## LongT5: Efficient Text-To-Text Transformer for Long Sequences
@@ -498,6 +517,7 @@ but without requiring additional side-inputs. We are able to achieve state-of-
 the-art results on several summarization and question answering tasks, as well
 as outperform the original T5 models on these tasks. We have open sourced our
 architecture and training code, as well as our pre-trained model checkpoints.
+
 ---
 
 ## OCR-free Document Understanding Transformer
@@ -526,6 +546,7 @@ state-of-the-art performances on various VDU tasks in terms of both speed and
 accuracy. In addition, we offer a synthetic data generator that helps the model
 pre-training to be flexible in various languages and domains. The code, trained
 model, and synthetic data are available at https://github.com/clovaai/donut.
+
 ---
 
 ## On the Learning of Non-Autoregressive Transformers
@@ -550,6 +571,7 @@ objectives in a unified framework and show that their success can be concluded
 as maximizing the likelihood on a proxy distribution, leading to a reduced
 information loss. Empirical studies show that our perspective can explain the
 phenomena in NAT learning and guide the design of new training methods.
+
 ---
 
 ## FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
@@ -582,6 +604,7 @@ models (0.7 better perplexity on GPT-2 and 6.4 points of lift on long-document
 classification) and entirely new capabilities: the first Transformers to achieve
 better-than-chance performance on the Path-X challenge (seq. length 16K, 61.4%
 accuracy) and Path-256 (seq. length 64K, 63.1% accuracy).
+
 ---
 
 ## Memorizing Transformers
@@ -604,6 +627,7 @@ benchmarks and tasks, including generic webtext (C4), math papers (arXiv), books
 performance steadily improves when we increase the size of memory up to 262K
 tokens. On benchmarks including code and mathematics, we find that the model is
 capable of making use of newly defined functions and theorems during test time.
+
 ---
 
 ## Block-Recurrent Transformers
@@ -630,6 +654,7 @@ long sequences. Our model out-performs a long-range Transformer XL baseline by a
 wide margin, while running twice as fast. We demonstrate its effectiveness on
 PG19 (books), arXiv papers, and GitHub source code. Our code has been released
 as open source.
+
 ---
 
 ## VLMO: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts
@@ -652,6 +677,7 @@ scale image-only and text-only data besides image-text pairs. Experimental
 results show that VLMO achieves state-of-the-art results on various vision-
 language tasks, including VQA, NLVR2 and image-text retrieval. The code and
 pretrained models are available at https://aka.ms/vlmo.
+
 ---
 
 ## RoFormer: Enhanced Transformer with Rotary Position Embedding
@@ -679,6 +705,7 @@ long text classification benchmark datasets. Our experiments show that it
 consistently overcomes its alternatives. Furthermore, we provide a theoretical
 analysis to explain some experimental results. RoFormer is already integrated
 into Huggingface: https://huggingface.co/docs/transformers/model_doc/roformer.
+
 ---
 
 ## Pure Transformers are Powerful Graph Learners
@@ -701,6 +728,7 @@ passing Graph Neural Networks (GNN). When trained on a large-scale graph dataset
 significantly better results compared to GNN baselines and competitive results
 compared to Transformer variants with sophisticated graph-specific inductive
 bias. Our implementation is available at https://github.com/jw9730/tokengt.
+
 ---
 
 ## ByT5: Towards a Token-Free Future with Pre-trained Byte-to-Byte Models
@@ -728,6 +756,7 @@ perform better on tasks that are sensitive to spelling and pronunciation. As
 part of our contribution, we release a new set of pre-trained byte-level
 Transformer models based on the T5 architecture, as well as all code and data
 used in our experiments.
+
 ---
 
 ## Block-Recurrent Transformers
@@ -754,6 +783,7 @@ long sequences. Our model out-performs a long-range Transformer XL baseline by a
 wide margin, while running twice as fast. We demonstrate its effectiveness on
 PG19 (books), arXiv papers, and GitHub source code. Our code has been released
 as open source.
+
 ---
 
 ## Downstream Transformer Generation of Question-Answer Pairs with Preprocessing and Postprocessing Pipelines
@@ -773,6 +803,7 @@ a postprocessing pipeline to filter inadequate QAPs. In particular, using
 pretrained T5 models as transformers and the SQuAD dataset as the finetuning
 dataset, we show that TP3 generates a satisfactory number of QAPs with high
 qualities on the Gaokao-EN dataset.
+
 ---
 
 ## EXT5: Towards Extreme Multi-Task Scaling for Transfer Learning
@@ -797,6 +828,7 @@ multi-task objective of self-supervised span denoising and supervised EXMIX. Via
 extensive experiments, we show that EXT5 outperforms strong T5 baselines on
 SuperGLUE, GEM, Rainbow, Closed-Book QA tasks, and several tasks outside of
 EXMIX. EXT5 also significantly improves sample efficiency while pre-training.
+
 ---
 
 ## ByT5: Towards a Token-Free Future with Pre-trained Byte-to-Byte Models
@@ -824,6 +856,7 @@ perform better on tasks that are sensitive to spelling and pronunciation. As
 part of our contribution, we release a new set of pre-trained byte-level
 Transformer models based on the T5 architecture, as well as all code and data
 used in our experiments.
+
 ---
 
 ## CHARFORMER: Fast Character Transformers via Gradient-Based Subword Tokenization
@@ -851,6 +884,7 @@ improving the speed of both vanilla byte-level and subword-level Transformers by
 28-100% while maintaining competitive quality. We believe this work paves the
 way for highly performant token-free models that are trained completely end-to-
 end.
+
 ---
 
 ## Language Models are General-Purpose Interfaces
@@ -880,6 +914,7 @@ instruction following with finetuned encoders. Experimental results across
 various language-only and vision-language benchmarks show that our model
 outperforms or is competitive with specialized models on finetuning, zero-shot
 generalization, and few-shot learning.
+
 ---
 
 ## Pure Transformers are Powerful Graph Learners
@@ -902,6 +937,7 @@ passing Graph Neural Networks (GNN). When trained on a large-scale graph dataset
 significantly better results compared to GNN baselines and competitive results
 compared to Transformer variants with sophisticated graph-specific inductive
 bias.
+
 ---
 
 ## Perceiver IO: A General Architecture for Structured Inputs & Outputs
@@ -927,6 +963,7 @@ IO outperforms a Transformer-based BERT baseline on the GLUE language benchmark
 despite removing input tokenization and achieves state-of-the-art performance on
 Sintel optical flow estimation with no explicit mechanisms for multiscale
 correspondence.
+
 ---
 
 ## Memorizing Transformers
@@ -949,6 +986,7 @@ benchmarks and tasks, including generic webtext (C4), math papers (arXiv), books
 performance steadily improves when we increase the size of memory up to 262K
 tokens. On benchmarks including code and mathematics, we find that the model is
 capable of making use of newly defined functions and theorems during test time.
+
 ---
 
 ## Perceiver IO: A General Architecture for Structured Inputs & Outputs
@@ -974,6 +1012,7 @@ IO outperforms a Transformer-based BERT baseline on the GLUE language benchmark
 despite removing input tokenization and achieves state-of-the-art performance on
 Sintel optical flow estimation with no explicit mechanisms for multiscale
 correspondence.
+
 ---
 
 ## Predicting the Future with Transformer-Based Models
@@ -990,6 +1029,7 @@ mechanisms with temporal convolutions to improve forecasting accuracy. Our
 extensive experiments demonstrate the superiority of our model compared to
 traditional methods in various datasets, showcasing its potential for real-world
 applications.
+
 ---
 
 ## Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
@@ -1017,6 +1057,7 @@ into multilingual settings where we measure gains over the mT5-Base version
 across all 101 languages. Finally, we advance the current scale of language
 models by pre-training up to trillion parameter models on the 'Colossal Clean
 Crawled Corpus', and achieve a 4x speedup over the T5-XXL model.
+
 ---
 
 ## EncT5: A Framework for Fine-tuning T5 as Non-autoregressive Models
@@ -1041,6 +1082,7 @@ these problems, and illustrate instantiations for these tasks. Our experiment
 results show that EncT5 has advantages over T5 such as efficiency and usability,
 and outperforms BERT when evaluated on publicly available pre-trained
 checkpoints.
+
 ---
 
 ## FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
@@ -1073,6 +1115,7 @@ models (0.7 better perplexity on GPT-2 and 6.4 points of lift on long-document
 classification) and entirely new capabilities: the first Transformers to achieve
 better-than-chance performance on the Path-X challenge (seq. length 16K, 61.4%
 accuracy) and Path-256 (seq. length 64K, 63.1% accuracy).
+
 ---
 
 ## Challenges in large scale training of Giant Transformers on Google TPU machines
@@ -1089,6 +1132,7 @@ difficulties, optimization strategies, and the performance considerations that
 are critical when scaling up transformer models on specialized hardware like
 TPUs. The focus is on addressing these challenges to achieve efficient and
 effective training processes.
+
 ---
 
 ## OCR-free Document Understanding Transformer
@@ -1117,6 +1161,7 @@ state-of-the-art performances on various VDU tasks in terms of both speed and
 accuracy. In addition, we offer a synthetic data generator that helps the model
 pre-training to be flexible in various languages and domains. The code, trained
 model, and synthetic data are available at https://github.com/clovaai/donut.
+
 ---
 
 ## Emerging Properties in Self-Supervised Vision Transformers
@@ -1140,6 +1185,7 @@ patches with ViTs. We implement our findings into a simple self-supervised
 method, called DINO, which we interpret as a form of self-distillation with no
 labels. We show the synergy between DINO and ViTs by achieving 80.1% top-1 on
 ImageNet in linear evaluation with ViT-Base.
+
 ---
 
 ## Emerging Properties in Self-Supervised Vision Transformers
@@ -1163,6 +1209,7 @@ patches with ViTs. We implement our findings into a simple self-supervised
 method, called DINO, which we interpret as a form of self-distillation with no
 labels. We show the synergy between DINO and ViTs by achieving 80.1% top-1 on
 ImageNet in linear evaluation with ViT-Base.
+
 ---
 
 ## Do Long-Range Language Models Actually Use Long-Range Context?
@@ -1189,6 +1236,7 @@ that can be copied from the distant context) and does not help at all for
 sentence-level prediction tasks. Finally, we discover that PG-19 contains a
 variety of different document types and domains, and that long-range context
 helps most for literary novels (as opposed to textbooks or magazines).
+
 ---
 
 ## A Generalization of Transformer Networks to Graphs
@@ -1220,6 +1268,7 @@ the original transformer, which was designed for the limited case of line
 graphs, and graph neural networks, that can work with arbitrary graphs. As our
 architecture is simple and generic, we believe it can be used as a black box for
 future applications that wish to consider transformer and graphs.
+
 ---
 
 ## Big Bird: Transformers for Longer Sequences
@@ -1244,6 +1293,7 @@ sequences of length up to 8x of what was previously possible using similar
 hardware. As a consequence of the capability to handle longer context, BIGBIRD
 drastically improves performance on various NLP tasks such as question answering
 and summarization. We also propose novel applications to genomics data.
+
 ---
 
 ## Capturing Row and Column Semantics in Transformer Based Question Answering over Tables
@@ -1271,6 +1321,7 @@ to ∼98% Hit@1 accuracy on WikiSQL lookup questions). Also, the interaction mod
 outperforms the state-of-the-art transformer based approaches, pre-trained on
 very large table corpora (TAPAS and TABERT), achieving ∼3.4% and ∼18.86%
 additional precision improvement on the standard WikiSQL benchmark.
+
 ---
 
 ## Big Bird: Transformers for Longer Sequences
@@ -1295,6 +1346,7 @@ sequences of length up to 8x of what was previously possible using similar
 hardware. As a consequence of the capability to handle longer context, BIGBIRD
 drastically improves performance on various NLP tasks such as question answering
 and summarization. We also propose novel applications to genomics data.
+
 ---
 
 ## FNet: Mixing Tokens with Fourier Transforms
@@ -1321,6 +1373,7 @@ lengths on GPUs (and across relatively shorter lengths on TPUs). Finally, FNet
 has a light memory footprint and is particularly efficient at smaller model
 sizes: for a fixed speed and accuracy budget, small FNet models outperform
 Transformer counterparts.
+
 ---
 
 ## Multimodal Few-Shot Learning with Frozen Language Models
@@ -1345,6 +1398,7 @@ embeddings. We demonstrate that it can rapidly learn words for new objects and
 novel visual categories, do visual question-answering with only a handful of
 examples, and make use of outside knowledge, by measuring a single model on a
 variety of established and new benchmarks.
+
 ---
 
 ## Big Bird: Transformers for Longer Sequences
@@ -1369,6 +1423,7 @@ sequences of length up to 8x of what was previously possible using similar
 hardware. As a consequence of the capability to handle longer context, BIGBIRD
 drastically improves performance on various NLP tasks such as question answering
 and summarization. We also propose novel applications to genomics data.
+
 ---
 
 ## A Generalization of Transformer Networks to Graphs
@@ -1400,6 +1455,7 @@ the original transformer, designed for the limited case of line graphs, and
 graph neural networks, which can work with arbitrary graphs. As our architecture
 is simple and generic, we believe it can be used as a black box for future
 applications that wish to consider transformer and graphs.
+
 ---
 
 ## Hopfield Networks is All You Need
@@ -1435,6 +1491,7 @@ layers yielded a new state-of-the-art when compared to different machine
 learning methods. Finally, Hopfield layers achieved state-of-the-art on two drug
 design datasets. The implementation is available at: https://github.com/ml-
 jku/hopfield-layers
+
 ---
 
 ## The Devil is in the Detail: Simple Tricks Improve Systematic Generalization of Transformers
@@ -1460,6 +1517,7 @@ decision problem, yielding 100% accuracy on the length split with a cutoff at
 invisible on the IID data split. This calls for proper generalization validation
 sets for developing neural networks that generalize systematically. We publicly
 release the code to reproduce our results.
+
 ---
 
 ## Compressive Transformers for Long-Range Sequence Modelling
@@ -1478,6 +1536,7 @@ respectively. We also find it can model high-frequency speech effectively and
 can be used as a memory mechanism for RL, demonstrated on an object matching
 task. To promote the domain of long-range sequence learning, we propose a new
 open-vocabulary language modelling benchmark derived from books, PG-19.
+
 ---
 
 ## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
@@ -1502,6 +1561,7 @@ achieve state-of-the-art results on many benchmarks covering summarization,
 question answering, text classification, and more. To facilitate future work on
 transfer learning for NLP, we release our data set, pre-trained models, and
 code.
+
 ---
 
 ## Efficient Transformers: A Survey
@@ -1519,6 +1579,7 @@ the recent advances in efficient Transformers that aim to reduce the
 computational complexity. We categorize the approaches into four groups:
 structured, low-rank, kernel-based, and sparsity-based methods. We also discuss
 the trade-offs and future directions in the design of efficient Transformers.
+
 ---
 
 ## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
@@ -1543,6 +1604,7 @@ achieve state-of-the-art results on many benchmarks covering summarization,
 question answering, text classification, and more. To facilitate future work on
 transfer learning for NLP, we release our data set, pre-trained models, and
 code.
+
 ---
 
 ## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
@@ -1567,6 +1629,7 @@ achieve state-of-the-art results on many benchmarks covering summarization,
 question answering, text classification, and more. To facilitate future work on
 transfer learning for NLP, we release our data set, pre-trained models, and
 code.
+
 ---
 
 ## SPECTER: Document-level Representation Learning using Citation-informed Transformers
@@ -1593,6 +1656,7 @@ models, we introduce SCIDOCS, a new evaluation benchmark consisting of seven
 document-level tasks ranging from citation prediction, to document
 classification and recommendation. We show that SPECTER outperforms a variety of
 competitive baselines on the benchmark.
+
 ---
 
 ## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
@@ -1617,6 +1681,7 @@ achieve state-of-the-art results on many benchmarks covering summarization,
 question answering, text classification, and more. To facilitate future work on
 transfer learning for NLP, we release our data set, pre-trained models, and
 code.
+
 ---
 
 ## Reformer: The Efficient Transformer
@@ -1637,6 +1702,7 @@ layers instead of the standard residuals, which allows storing activations only
 once in the training process instead of N times, where N is the number of
 layers. The resulting model, the Reformer, performs on par with Transformer
 models while being much more memory-efficient and much faster on long sequences.
+
 ---
 
 ## Graph Transformer Networks
@@ -1665,6 +1731,7 @@ via convolution on the new graphs. Without domain-specific graph preprocessing,
 GTNs achieved the best performance in all three benchmark node classification
 tasks against the state-of-the-art methods that require pre-defined meta-paths
 from domain knowledge.
+
 ---
 
 ## Reformer: The Efficient Transformer
@@ -1685,6 +1752,7 @@ layers instead of the standard residuals, which allows storing activations only
 once in the training process instead of N times, where N is the number of
 layers. The resulting model, the Reformer, performs on par with Transformer
 models while being much more memory-efficient and much faster on long sequences.
+
 ---
 
 ## Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
@@ -1709,6 +1777,7 @@ achieve state-of-the-art results on many benchmarks covering summarization,
 question answering, text classification, and more. To facilitate future work on
 transfer learning for NLP, we release our data set, pre-trained models, and
 code.
+
 ---
 
 ## Longformer: The Long-Document Transformer
@@ -1734,6 +1803,7 @@ long document tasks and sets new state-of-the-art results on WikiHop and
 TriviaQA. We finally introduce the Longformer-Encoder-Decoder (LED), a
 Longformer variant for supporting long document generative sequence-to-sequence
 tasks, and demonstrate its effectiveness on the arXiv summarization dataset.
+
 ---
 
 ## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
@@ -1756,6 +1826,7 @@ conceptually simple and empirically powerful. It obtains new state-of-the-art
 results on eleven natural language processing tasks, including pushing the GLUE
 score to 80.5%, MultiNLI accuracy to 86.7%, SQuAD v1.1 question answering Test
 F1 to 93.2, and SQuAD v2.0 Test F1 to 83.1.
+
 ---
 
 ## Fast Transformer Decoding: One Write-Head is All You Need
@@ -1777,6 +1848,7 @@ shared across all of the different attention "heads", greatly reducing the size
 of these tensors and hence the memory bandwidth requirements of incremental
 decoding. We verify experimentally that the resulting models can indeed be much
 faster to decode, and incur only minor quality degradation from the baseline.
+
 ---
 
 ## Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context
@@ -1803,6 +1875,7 @@ on Penn Treebank (without finetuning). When trained only on WikiText-103,
 Transformer-XL manages to generate reasonably coherent, novel text articles with
 thousands of tokens. Our code, pretrained models, and hyperparameters are
 available in both Tensorflow and PyTorch.
+
 ---
 
 ## Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context
@@ -1829,6 +1902,7 @@ on Penn Treebank (without finetuning). When trained only on WikiText-103,
 Transformer-XL manages to generate reasonably coherent, novel text articles with
 thousands of tokens. Our code, pretrained models, and hyperparameters are
 available in both Tensorflow and PyTorch.
+
 ---
 
 ## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
@@ -1853,6 +1927,7 @@ score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7%
 (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5
 point absolute improvement), and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute
 improvement).
+
 ---
 
 ## Are Sixteen Heads Really Better than One?
@@ -1880,6 +1955,7 @@ and accuracy improvements obtainable therefrom. Finally, we analyze the results
 with respect to which parts of the model are more reliant on having multiple
 heads, and provide precursory evidence that training dynamics play a role in the
 gains provided by multi-head attention.
+
 ---
 
 ## Are Sixteen Heads Really Better than One?
@@ -1907,6 +1983,7 @@ and accuracy improvements obtainable therefrom. Finally, we analyze the results
 with respect to which parts of the model are more reliant on having multiple
 heads, and provide precursory evidence that training dynamics play a role in the
 gains provided by multi-head attention.
+
 ---
 
 ## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
@@ -1931,6 +2008,7 @@ score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7%
 (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5
 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute
 improvement).
+
 ---
 
 ## RoBERTa: A Robustly Optimized BERT Pretraining Approach
@@ -1953,6 +2031,7 @@ model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results
 highlight the importance of previously overlooked design choices, and raise
 questions about the source of recently reported improvements. We release our
 models and code.
+
 ---
 
 ## Are Sixteen Heads Really Better than One?
@@ -1980,6 +2059,7 @@ and accuracy improvements obtainable therefrom. Finally, we analyze the results
 with respect to which parts of the model are more reliant on having multiple
 heads, and provide precursory evidence that training dynamics play a role in the
 gains provided by multi-head attention.
+
 ---
 
 ## Compressive Transformers for Long-Range Sequence Modelling
@@ -1998,6 +2078,7 @@ respectively. We also find it can model high-frequency speech effectively and
 can be used as a memory mechanism for RL, demonstrated on an object matching
 task. To promote the domain of long-range sequence learning, we propose a new
 open-vocabulary language modelling benchmark derived from books, PG-19.
+
 ---
 
 ## Fast Transformer Decoding: One Write-Head is All You Need
@@ -2019,6 +2100,7 @@ shared across all of the different attention 'heads', greatly reducing the size
 of these tensors and hence the memory bandwidth requirements of incremental
 decoding. We verify experimentally that the resulting models can indeed be much
 faster to decode, and incur only minor quality degradation from the baseline.
+
 ---
 
 ## Deep Equilibrium Models
@@ -2046,6 +2128,7 @@ similar computational requirements to existing models; and 3) vastly reduce
 memory consumption (often the bottleneck for training large sequence models),
 demonstrating an up-to 88% memory reduction in our experiments. The code is
 available at https://github.com/locuslab/deq.
+
 ---
 
 ## Are Sixteen Heads Really Better than One?
@@ -2073,6 +2156,7 @@ and accuracy improvements obtainable therefrom. Finally, we analyze the results
 with respect to which parts of the model are more reliant on having multiple
 heads, and provide precursory evidence that training dynamics play a role in the
 gains provided by multi-head attention.
+
 ---
 
 ## What Does BERT Look At? An Analysis of BERT’s Attention
@@ -2098,6 +2182,7 @@ direct objects of verbs, determiners of nouns, objects of prepositions, and
 coreferent mentions with remarkably high accuracy. Lastly, we propose an
 attention-based probing classifier and use it to further demonstrate that
 substantial syntactic information is captured in BERT’s attention.
+
 ---
 
 ## What Does BERT Look At? An Analysis of BERT’s Attention
@@ -2122,6 +2207,7 @@ attend to the direct objects of verbs, determiners of nouns, objects of
 prepositions, and coreferent mentions with remarkably high accuracy. Lastly, we
 propose an attention-based probing classifier and use it to further demonstrate
 that substantial syntactic information is captured in BERT’s attention.
+
 ---
 
 ## BERT Rediscovers the Classical NLP Pipeline
@@ -2141,6 +2227,7 @@ sequence: POS tagging, parsing, NER, semantic roles, then coreference.
 Qualitative analysis reveals that the model can and often does adjust this
 pipeline dynamically, revising lower-level decisions on the basis of
 disambiguating information from higher-level representations.
+
 ---
 
 ## BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
@@ -2165,6 +2252,7 @@ processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute
 improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1
 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD
 v2.0 Test F1 to 83.1 (5.1 point absolute improvement).
+
 ---
 
 ## Are Sixteen Heads Really Better than One?
@@ -2192,6 +2280,7 @@ and accuracy improvements obtainable therefrom. Finally, we analyze the results
 with respect to which parts of the model are more reliant on having multiple
 heads, and provide precursory evidence that training dynamics play a role in the
 gains provided by multi-head attention.
+
 ---
 
 ## Attention Is All You Need
@@ -2217,6 +2306,7 @@ after training for 3.5 days on eight GPUs, a small fraction of the training
 costs of the best models from the literature. We show that the Transformer
 generalizes well to other tasks by applying it successfully to English
 constituency parsing both with large and limited training data.
+
 ---
 
 ## Attention Is All You Need

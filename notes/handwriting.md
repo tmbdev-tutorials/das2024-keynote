@@ -21,6 +21,7 @@ process. The line segmentation methods used in the character recognition of
 handwritten documents are presented in this paper. The various levels of
 segmentation which include line, word, and character segmentation are discussed
 with a focus on line segmentation.
+
 ---
 
 ## DAN: a Segmentation-free Document Attention Network for Handwritten Document Recognition
@@ -47,6 +48,7 @@ at page level, as well as double-page level with a CER of 3.43% and 3.70%,
 respectively. We also provide results for the RIMES 2009 dataset at page level,
 reaching 4.54% of CER. We provide all source code and pre-trained model weights
 at https://github.com/FactoDeepLearning/DAN.
+
 ---
 
 ## DAN: A Segmentation-Free Document Attention Network for Handwritten Document Recognition
@@ -73,6 +75,7 @@ at page level, as well as double-page level with a CER of 3.43% and 3.70%,
 respectively. We also provide results for the RIMES 2009 dataset at page level,
 reaching 4.54% of CER. We provide all source code and pre-trained model weights
 at https://github.com/FactoDeepLearning/DAN.
+
 ---
 
 ## DAN: A Segmentation-Free Document Attention Network for Handwritten Document Recognition
@@ -99,6 +102,7 @@ at page level, as well as double-page level with a CER of 3.43% and 3.70%,
 respectively. We also provide results for the RIMES 2009 dataset at page level,
 reaching 4.54% of CER. We provide all source code and pre-trained model weights
 at https://github.com/FactoDeepLearning/DAN.
+
 ---
 
 ## Rescoring Sequence-to-Sequence Models for Text Line Recognition with CTC-Prefixes
@@ -125,6 +129,7 @@ IAM, Rimes, and StAZH. On IAM, we achieve a competitive Character Error Rate
 character-based language model for contemporary English. Compared to other
 state-of-the-art approaches, our model requires about 10-20 times less
 parameters.
+
 ---
 
 ## Transformer-based HTR for Historical Documents
@@ -148,6 +153,7 @@ challenges to libraries and archives, especially because of the variety of
 handwriting styles. Transformer-based architectures have proven suitable to
 build large language representation models and recently found their way into
 image processing, driving the development of image transformers.
+
 ---
 
 ## Transformer-based HTR for Historical Documents
@@ -169,6 +175,7 @@ based architectures, such as TrOCR, which combines the BERT-style vision
 transformer BEiT with a RoBERTa language representation model, offer promising
 solutions by adapting well to different handwriting styles with little training
 data.
+
 ---
 
 ## Pay attention to what you read: Non-recurrent handwritten text-Line recognition
@@ -195,6 +202,7 @@ unconstrained to any predefined vocabulary, being able to recognize out-of-
 vocabulary words, i.e. words that do not appear in the training vocabulary. We
 significantly advance over prior art and demonstrate that satisfactory
 recognition accuracies are yielded even in few-shot learning scenarios.
+
 ---
 
 ## Transformer-based HTR for Historical Documents
@@ -217,6 +225,7 @@ effective for language representation and are adaptable for various tasks.
 Recent developments in image processing have led to image transformers. This
 paper explores the use of TrOCR, which combines a vision transformer with a
 language representation model, for historical document HTR.
+
 ---
 
 ## Rescoring Sequence-to-Sequence Models for Text Line Recognition with CTC-Preﬁxes
@@ -243,6 +252,7 @@ IAM, Rimes, and StAZH. On IAM, we achieve a competitive Character Error Rate
 character-based language model for contemporary English. Compared to other
 state-of-the-art approaches, our model requires about 10-20 times less
 parameters.
+
 ---
 
 ## Transformer-based HTR for Historical Documents
@@ -264,6 +274,7 @@ BERT and its adaptations, have shown promise in adapting to different
 handwritings with minimal training data. This paper explores the use of the
 TrOCR model, which combines a vision transformer with a language representation
 model, for HTR tasks.
+
 ---
 
 ## Transformer for Handwritten Text Recognition Using Bidirectional Post-decoding
@@ -292,6 +303,7 @@ analysis, we show that the Transformer is able to learn a strong language model
 which explains why a larger training dataset is required to outperform
 traditional approaches and discuss why Transformers should be used with caution
 for HTR due to several shortcomings such as repetitions in the text.
+
 ---
 
 ## End-to-end Handwritten Paragraph Text Recognition Using a Vertical Attention Network
@@ -317,6 +329,7 @@ of-the-art character error rate at paragraph level on three popular datasets:
 1.91% for RIMES, 4.45% for IAM and 3.59% for READ 2016. Our code and trained
 model weights are available at
 https://github.com/FactoDeepLearning/VerticalAttentionOCR.
+
 ---
 
 ## Pay Attention to What You Read: Non-recurrent Handwritten Text-Line Recognition
@@ -344,6 +357,7 @@ vocabulary, being able to recognize out-of-vocabulary words, i.e. words that do
 not appear in the training vocabulary. We significantly advance over prior art
 and demonstrate that satisfactory recognition accuracies are yielded even in
 few-shot learning scenarios.
+
 ---
 
 ## Evaluating Sequence-to-Sequence Models for Handwritten Text Recognition
@@ -369,6 +383,7 @@ loss allows the encoder to retain an interpretable and usable output, if
 desired. We achieve competitive results on the IAM and ICFHR2016 READ data sets
 compared to the state-of-the-art without the use of a language model, and we
 significantly improve over any recent sequence-to-sequence approaches.
+
 ---
 
 ## Start, Follow, Read: End-to-End Full-Page Handwriting Recognition
@@ -392,6 +407,7 @@ preprocesses lines of (perhaps curved) text into dewarped images suitable for
 recognition by a CNN-LSTM network. SFR exceeds the performance of the winner of
 the ICDAR2017 handwriting recognition competition, even when not using the
 provided competition region annotations.
+
 ---
 
 ## Fully Convolutional Network with Dilated Convolutions for Handwritten Text Line Segmentation
@@ -412,6 +428,7 @@ most popular variants of FCN, based on deconvolution or unpooling layers, on a
 public dataset. We also provide results investigating various settings, and we
 conclude with a comparison of our model with recent approaches defined as part
 of the cBAD international competition, leading us to a 91.3% F-measure.
+
 ---
 
 ## Start, Follow, Read: End-to-End Full-Page Handwriting Recognition
@@ -435,6 +452,7 @@ preprocesses lines of (perhaps curved) text into dewarped images suitable for
 recognition by a CNN-LSTM network. SFR exceeds the performance of the winner of
 the ICDAR2017 handwriting recognition competition, even when not using the
 provided competition region annotations.
+
 ---
 
 ## Gated Convolutional Recurrent Neural Networks for Multilingual Handwriting Recognition
@@ -459,6 +477,7 @@ large benchmark including seven languages show a consistent and significant
 improvement of the proposed approach over our previous production systems. We
 also report state-of-the-art results on line and paragraph level recognition on
 the IAM and Rimes databases.
+
 ---
 
 ## Gated Convolutional Recurrent Neural Networks for Multilingual Handwriting Recognition
@@ -483,6 +502,7 @@ large benchmark including seven languages show a consistent and significant
 improvement of the proposed approach over our previous production systems. We
 also report state-of-the-art results on line and paragraph level recognition on
 the IAM and Rimes databases.
+
 ---
 
 ## Generating Synthetic Data for Text Recognition
@@ -500,6 +520,7 @@ using open source fonts and incorporate data augmentation schemes. As part of
 this work, we release 9M synthetic handwritten word image corpus which could be
 useful for training deep network architectures and advancing the performance in
 handwritten word spotting and recognition tasks.
+
 ---
 
 ## Joint Line Segmentation and Transcription for End-to-End Handwritten Paragraph Recognition
@@ -525,6 +546,7 @@ representation. The experiments on paragraphs of Rimes and IAM databases yield
 results that are competitive with those of networks trained at line level, and
 constitute a significant step towards end-to-end transcription of full
 documents.
+
 ---
 
 ## Segmentation-free Handwritten Chinese Text Recognition with LSTM-RNN
@@ -547,6 +569,7 @@ languages with Latin and Arabic characters, hence we propose to apply RNN on
 Chinese text recognition. Our results on the data from the Task 4 in ICDAR 2013
 competition for handwritten Chinese recognition are comparable in performance
 with the best reported systems.
+
 ---
 
 ## Spatially-sparse convolutional neural networks
@@ -570,6 +593,7 @@ sparse, they can be thought of as sparse by adding padding. Applying a deep
 convolutional network using sparsity has resulted in a substantial reduction in
 test error on the CIFAR small picture datasets: 6.28% on CIFAR-10 and 24.30% for
 CIFAR-100.
+
 ---
 
 ## Generating Sequences With Recurrent Neural Networks
@@ -587,6 +611,7 @@ predicting one data point at a time. The approach is demonstrated for text
 valued). It is then extended to handwriting synthesis by allowing the network to
 condition its predictions on a text sequence. The resulting system is able to
 generate highly realistic cursive handwriting in a wide variety of styles.
+
 ---
 
 ## TANDEM HMM WITH CONVOLUTIONAL NEURAL NETWORK FOR HANDWRITTEN WORD RECOGNITION
@@ -609,6 +634,7 @@ features. We validated the approach on two publicly available databases, and we
 report up to 60% (Rimes) and 35% (IAM) relative improvement compared to a
 Gaussian HMM based on pixel values. The final systems give comparable results to
 recurrent neural networks, which are the best systems since 2009.
+
 ---
 
 ## Results of the RIMES evaluation campaign for handwritten mail processing
@@ -630,6 +656,7 @@ and writer identification. The databases used are part of the RIMES database of
 5605 real mails completely annotated, as well as secondary databases of isolated
 characters and handwritten words (250,000 snippets). The paper reports on
 protocols and gives the results obtained in the campaign.
+
 ---
 
 ## Off-line Handwriting Text Line Segmentation: A Review
@@ -649,6 +676,7 @@ nature of handwriting makes the process of text line segmentation very
 challenging. Several techniques to segment handwriting text line have been
 proposed in the past. This paper seeks to provide a comprehensive review of the
 methods of off-line handwriting text line segmentation proposed by researchers.
+
 ---
 
 ## A Novel Approach to On-Line Handwriting Recognition Based on Bidirectional Long Short-Term Memory Networks
@@ -667,6 +695,7 @@ function, known as Connectionist Temporal Classification (CTC), that directly
 trains the network to label unsegmented sequence data. Our new system achieves a
 word recognition rate of 74.0%, compared with 65.4% using a previously developed
 HMM-based recognition system.
+
 ---
 
 ## The IAM-database: an English sentence database for offline handwriting recognition
@@ -689,6 +718,7 @@ linguistic knowledge beyond the lexicon level is used, because this knowledge
 can be automatically derived from the underlying corpus. The database also
 includes a few image-processing procedures for extracting the handwritten text
 from the forms and the segmentation of the text into lines and words.
+
 ---
 
 ## A System for the Offline Recognition of Handwritten Text
@@ -713,6 +743,7 @@ and the other based on a simple word grammar. Hypotheses from recognition based
 on each language model are integrated using a decision tree classifier. Results
 from the application of the system to the recognition of handwritten responses
 on U.S. census forms are reported.
+
 ---
 
 ## Language Modeling for a Real-World Handwriting Recognition Task
@@ -733,6 +764,7 @@ this paper are to discuss some of the constraints and trade-offs in an existing
 real-world handwriting recognition system, to present work already done on
 language modeling for the system, and to suggest possible future directions of
 research in language modeling for handwriting recognition tasks.
+
 ---
 
 ## Signature Verification using a "Siamese" Time Delay Neural Network
@@ -752,6 +784,7 @@ between the two feature vectors. Verification consists of comparing the
 extracted feature vector with a stored feature vector for the signer. Signatures
 closer to this stored representation than a chosen threshold are accepted, all
 other signatures are rejected as forgeries.
+
 ---
 
 ## Segmentation of Handprinted Letter Strings using a Dynamic Programming Algorithm

@@ -20,6 +20,7 @@ heatmaps, which speeds up the training process as these computations are only
 done once. The training can then be conducted using the main script, and
 progress can be monitored using TensorBoard. This project utilizes PyTorch and
 PyTorch Lightning frameworks to facilitate model training and deployment.
+
 ---
 
 
@@ -45,6 +46,7 @@ providing a user-friendly interface for data annotation, model training, and
 inference. Kraken is developed at the École Pratique des Hautes Études,
 Université PSL, with funding from the European Union and the French National
 Research Agency.
+
 ---
 
 
@@ -67,6 +69,7 @@ supports training new models with user-specific datasets, allowing flexibility
 in handling variable text lengths by organizing images accordingly. Dependencies
 for the project include 'warp_ctc_pytorch' and 'lmdb'. The project is open-
 source and licensed under the MIT License.
+
 ---
 
 
@@ -92,6 +95,7 @@ Homebrew on macOS or by building from source. The ocreval project is maintained
 under the Apache-2.0 license and is developed by Eddie Antonio Santos, with
 contributions from the National Research Council Canada. It is built primarily
 in C, with some components in Python, Roff, Makefile, and Shell scripting.
+
 ---
 
 
@@ -119,6 +123,7 @@ this tool is no longer actively maintained and has been superseded by the more
 advanced 'eynollah' tool, it remains a useful resource for historical document
 analysis. The tool requires pre-trained models for operation and offers both a
 standard command-line interface and integration with OCR-D.
+
 ---
 
 
@@ -146,6 +151,7 @@ indicators. The project demonstrates high accuracy on both English and Chinese
 datasets, using various network designs and configurations. Future improvements
 aim to increase data volume, enhance network complexity, and incorporate
 advanced techniques like Attention and Spatial Transformer Networks (STN).
+
 ---
 
 
@@ -172,6 +178,7 @@ detailed statistics on the number of tables and images across different document
 formats and splits for training, validation, and testing. TableBank aims to
 advance large-scale table analysis tasks by providing a diverse set of labeled
 data from various domains such as business and academic documents.
+
 ---
 
 
@@ -195,6 +202,7 @@ install the package via PyPI. Comprehensive documentation is available to guide
 users on installation, command-line usage, and API customization. The project
 has garnered significant attention, with over 1,000 stars and 210 forks on
 GitHub.
+
 ---
 
 
@@ -220,6 +228,7 @@ into training, validation, and test sets, and supports several evaluation tasks,
 including word detection, line detection, and end-to-end recognition. HierText
 is released under the CC-BY-SA-4.0 license and is a valuable resource for
 researchers seeking to improve OCR technology and conduct layout analysis.
+
 ---
 
 
@@ -244,6 +253,7 @@ includes support for new datasets and updated documentation. Installation
 requires PyTorch, MMEngine, MMCV, and MMDetection, with detailed instructions
 available in the documentation. The project is licensed under Apache 2.0 and is
 part of the broader OpenMMLab ecosystem.
+
 ---
 
 
@@ -270,6 +280,7 @@ can be installed via pip and requires pretrained models available for download.
 It supports a command-line interface and integration with OCR-D, allowing it to
 process images and output results in the PAGE-XML format. The project is open-
 source, licensed under Apache-2.0, and primarily developed in Python.
+
 ---
 
 
@@ -297,6 +308,7 @@ efficiency in table structure recognition. UniTable's development and deployment
 include the availability of model weights and resources on platforms like
 HuggingFace, catering to researchers and developers looking to implement
 advanced table recognition solutions.
+
 ---
 
 
@@ -324,6 +336,7 @@ executing training and testing processes. Additionally, PSENet is incorporated
 in the MMOCR project and has been adapted to PaddlePaddle. The work is licensed
 under the Apache 2.0 license and maintained by IMAGINE Lab at Nanjing
 University.
+
 ---
 
 
@@ -350,6 +363,7 @@ related tools. The project is focused on enhancing quality for historical
 documents, although processing times can be slow. The development team welcomes
 contributions to improve efficiency. Eynollah is released under the Apache-2.0
 license.
+
 ---
 
 
@@ -375,6 +389,7 @@ model selection based on segment conditions and offers a variety of OCR-D
 processors to handle different segmentation and recognition tasks. The project
 is licensed under the MIT license and is actively maintained with numerous
 contributors.
+
 ---
 
 
@@ -400,6 +415,7 @@ is capable of recognizing alphanumeric characters. Pre-trained models and
 example scripts are provided for demonstrating the text recognition
 capabilities. The project is licensed under the MIT license, promoting open-
 source collaboration.
+
 ---
 
 
@@ -423,6 +439,7 @@ reliability. PAGE-XML is widely used for its ability to handle complex document
 structures, supporting various applications in document digitization and
 processing. The project is open source, licensed under the Apache-2.0 License,
 and offers resources such as documentation to aid in its implementation.
+
 ---
 
 
@@ -446,6 +463,7 @@ Boy Apprenticed to an Enchanter' by Padraic Colum, and 'The Lusitania's Last
 Voyage' by Charles E. Lauriat. This dataset serves as a valuable resource for
 researchers and developers focusing on text recognition and historical document
 analysis.
+
 ---
 
 
@@ -473,6 +491,7 @@ The project also offers CLSTM, a C++ based alternative for text line
 recognition, providing faster processing with minimal dependencies. Users can
 contribute by developing new command line tools and enhancing text/image
 segmentation and detection capabilities.
+
 ---
 
 
@@ -497,6 +516,7 @@ solution for OCR as being suboptimal and encourages users to explore other
 implementations. The repository includes code, issues, pull requests, and
 insights sections, but is now in a read-only state since its archiving on June
 11, 2020.
+
 ---
 
 
@@ -520,6 +540,7 @@ diverse real-world applications. The repository contains the necessary code and
 resources, including Python scripts for training, testing, and evaluating the
 model. The project is open-source and licensed under the MIT License,
 encouraging further development and collaboration.
+
 ---
 
 
@@ -543,6 +564,7 @@ downloaded and used for testing images, with results saved in a specified
 directory. Training instructions and code are also provided to help users train
 their models. The project is licensed under the MIT License, encouraging wide
 usage and collaboration.
+
 ---
 
 
@@ -568,6 +590,7 @@ and Tensorflow versions above 1.0, and it comes with a demo for inference on
 sample images from the cBad test set. Despite being archived, the repository
 remains a valuable resource for researchers and developers interested in
 document image analysis, particularly those dealing with historical documents.
+
 ---
 
 
@@ -591,6 +614,7 @@ repository includes features like model loading, prediction, and exporting
 detected text regions and additional results like heatmaps. The project is
 licensed under the MIT License and has been archived as a read-only repository
 since December 2022.
+
 ---
 
 
@@ -616,6 +640,7 @@ technologies. It includes installation instructions, environment setup
 guidelines, and a FAQ for troubleshooting. The software is released under the
 Apache 2.0 license, and users are encouraged to cite the project in their
 academic work if it aids their research.
+
 ---
 
 
@@ -643,6 +668,7 @@ model by following instructions and using specific command-line arguments to
 customize the inference process. The project has been released under the MIT
 license and has gained significant attention, with over 3,000 stars and more
 than 860 forks on GitHub.
+
 ---
 
 
@@ -669,6 +695,7 @@ also be served via TensorFlow Serving to enable REST API integration. While the
 current implementation supports TensorFlow 1.x, a future upgrade to TensorFlow 2
 is planned. The project acknowledges contributions from Qi Guo and Yuntian Deng,
 and it is released under the MIT license.
+
 ---
 
 
@@ -694,6 +721,7 @@ use the tool in debug mode to visualize detailed transformations and bounding
 boxes. Text Renderer is open-source under the MIT license and is accompanied by
 scripts to check font compatibility with character sets. The project is actively
 maintained with ongoing updates to improve functionality and user experience.
+
 ---
 
 
@@ -718,6 +746,7 @@ used to interpret these sequences. The project demonstrated a high accuracy of
 network architecture parameters and run the model on their data following the
 provided instructions. The project is licensed under the MIT License, making it
 open for community contributions and use.
+
 ---
 
 
@@ -744,6 +773,7 @@ for visualization and HTML modules. A demo app and Docker containers are
 available for easy deployment, along with an example script for document
 analysis. The library is open-source, distributed under the Apache 2.0 License,
 and contributions are welcome.
+
 ---
 
 
@@ -770,6 +800,7 @@ and FinTabNet datasets. The repository offers training scripts, evaluation
 metrics, and an inference pipeline for users who wish to apply TATR to their
 datasets. The project is open source and welcomes contributions under the MIT
 license.
+
 ---
 
 
@@ -797,6 +828,7 @@ GPU. Keras-OCR is particularly suitable for academic and commercial applications
 that require efficient and customizable OCR solutions. The library is open-
 source and distributed under the MIT license, encouraging contributions and
 modifications from the community.
+
 ---
 
 
@@ -820,6 +852,7 @@ the EAST text detector for real-world image processing. Users can evaluate the
 system by using 'mouse_prediction.py' to detect text under the mouse pointer.
 The codebase is entirely written in Python and is open-source, allowing for
 community contributions and customization.
+
 ---
 
 
@@ -845,6 +878,7 @@ The project provides functionality for running the code via command line or
 importing as a module in Python, with outputs saved in JSON format. The
 repository includes detailed instructions for setup, usage, and output
 interpretation.
+
 ---
 
 
@@ -872,6 +906,7 @@ includes scripts for training, validation, and testing, with configurations
 available through command-line options. The work is detailed in the ICDAR 2019
 paper by Weinman et al., with acknowledgments to the National Science Foundation
 for support.
+
 ---
 
 
@@ -898,6 +933,7 @@ training the model using the Synth 90k dataset, as well as testing and
 visualizing the results using standard datasets like ICDAR03 and SVT. The
 project is licensed under the MIT License, making it accessible for further
 development and deployment.
+
 ---
 
 
@@ -924,6 +960,7 @@ under the CC BY-SA 4.0 license, integrating advancements from projects like
 im2latex and Donut. Despite its capabilities, Texify has limitations regarding
 image cropping and resolution dependencies. Its training involved 96 DPI images,
 which may affect performance on images outside this specification.
+
 ---
 
 
@@ -948,6 +985,7 @@ examples. The project has been recognized in academic settings, with its
 methodology detailed in a paper presented at the 16th International Conference
 on Frontiers in Handwriting Recognition in 2018. The software is distributed
 under the GPL-3.0 license, encouraging open-source collaboration and adaptation.
+
 ---
 
 
@@ -975,6 +1013,7 @@ interested in improving OCR systems. The project does not have any packaged
 releases yet, but the code is available for use and contribution by the open-
 source community. It is especially useful for developers focused on machine
 learning and computer vision tasks related to document digitization.
+
 ---
 
 
@@ -999,6 +1038,7 @@ licensed under the Creative Commons Attribution 4.0 International License,
 encouraging collaboration and further development by the community.
 Contributions can be made by submitting pull requests or contacting the project
 maintainer.
+
 ---
 
 
@@ -1026,6 +1066,7 @@ effectiveness of the transformer-based approach for text detection and
 recognition. The project is released under the Apache License 2.0 and
 acknowledges contributions from AdelaiDet and Deformable-DETR for providing
 standardized frameworks and implementations.
+
 ---
 
 
@@ -1048,6 +1089,7 @@ provides links to numerous OCR datasets including ICDAR competitions, SynthText
 in the Wild, and the MSRA Text Detection Database. This collection is valuable
 for developers and researchers working on text recognition and location projects
 by providing access to a variety of synthetic datasets and tools.
+
 ---
 
 
@@ -1072,6 +1114,7 @@ Materialize, and jQuery, and includes components like OCRopus, Calamari, and
 LAREX for document analysis and layout recognition. The project is actively
 developed with frequent updates and has received funding from initiatives like
 the DFG-funded OCR-D and the BMBF Project “Kallimachos.”
+
 ---
 
 
@@ -1094,6 +1137,7 @@ utilizing PyTorch 1.7. Users interested in the latest developments should refer
 to the OCRopus4 repository. To set up OCRopus3, users could clone the repository
 and run the install script. Despite its archival status, the repository garnered
 a moderate level of interest, with 142 stars and 37 forks on GitHub.
+
 ---
 
 
@@ -1119,6 +1163,7 @@ configurations for aligning multiple OCR models, ensuring compatibility between
 the Paddle and Pytorch frameworks. PytorchOCR is a versatile library suitable
 for developers looking to implement or experiment with OCR solutions
 efficiently.
+
 ---
 
 
@@ -1142,6 +1187,7 @@ extracts information from rows and columns. Users are directed to download the
 Marmot Dataset for training and testing, and follow a Jupyter Notebook for
 execution. The project requires a system with a powerful GPU to achieve accurate
 results on high-resolution images.
+
 ---
 
 
@@ -1169,6 +1215,7 @@ allowing for broad use and collaboration. Although the repository lacks a
 detailed description or documentation, the provided scripts and installation
 instructions form a comprehensive guide to utilizing the FCN approach for text
 line segmentation.
+
 ---
 
 
@@ -1191,6 +1238,7 @@ demos, utilizing pretrained models, and training new models on custom datasets.
 The software is primarily tested on Ubuntu 14.04 with CUDA-enabled GPUs and
 requires Torch7, fblualib, and LMDB. It also includes a Docker setup for
 simplified deployment. The implementation is open-source under the MIT license.
+
 ---
 
 
@@ -1211,6 +1259,7 @@ repository includes a demo script, 'demo_mjsyth.py', which demonstrates text
 recognition on an input image using a pre-trained model. Users can also train a
 new model by converting their datasets into TFRecords. The original CRNN
 implementation can be found on GitHub under the repository 'crnn'.
+
 ---
 
 
@@ -1235,6 +1284,7 @@ implemented in Python using PyTorch and requires Ubuntu 16.04, Python 2.7, and
 CUDA 9.0 for execution. The repository includes scripts for data preprocessing,
 training, and testing, with specific instructions for dataset handling and model
 evaluation.
+
 ---
 
 
@@ -1263,6 +1313,7 @@ available through its GitHub repository. Users can configure the system with
 YAML files and initiate jobs via the Celery daemon, tracking job statuses and
 retrieving outputs through command-line utilities. Nidaba is licensed under
 GPL-2.0, promoting open-source collaboration and innovation.
+
 ---
 
 
@@ -1287,6 +1338,7 @@ both training and testing the models, leveraging Python as the primary
 programming language, with some shell scripts for automation. The repository is
 open for collaboration and has a few forks and stars, indicating community
 interest and participation.
+
 ---
 
 
@@ -1312,6 +1364,7 @@ Documentation and further instructions for installation are available online.
 Calamari is actively maintained, with contributions from multiple developers,
 and it is widely used in the field of digital humanities and other OCR-related
 applications.
+
 ---
 
 
@@ -1335,6 +1388,7 @@ trained, the model can be tested using an inference pipeline that generates
 results and logs for evaluation. Necessary libraries include Python 3,
 Tensorflow, Pillow, OpenCV, and Pandas. The project is open source under the MIT
 license.
+
 ---
 
 
@@ -1356,6 +1410,7 @@ from various formats. The repository includes code, documentation, and resources
 that developers can use to integrate OCR functionalities into their own
 applications. The project leverages modern deep learning frameworks to enhance
 the accuracy and efficiency of text recognition tasks.
+
 ---
 
 
@@ -1378,6 +1433,7 @@ for building, running, and training with CRNN using Docker and Torch7. The
 software is primarily tested on Ubuntu 14.04 and requires CUDA-enabled GPUs.
 Additionally, it offers a PyTorch port and an implementation combining CTPN and
 CRNN for end-to-end text detection and recognition.
+
 ---
 
 
@@ -1402,6 +1458,7 @@ adding corresponding fonts and dictionary files. The tool is useful for creating
 training datasets for OCR applications, and offers both CLI and Python module
 interfaces for integration into workflows. It is open-source and licensed under
 the MIT license.
+
 ---
 
 
@@ -1426,6 +1483,7 @@ with plans to support TensorFlow 2.x in the future. The project is open-source
 under the GPL-3.0 license, and the code is primarily written in C++ and Python.
 It is suitable for researchers and developers interested in OCR, computer
 vision, and deep learning applications.
+
 ---
 
 
@@ -1451,6 +1509,7 @@ manages multi-width images. The accuracy of this approach can exceed 95%,
 demonstrating its effectiveness in OCR applications. Users can adjust various
 parameters such as learning rate and image height to fine-tune the model for
 specific use cases.
+
 ---
 
 
@@ -1476,6 +1535,7 @@ streamline OCR processes across different applications. The toolkit is supported
 by a vibrant community and offers extensive documentation to facilitate ease of
 use. It is licensed under the Apache-2.0 license, ensuring open-source access
 and contribution.
+
 ---
 
 
@@ -1498,6 +1558,7 @@ files, and test it using provided scripts. The repository includes various
 scripts and configuration files necessary to facilitate training and evaluation.
 It is primarily written in C++ and Python, with a small portion in Makefile, and
 has gained moderate community attention with 173 stars and 41 forks.
+
 ---
 
 
@@ -1520,6 +1581,7 @@ segmentations. The repository emphasizes modularity and compliance with OCR-D
 specifications, facilitating integration into larger OCR workflows. Installation
 is straightforward, requiring a Python environment, and the project is open-
 source, licensed under the MIT license.
+
 ---
 
 
@@ -1543,6 +1605,7 @@ offers an OCR-D interface for integration with OCR workflows. The project is
 available under the Apache-2.0 license and has received contributions from
 multiple developers. It is part of the Qurator initiative, which focuses on
 improving digital document processing.
+
 ---
 
 
@@ -1567,6 +1630,7 @@ particularly useful for digitizing printed documents or analyzing scanned
 reports, where manual data entry would be time-consuming. The project is open-
 source and available under the MIT license, encouraging contributions and
 modifications.
+
 ---
 
 
@@ -1593,6 +1657,7 @@ OCR evaluation metrics for model performance assessment. Users can access more
 resources, such as a demo and the project's webpage, for further exploration.
 The code is open-source under the MIT license, encouraging contributions and
 usage in related research.
+
 ---
 
 
@@ -1620,6 +1685,7 @@ blurring, noise, ink spread, and fibrous noise, which are common in scanned or
 photocopied documents. These features make Ocrodeg a valuable tool for
 researchers and developers working on OCR systems, allowing them to create more
 resilient models by training on a diverse set of augmented data.
+
 ---
 
 
@@ -1641,6 +1707,7 @@ recognition from images, such as document digitization, license plate
 recognition, and more. The project is hosted on GitHub, providing code and
 resources for developers interested in integrating or improving text recognition
 capabilities in their applications.
+
 ---
 
 
@@ -1662,6 +1729,7 @@ advised to download a pre-trained model and place it in the specified directory
 for the demo to function. Additionally, instructions are provided for converting
 datasets to TFRecords format for training new models. The original CRNN software
 can be found on GitHub, linked in the project description.
+
 ---
 
 
@@ -1686,6 +1754,7 @@ parameters. The models are trained to enhance document clarity by learning from
 labeled datasets, and the project is tied to a publication in 'Pattern
 Recognition' journal, providing a comprehensive framework for document image
 processing.
+
 ---
 
 
@@ -1708,6 +1777,7 @@ execute the sequence recognition task. Although the implementation of the system
 is currently incomplete, it represents a combination of advanced neural network
 architectures aimed at improving the accuracy and efficiency of sequence
 recognition in images.
+
 ---
 
 
@@ -1731,6 +1801,7 @@ project categorizes papers by publication date and provides links to related
 resources, including code repositories and datasets. With contributions from the
 OCR team at Clova AI powered by NAVER-LINE, the repository is regularly updated
 to reflect the latest advancements and trends in AI conferences.
+
 ---
 
 
@@ -1757,6 +1828,7 @@ characters including Chinese characters, numbers, English letters, and symbols.
 Instructions for exporting CRNN weights for deployment on C++ server
 implementations with cuDNN or TensorFlow Servering are provided, along with
 Python scripts for training and testing CRNN models with and without RNNs.
+
 ---
 
 
@@ -1782,6 +1854,7 @@ scripts for data preparation and model training, alongside detailed
 documentation to guide users through the setup and execution processes. The
 project is licensed under GPL-3.0 and has a substantial community with 291 stars
 and 98 forks on GitHub.
+
 ---
 
 
@@ -1810,6 +1883,7 @@ performance evaluation. The project also provides a demo script to test the OCR
 capabilities, saving results to a specified directory. The repository is open-
 source and released under the Apache-2.0 license, inviting collaboration and
 further development.
+
 ---
 
 
@@ -1835,6 +1909,7 @@ layers, such as an IOU loss layer, due to intellectual property restrictions.
 The project is licensed under the GNU General Public License for non-commercial
 use, with commercial inquiries directed to Chunhua Shen. Key topics include text
 detection, text recognition, and end-to-end neural networks.
+
 ---
 
 
@@ -1859,6 +1934,7 @@ tools within the project demonstrate the dynamic receptive fields in GRCNN,
 showcasing the model's ability to differentiate between characters effectively.
 The project is licensed under the MIT license and is available for public use
 and contribution.
+
 ---
 
 
@@ -1880,6 +1956,7 @@ command-line tool and within Python scripts, supporting integration with
 libraries like scikit-image and OpenCV. Debugging tools are available to fine-
 tune skew detection parameters, making it versatile for various skew detection
 needs.
+
 ---
 
 
@@ -1906,6 +1983,7 @@ exist due to memory constraints on such platforms. Installation is supported on
 both Windows and Linux, with specific dependencies outlined for each operating
 system. The project encourages contributions and feedback from users to enhance
 its capabilities and performance.
+
 ---
 
 
@@ -1930,6 +2008,7 @@ trained to recognize new languages. The project is maintained by Zdenko Podobny
 with contributions from a large community of developers. The software is
 licensed under the Apache License, Version 2.0, and relies on the Leptonica
 library for handling image files.
+
 ---
 
 
@@ -1956,6 +2035,7 @@ project uses datasets such as ICDAR 2013, ICDAR 2015, ICDAR 2017, Total Text,
 and MS COCO for evaluation. The implementation is primarily in Python and offers
 insights into text detection using the CRAFT model, making it a valuable
 resource for optical character recognition (OCR) and computer vision tasks.
+
 ---
 
 
@@ -1977,6 +2057,7 @@ valuable resource for developers and researchers working on OCR technologies.
 The repository is released under a Creative Commons Attribution-NonCommercial-
 ShareAlike 4.0 International (CC BY-NC-SA 4.0) license, allowing for non-
 commercial use and adaptation with proper attribution.
+
 ---
 
 
@@ -2001,6 +2082,7 @@ evaluation. The tool is available under the MIT license, and users can install
 it via pip or build it from source. CLEval is aimed at improving the fairness of
 evaluations in the optical character recognition (OCR) community, and the
 developers encourage feedback and contributions.
+
 ---
 
 
@@ -2026,6 +2108,7 @@ instances for drawing graphs, controlling default boxes, and loading data. After
 training, users can detect text in images using the 'Runner.image()' method. The
 package requires Python 3.5.3, alongside dependencies like NumPy, TensorFlow,
 and OpenCV.
+
 ---
 
 
@@ -2048,6 +2131,7 @@ synthetic data are promising. The project is open-source and allows
 contributions, with a to-do list that includes validation code and weakly-
 supervised learning enhancements. The project has gained interest as evidenced
 by its stars, forks, and watchers on GitHub.
+
 ---
 
 
@@ -2074,6 +2158,7 @@ a detailed guide for setting up and running the system. TextSnake's flexible
 representation and comprehensive toolkit make it a valuable resource for
 developers and researchers working on text detection in complex visual
 environments.
+
 ---
 
 
@@ -2096,6 +2181,7 @@ approximately 16 seconds per image. Users can test the system by comparing the
 output with ground truth data. The project includes a dataset of 1000 images for
 training and is implemented entirely in Python. The code is open-source and
 available under the MIT license.
+
 ---
 
 
@@ -2122,6 +2208,7 @@ upon existing work by Chadoliver, with the source code available for public use
 and contributions. While the project is still in development, with certain
 evaluation and post-processing tasks marked as 'to be determined', it offers a
 robust foundation for document image analysis using the Docstrum approach.
+
 ---
 
 
@@ -2142,6 +2229,7 @@ to automatically detect and correct the skew angle of an image, thereby aligning
 it properly. This can be particularly useful in applications dealing with
 scanned documents or photos that need to be perfectly aligned for further
 processing.
+
 ---
 
 
@@ -2166,6 +2254,7 @@ dataset and can use 'train.py' to start the training process. Dependencies for
 this project include 'warp_ctc_pytorch' and 'lmdb'. The project is open-source
 under the MIT license, and it has garnered significant attention with over 2.4k
 stars and 658 forks on GitHub.
+
 ---
 
 
@@ -2187,6 +2276,7 @@ and output data pre- and post-processing. The project depends on TensorFlow r1.0
 and OpenCV2, and is shared under the MIT license. The implementation aims to
 provide robust text detection capabilities by incorporating additional default
 boxes compared to standard SSD implementations.
+
 ---
 
 
@@ -2209,6 +2299,7 @@ data processing. The STN component is adapted from the Tensorflow models
 repository, showcasing its versatile application in spatial transformations. The
 repository is actively maintained with contributions open for testing and
 improvement.
+
 ---
 
 
@@ -2237,6 +2328,7 @@ text areas, ranked by confidence scores. The project offers tools for generating
 proposals for text in images and provides scripts for evaluation of results
 using MATLAB. If used in academic work, users are encouraged to cite the related
 papers.
+
 ---
 
 
@@ -2259,6 +2351,7 @@ training and evaluating optical character recognition (OCR) systems. The dataset
 is shared under the Creative Commons Attribution (CC-BY) license, allowing for
 wide usage in academic and commercial projects. More details about the
 collaboration and the project can be found on the associated website.
+
 ---
 
 
@@ -2286,6 +2379,7 @@ the format has contributions from various institutions including the University
 of Graz and the University of Innsbruck. The repository aims to support
 developers and organizations in effectively implementing the ALTO XML format in
 their digital text processing workflows.
+
 ---
 
 
@@ -2308,6 +2402,7 @@ archives, and researchers who need to convert scanned document data into usable
 and standardized formats for further processing or analysis. The repository
 links to other related projects and tools, allowing users to expand
 functionality and incorporate additional formats as needed.
+
 ---
 
 
@@ -2335,6 +2430,7 @@ multiple file types, including TXT, RTF, DOCX, and PDF/A-1b. To use the service,
 you need to register on the ABBYY Cloud OCR SDK website, download the sample
 code, and implement applications using the provided examples and API
 documentation.
+
 ---
 
 
@@ -2359,6 +2455,7 @@ licensed under the MIT License, and supports cross-platform usage with Docker
 integration. It includes comprehensive online documentation for both py-pagexml
 and py-textfeat to assist users in implementation and deployment. The library is
 maintained actively with several releases, the latest being in July 2021.
+
 ---
 
 
@@ -2383,6 +2480,7 @@ or disable metrics, and to specify text extraction levels. Installation is
 straightforward using pip, and the tool supports Unicode, making it versatile
 for different languages and scripts. Dinglehopper is suitable for use as a UI
 tool, in automated evaluations, or as a library in larger systems.
+
 ---
 
 
@@ -2406,6 +2504,7 @@ encouraging contributions from the community. Interested contributors can clone
 the repository and submit pull requests or contact the maintainer via email. The
 repository aims to aid in the digital transcription and accessibility of
 historical French texts.
+
 ---
 
 
@@ -2434,6 +2533,7 @@ of modern OCR software, including decisions on punctuation, capitalization,
 abbreviations, spacing, and numeral representation. The repository is licensed
 under Public Domain or Apache License 2.0, and it uses freely redistributable
 manuscript images.
+
 ---
 
 
@@ -2457,6 +2557,7 @@ digitized and analyzed. The project leverages machine learning and artificial
 intelligence to enhance the capabilities of OCR systems, potentially integrating
 with platforms like GitHub for collaborative development and deployment of OCR
 solutions.
+
 ---
 
 
@@ -2485,6 +2586,7 @@ for academic and non-commercial use, as outlined in its licensing terms, with
 options for commercial licensing. It is based on the ICCV17 paper 'Self-
 organized Text Detection with Minimal Post-processing via Border Learning' by Wu
 and Natarajan.
+
 ---
 
 
@@ -2508,6 +2610,7 @@ corpus without the need for supervised training, making it highly flexible for
 various historical document transcription tasks. Ocular has been documented in
 several academic publications and its development has been supported by grants
 focused on enhancing early-modern multilingual OCR capabilities.
+
 ---
 
 
@@ -2532,6 +2635,7 @@ Keras. The project's core components include model building, training, and
 utilities for processing OCR outputs. The setup requires TensorFlow and Lekhaka,
 a package for generating complex text. Chamanti OCR aims to provide an advanced,
 flexible, and language-agnostic OCR solution.
+
 ---
 
 
@@ -2557,6 +2661,7 @@ a diverse range of historical documents from Polish collections. This initiative
 supports the enhancement of digital resources and the preservation of cultural
 heritage by making these documents more accessible and usable in digital
 formats.
+
 ---
 
 
@@ -2582,6 +2687,7 @@ implementation. Pre-trained models, sample training data, and detailed setup
 instructions are provided to facilitate ease of use. The project is licensed
 under the MIT license and has gained a significant community following with over
 3,400 stars and 1,300 forks on GitHub.
+
 ---
 
 
@@ -2605,6 +2711,7 @@ tool generates reports with statistical metrics like Character Error Rate (CER)
 and Word Error Rate (WER), and highlights differences between texts. It is
 available for download on GitHub, and additional usage instructions can be found
 in its wiki. The project is open-source under the Apache-2.0 license.
+
 ---
 
 
@@ -2634,6 +2741,7 @@ improvements through multi-process batch sampling. The tool significantly
 improves text recognition accuracy, as demonstrated by experiments showing
 increased performance across multiple datasets. It is available for academic
 research under the MIT license.
+
 ---
 
 
@@ -2661,6 +2769,7 @@ model training. The repository includes detailed steps for setting up the
 environment, downloading necessary models, and running tests or training new
 models. The project contributes to the field by providing a tool that enhances
 text spotting capabilities in complex scenarios.
+
 ---
 
 
@@ -2688,6 +2797,7 @@ seamlessly with HTML, allowing for extensive manipulation while retaining the
 text and layout information. This makes hOCR Tools particularly useful for
 researchers and developers working with OCR technologies and digital document
 processing.
+
 ---
 
 
@@ -2711,6 +2821,7 @@ under the Apache-2.0 license and has garnered attention with over 100 stars and
 13 forks. The repository aims to support advancements in OCR by providing a
 centralized listing of datasets that can be used for training and testing OCR
 models.
+
 ---
 
 
@@ -2736,6 +2847,7 @@ changes and improvements to the ALTO standard, providing a centralized location
 for collaboration and tracking of updates. Documentation for the schema is
 available in a separate documentation repository linked from the main project
 page.
+
 ---
 
 
@@ -2760,6 +2872,7 @@ implementations for text recognition. It serves as a valuable resource for
 developers and researchers interested in OCR technology, offering links to
 projects on GitHub, blog posts, and Q&A discussions that explore practical
 applications and techniques to improve OCR accuracy.
+
 ---
 
 
@@ -2779,6 +2892,7 @@ accuracy of optical character recognition (OCR) systems. The repository provides
 a Python-based implementation, where users can run 'rotation_demo.py' to see a
 sample rotation and 'rotation.py' to process multiple images in batch mode. The
 project is open source, hosted on GitHub, and written entirely in Python.
+
 ---
 
 
@@ -2805,6 +2919,7 @@ its implementation can be accessed and contributed to on GitHub. The repository
 includes resources such as installation instructions, usage examples, and
 reproducibility codes, making it accessible for developers and researchers
 interested in document image processing.
+
 ---
 
 
@@ -2829,6 +2944,7 @@ on historical texts, utilizing techniques like cross-fold training and transfer
 learning. The data is licensed under a Creative Commons Attribution-
 NonCommercial-ShareAlike 4.0 International License, and users are encouraged to
 cite relevant publications when using the data.
+
 ---
 
 
@@ -2852,6 +2968,7 @@ books locally or via web interfaces. The tool is part of the OCR4all project and
 supports integration with broader OCR applications. It aims to streamline the
 digitization process of early printed materials, preserving textual cultural
 heritage.
+
 ---
 
 
@@ -2876,6 +2993,7 @@ like learning rate and batch size. The authors propose to improve visualization
 and image processing aspects and plan to extend the training to other datasets,
 fine-tune models, and automate dataset downloading. The project is authored by
 Daitao Xing and Jin Huang.
+
 ---
 
 
@@ -2898,6 +3016,7 @@ transcriptions in both literal and normalized forms. Ocular has been detailed in
 several publications, showcasing its ability to process early-modern
 multilingual texts. The project is supported by the National Endowment for the
 Humanities, under a Digital Humanities Implementation Grant.
+
 ---
 
 
@@ -2922,6 +3041,7 @@ Recognition and the International Conference on Document Analysis and
 Recognition. While pre-trained models and performance metrics are expected to be
 made available soon, VistaOCR serves as a robust tool for researchers and
 developers interested in state-of-the-art OCR technology.
+
 ---
 
 
@@ -2944,6 +3064,7 @@ adding Apple Silicon support and new text detection models. EasyOCR is available
 for installation via pip and can be integrated into various applications using
 Python. The project is open-source, allowing contributions and improvements from
 the community, and is licensed under the Apache-2.0 license.
+
 ---
 
 
@@ -2967,6 +3088,7 @@ projects and curated lists from other contributors in the field. The repository
 aims to serve as a valuable reference for OCR development and research, offering
 a structured overview of the most significant advancements and datasets
 available in this domain.
+
 ---
 
 
@@ -2995,6 +3117,7 @@ Network) folder, data generators, and training scripts for CRNN models,
 indicating a comprehensive approach to OCR tasks. With a focus on Python, the
 project invites collaboration and exploration in the field of machine learning-
 driven text recognition.
+
 ---
 
 
@@ -3018,6 +3141,7 @@ balance adjustments, border detection, removal of perspective warp, and image
 cropping. The library is dependent on OpenCV and Leptonica for its operations.
 To build the library, users need to create a build directory, run cmake, and
 then make. PRLib is open-source and available under the MIT license.
+
 ---
 
 
@@ -3045,6 +3169,7 @@ automating layout tasks, which can be particularly beneficial for digitizing and
 organizing large volumes of documents. Users interested in trying out its
 features can access a demo and utilize the provided tools for visualization and
 editing. The project is open-source under the GNU GPL-3.0 license.
+
 ---
 
 
@@ -3069,6 +3194,7 @@ Additionally, it provides scripts for downloading and preprocessing datasets, as
 well as training and evaluation scripts for model performance assessment. The
 project is licensed under the GPL-3.0 license and has a citation available for
 academic use.
+
 ---
 
 
@@ -3094,6 +3220,7 @@ project includes detailed instructions for setting up the environment, training
 the model, and conducting evaluations. It also recognizes contributions and
 feedback from users to improve the codebase. The project is open-source and
 licensed under the MIT license.
+
 ---
 
 
@@ -3119,6 +3246,7 @@ supports multi-GPU training and can leverage Automatic Mixed Precision for
 faster execution. The repository offers scripts for both training and testing
 the model, along with detailed instructions for setting up the environment and
 prerequisites.
+
 ---
 
 
@@ -3143,6 +3271,7 @@ detection applications, and was presented at CVPR 2021. Researchers and
 developers can integrate STKM into their projects to improve text detection
 tasks, and they are encouraged to cite the work if it proves beneficial in their
 research.
+
 ---
 
 
@@ -3164,6 +3293,7 @@ Recognize can be used through a command-line interface or a REST API, making it
 versatile for integration in various workflows. The results can be viewed or
 edited with compatible tools, enhancing document recognition and layout analysis
 capabilities.
+
 ---
 
 
@@ -3188,6 +3318,7 @@ process and improve the readability of scanned documents. Users can install the
 package via pip and use it to read, process, and extract text from files in
 formats including PDF, PNG, JPG, BMP, and TIFF. The module is licensed under the
 MIT License, emphasizing its open-source nature.
+
 ---
 
 
@@ -3210,6 +3341,7 @@ training the model using provided scripts. The process results in detecting text
 regions in natural images, which are stored in specified directories. This
 implementation is useful for tasks requiring robust text detection in various
 image datasets.
+
 ---
 
 
@@ -3235,6 +3367,7 @@ noted to be currently broken, and offers a variety of command-line drivers for
 training and applying models for OCR and text transformations. The project is
 maintained in a state where it primarily serves users who need a minimalistic
 solution, with its code base being open source under the Apache-2.0 license.
+
 ---
 
 
@@ -3258,6 +3391,7 @@ dataset for training and testing. The project is open for further improvements,
 including data augmentation and refined dewarping algorithms. The repository
 includes Python scripts for data processing and model training, as well as
 visual results of the loss over training iterations.
+
 ---
 
 
@@ -3278,6 +3412,7 @@ project is implemented in Python and requires libraries such as scipy, OpenCV
 running 'page_dewarp.py' with one or more image files as arguments. The project
 is open source and distributed under the MIT license. More detailed information
 and a full write-up on the methodology can be found on the developer's website.
+
 ---
 
 
@@ -3303,6 +3438,7 @@ corrections, such as splitting merged rows or fixing date formats.
 ExtractTable's comprehensive API provides detailed output structures, including
 table coordinates and character confidence levels. The library is licensed under
 Apache License 2.0.
+
 ---
 
 
@@ -3327,6 +3463,7 @@ iteratively refines the rectification by removing outliers—misaligned text lin
 and line segments. Evaluations on datasets like CBDAR 2007 and custom datasets
 with varied layouts demonstrate the method's robustness and versatility in
 handling different document and curved surfaces.
+
 ---
 
 
@@ -3352,6 +3489,7 @@ annotations from the COCO-Text website. The API's repository contains a variety
 of scripts and a demo notebook to demonstrate its capabilities. It is a valuable
 tool for researchers and developers working on text detection and recognition
 challenges.
+
 ---
 
 
@@ -3374,6 +3512,7 @@ with varying lengths of skew. The code is primarily written in Python, with some
 shell scripts for batch processing. This project is an open-source effort and
 has received a moderate level of community interest, as indicated by its stars
 and forks on GitHub.
+
 ---
 
 
@@ -3399,6 +3538,7 @@ include the use of a bi-directional GRU and data augmentation techniques like
 horizontal flipping and random cropping. The repository includes code for
 training, prediction, and evaluation, making it a comprehensive tool for text
 detection in images.
+
 ---
 
 
@@ -3426,6 +3566,7 @@ single image using a 2.0GHz CPU. The project is open-source and licensed under
 the MIT License, making it accessible for academic research and application
 customization. It also includes a demo and installation guide to help users
 implement the tool in their projects.
+
 ---
 
 
@@ -3454,6 +3595,7 @@ pixel-label image with class information encoded in the blue channel. This
 evaluator serves as a crucial component for researchers and developers working
 on document layout analysis, allowing them to fine-tune and validate their
 algorithms.
+
 ---
 
 
@@ -3480,6 +3622,7 @@ others, for real data. The pretrained model can be downloaded from an external
 link and used directly for text recognition tasks. The code is intended for
 academic use, with provisions for commercial licensing through contact with the
 authors. The project has gained attention with 173 stars and 40 forks on GitHub.
+
 ---
 
 
@@ -3498,6 +3641,7 @@ evaluating traditional methods and exploring new techniques to improve
 segmentation accuracy and efficiency. The project is hosted on GitHub,
 suggesting it may be open for collaboration and further development by the
 community.
+
 ---
 
 
@@ -3519,6 +3663,7 @@ The tool is available for various platforms, including Docker, Linux, Windows,
 and macOS, and supports customization through configuration settings like book
 paths, save modes, and UI elements. Users can add their own books for processing
 and access detailed usage guides for efficient operation.
+
 ---
 
 
@@ -3544,6 +3689,7 @@ between OCR and gold standard texts to understand error types. The toolbox
 employs external tools like ocrevalUAtion for evaluating OCR performance. Ochre
 is open-source and licensed under the Apache-2.0 license, making it accessible
 for further development and integration into different OCR workflows.
+
 ---
 
 
@@ -3570,6 +3716,7 @@ and it uses Java for executing Galicia and Lattice Miner, Python for scripting,
 and gcc/g++ for compiling the algorithms. The repository provides a structured
 approach to executing the binarization process step-by-step and includes
 resources for further exploration of FCA concepts.
+
 ---
 
 
@@ -3593,6 +3740,7 @@ various updates and files such as utility for handling checkpoints, string
 conversion, model testing scripts, dataset handlers, and training scripts. It is
 licensed under the MIT license and has received a few stars and forks from the
 GitHub community.
+
 ---
 
 
@@ -3615,6 +3763,7 @@ and OCRopus. The repository is publicly accessible on GitHub, offering resources
 such as submission procedures for contributing typefaces, and is maintained to
 ensure that high-quality text extraction can be achieved through improved
 recognition of various typefaces.
+
 ---
 
 
@@ -3640,6 +3789,7 @@ technologies in the context of historical document digitization. The dataset
 covers a wide range of subjects and publication years, providing a broad
 spectrum of historical data for research and development in OCR and related
 fields.
+
 ---
 
 
@@ -3662,6 +3812,7 @@ technologies. The project is open-source and licensed under the Apache-2.0
 license, allowing for broad use and adaptation. With a small but dedicated user
 base indicated by its GitHub stars and forks, the PRImA Page Viewer represents a
 specialized tool for managing complex document formats.
+
 ---
 
 
@@ -3685,6 +3836,7 @@ provides instructions for training new models using a script `ocrotrain.sh`.
 This setup is beneficial for those looking to leverage Ocropy's capabilities for
 text recognition tasks while ensuring a consistent and isolated execution
 environment.
+
 ---
 
 
@@ -3707,6 +3859,7 @@ recommended to manually review the results and adjust parameters as needed,
 since automatic processing might not always be perfect. Unpaper requires ffmpeg
 for file input and output and uses the Meson build system for compilation, with
 additional dependencies on pytest and pillow for testing.
+
 ---
 
 
@@ -3727,6 +3880,7 @@ reading of important information such as names, dates, and identification
 numbers from ID cards, using machine learning and image processing techniques.
 This project is valuable for applications in sectors such as security, finance,
 and administration where quick and accurate data extraction from IDs is crucial.
+
 ---
 
 
@@ -3751,6 +3905,7 @@ versions, ensuring continuity and ease of use for developers and contributors.
 The project also includes Chinese translations and aims to harmonize styles and
 add cross-references to other specifications, making it a comprehensive resource
 for developers working with OCR technologies.
+
 ---
 
 
@@ -3774,6 +3929,7 @@ Python 2.7, Cython, and other libraries required by Caffe. Users can clone the
 repository, compile the necessary files, and run the demo script to perform text
 detection. The project is released under the MIT License, allowing for open-
 source use and modification.
+
 ---
 
 
@@ -3799,6 +3955,7 @@ repository is public and open for contributions, although it currently has no
 stars and only a few forks. This collection of ground truth files can be
 particularly valuable for researchers and developers working on projects related
 to digitization, text recognition, and cultural heritage preservation.
+
 ---
 
 
@@ -3824,6 +3981,7 @@ executed through a command-line interface, where users provide the path to an
 ALTO XML file or directory and specify options for the desired operations. The
 output is directed to the standard output, enabling easy integration into larger
 workflows.
+
 ---
 
 
@@ -3849,6 +4007,7 @@ hidden layers, and the alphabet of recognized characters. The project is open-
 source under the MIT license and is designed to facilitate the recognition of
 both English and Chinese text in images, making it suitable for multilingual
 optical character recognition applications.
+
 ---
 
 
@@ -3875,6 +4034,7 @@ processing, and evaluate extraction accuracy using precision, recall, and F1
 score metrics at the character level. The tool is built using Python and Jupyter
 Notebook, and it incorporates open-source resources like the table-extraction
 tool from GitHub.
+
 ---
 
 
@@ -3896,6 +4056,7 @@ perform OCR, and retrieving the resulting text files with extracted table data.
 An alternate method is provided for cases where the primary approach is
 ineffective. The project is open-source and licensed under the MIT license,
 encouraging collaboration and further development.
+
 ---
 
 
@@ -3918,6 +4079,7 @@ requires several dependencies, including numpy, matplotlib, scipy, and scikit-
 image, and is easily installed via pip. The application is suitable for
 automating the correction of skewed text images, which is particularly useful in
 document processing and digitization tasks.
+
 ---
 
 
@@ -3943,6 +4105,7 @@ demonstrate the functionality. Interested users can run the provided Python
 scripts on sample images to see the perspective recovery in action. The project
 is open-source and available on GitHub, encouraging contributions and forking by
 interested developers.
+
 ---
 
 
@@ -3967,6 +4130,7 @@ SegLink-512, have been trained with specific configurations and are available
 for download. The repository provides scripts for testing custom images and
 visualizing detection results. The project is open-source and licensed under
 GPL-3.0.
+
 ---
 
 
@@ -3990,6 +4154,7 @@ works in the domain, including Wong et al.'s document analysis system and Ha et
 al.'s recursive X-Y cut method. While the repository has limited community
 activity, it provides a foundational implementation for users interested in
 document analysis using OpenCV.
+
 ---
 
 
@@ -4014,6 +4179,7 @@ and testing, facilitating the seamless integration and assessment of OCR
 engines. With its focus on high-quality data verification, it ensures that OCR
 solutions are built on a solid and reliable dataset, potentially improving the
 performance of OCR systems across various applications.
+
 ---
 
 
@@ -4037,6 +4203,7 @@ of formats for input and output, and is freely available under the MIT license.
 The project is actively maintained with contributions from the community, and it
 aims to facilitate seamless transitions between different OCR formats for both
 individual and enterprise-level applications.
+
 ---
 
 
@@ -4063,6 +4230,7 @@ writeup provides insights into how to apply FineReader in a semi-automated
 fashion for batch processing, emphasizing that while OCR technology can
 facilitate data extraction, additional systems are required for comprehensive
 data processing and integration.
+
 ---
 
 
@@ -4084,6 +4252,7 @@ source, licensed under the Apache-2.0 license, and available for community
 contributions and use. It provides a foundational toolset for developers working
 with OCR data, allowing for efficient parsing and manipulation of text
 recognized from scanned images or documents.
+
 ---
 
 
@@ -4107,6 +4276,7 @@ FreeBSD, and offers installation through package managers like apt, dnf, and
 brew. The software is licensed under MPL-2.0, enabling integration with other
 projects. It has been tested on millions of PDFs and is widely used in various
 industries for automating OCR processes.
+
 ---
 
 
@@ -4134,6 +4304,7 @@ datasets, with example training scripts included for both CTPN and CRNN. The
 project's codebase supports both GPU and CPU environments. The repository also
 offers links to various datasets and pre-trained models, along with detailed
 descriptions of the algorithms and training procedures involved.
+
 ---
 
 
@@ -4160,6 +4331,7 @@ with possibilities for scaling through additional computational resources. The
 ultimate goal is to efficiently identify document types and involved identities
 with minimal errors. The project is open-source under the MIT license and is
 implemented primarily in Jupyter Notebook.
+
 ---
 
 
@@ -4186,6 +4358,7 @@ for more advanced integration into Python applications. The project is open-
 source under the MIT license, with its repository hosted on GitHub, where users
 and contributors can find the source code, report issues, and contribute to its
 development.
+
 ---
 
 
@@ -4213,6 +4386,7 @@ necessary dependencies and preparing data for training and evaluation using
 provided scripts. CUTIE is particularly efficient when document rows and columns
 are well-structured, and it provides detailed results with a focus on accuracy
 in identifying key information classes.
+
 ---
 
 
@@ -4239,6 +4413,7 @@ post-processing techniques. The project is built on existing technologies like
 Deformable DETR and MOTR, and it requires specific dependencies such as PyTorch
 and CUDA for setup. TransDETR's performance and capabilities make it a valuable
 tool for researchers and developers interested in video text recognition.
+
 ---
 
 
@@ -4260,6 +4435,7 @@ project offers a schema and documentation to guide users in leveraging these
 capabilities in their OCR workflows. Released under the CC0-1.0 license, TEI-OCR
 aims to enhance the processing and encoding of OCR-generated layout and content
 information.
+
 ---
 
 
@@ -4284,6 +4460,7 @@ shared under the Apache-2.0 license and is actively maintained with
 contributions from a diverse group of developers. Users can run the parser on
 sample images or their own by using Docker commands, making it versatile and
 easy to use for various receipt parsing needs.
+
 ---
 
 
@@ -4311,6 +4488,7 @@ comprehensive web service API, Docker images, and clients in Python, Java, and
 Node.js for parallel batch processing. GROBID is distributed under the Apache
 2.0 license and aims to operate efficiently on commodity hardware with good
 parallelization capabilities.
+
 ---
 
 
@@ -4330,6 +4508,7 @@ reduction, which are primarily handled using OpenCV to enhance OCR accuracy.
 Developed for ipin.com, cvOCR leverages a combination of C++, Python, HTML, and
 Shell scripting to perform its operations. It is hosted on GitHub, where it has
 received contributions and engagement from the open-source community.
+
 ---
 
 
@@ -4351,6 +4530,7 @@ supported on multiple platforms including Docker, Linux, Windows, and macOS. It
 offers features for segmenting, editing, and processing text lines in printed
 books, making it a valuable resource for digital humanities and archival
 research.
+
 ---
 
 
@@ -4377,6 +4557,7 @@ document-scanner' and 'react-native-perspective-image-cropper', are used to meet
 the project's requirements. The repository provides comprehensive steps to set
 up and run the application on both Android and iOS platforms, including
 instructions for building the application and generating the APK file.
+
 ---
 
 
@@ -4401,6 +4582,7 @@ hOCR2ALTO, is located in the xsl directory of the repository. The project is
 open-source and distributed under the Apache-2.0 license. Despite its niche
 application, hOCRTools has garnered a small following, indicated by its six
 stars on GitHub.
+
 ---
 
 
@@ -4425,6 +4607,7 @@ higher and OpenCV. It provides a practical tool for developers and researchers
 interested in OCR applications, particularly for Chinese text recognition, and
 facilitates further experimentation and customization through its open-source
 codebase.
+
 ---
 
 
@@ -4450,6 +4633,7 @@ installation process involves cloning the repository, setting up directories,
 and ensuring all dependencies are installed. Despite being robust and versatile,
 the project is in its initial stages with limited community engagement, as
 indicated by its stars and forks on GitHub.
+
 ---
 
 
@@ -4477,6 +4661,7 @@ implementation. Community projects and examples demonstrate its practical uses,
 such as document scanning applications and PDF-to-text conversion tools.
 Tesseract.js is open-source under the Apache-2.0 license, encouraging
 contributions from a diverse group of developers.
+
 ---
 
 
@@ -4503,6 +4688,7 @@ drop images into the interface, which then processes the images in the
 background using a Perl script. The software is distributed under the AGPL-3.0
 license, and contributions from the community are encouraged, especially in the
 form of bug reports or feature suggestions.
+
 ---
 
 
@@ -4526,6 +4712,7 @@ and using Docker for easy deployment. The project also includes a demo for
 identity card recognition, although this feature is still in development and
 requires additional semantic models for improved stability. Users can train
 their own character recognition models using provided data and scripts.
+
 ---
 
 
@@ -4547,6 +4734,7 @@ files and output recognized text using commands like 'djvused'. The project was
 developed with support from the Polish Ministry of Science and Higher Education
 and is distributed under the GPL-2.0 license. The repository is archived and
 read-only as of October 2022, indicating it is no longer actively maintained.
+
 ---
 
 
@@ -4572,6 +4760,7 @@ training sample criteria. The project supports both training and testing modes,
 with specific instructions for dataset preparation and annotation. The
 repository offers a comprehensive guide for installation and execution, along
 with an example dataset to help users get started.
+
 ---
 
 
@@ -4596,6 +4785,7 @@ to use across different environments. The working directory for the container is
 set to '/data', where users can mount files to be processed. The project is
 licensed under GPL-3.0 and can be found on Docker Hub under the repository
 'kbai/ocrad'.
+
 ---
 
 
@@ -4618,6 +4808,7 @@ programming languages like Python, Java, and Swift. Additionally, the repository
 lists OCR training tools and datasets with ground truth for model training and
 evaluation. Contributions and feedback from the community are encouraged to
 enhance the repository's breadth and depth.
+
 ---
 
 
@@ -4639,6 +4830,7 @@ converting between different OCR formats and validating files against format
 schemas. This open-source project is licensed under the MIT License, and it aims
 to facilitate the handling of OCR data by providing flexible and robust
 transformation and validation tools.
+
 ---
 
 
@@ -4665,6 +4857,7 @@ interaction modes, enhancing user efficiency and flexibility. ScanTailor
 Advanced is open-source, licensed under GPL-3.0, and supports multi-threaded
 batch processing, making it suitable for managing large-scale digitization
 projects.
+
 ---
 
 
@@ -4691,6 +4884,7 @@ vision and optical character recognition, offering them a comprehensive solution
 for text detection tasks. The repository provides detailed instructions for
 setting up the environment, training models, and performing evaluations, making
 it a valuable resource for machine learning practitioners.
+
 ---
 
 
@@ -4712,6 +4906,7 @@ instructions using both g++ and CMake. The algorithm's details are rooted in a
 research project at Cornell University. DetectText is licensed under GPL-3.0,
 and the repository has garnered a significant community interest with over 300
 stars and 150 forks on GitHub.
+
 ---
 
 
@@ -4733,6 +4928,7 @@ which processes documents, stores result blocks as binaries, and saves segmented
 images. The project serves as a term project from January to July 2018, focusing
 on document image retrieval based on layout. It is open-source and hosted on
 GitHub, with no current forks or releases.
+
 ---
 
 
@@ -4755,6 +4951,7 @@ no longer actively maintained, but it remains accessible for academic research.
 Evaluation scripts for original detection and end-to-end evaluation are
 provided, with examples for the Total-Text dataset. The repository primarily
 uses Jupyter Notebook, C++, and Python, and it is open for academic use only.
+
 ---
 
 
@@ -4777,6 +4974,7 @@ text data. The tools require a specific directory structure for input files and
 support processing through the 'ocrevalutf8' wrapper script to handle UTF-8
 encoded text. The project is hosted on GitHub and is open source, with
 contributions welcome from the community.
+
 ---
 
 
@@ -4800,6 +4998,7 @@ Key implementation features include dataset reading customizations, image size
 configuration for training, and parameter settings such as learning rate and
 batch size. Although primarily for general object detection, the project aims to
 evolve for specific text detection tasks.
+
 ---
 
 
@@ -4824,6 +5023,7 @@ purposes. Java 8 or above is required to run MathOCR, and it can be used through
 a prebuilt JAR or by building from the source code. The system includes a GUI
 for ease of use and supports modularity for layout, segmentation, and output
 format plugins.
+
 ---
 
 
@@ -4845,6 +5045,7 @@ which generates ground truth data, and encourages modification of paths and
 hyperparameters to fit specific needs. The project is hosted on GitHub and
 welcomes collaboration and discussion through the author's provided contact
 information.
+
 ---
 
 
@@ -4872,6 +5073,7 @@ installing dependencies like Redis and LAREX, configuring the application, and
 setting up a database. Future development plans for Nashi include advanced text
 editing capabilities, sorting of lines, and integration with external OCR
 services.
+
 ---
 
 
@@ -4897,6 +5099,7 @@ text generation for non-Latin scripts. Additionally, it offers a pre-generated
 dataset of approximately 800,000 images. The core dependencies for running
 SynthText include pygame, OpenCV, PIL, numpy, matplotlib, h5py, and scipy. The
 project is open-source and distributed under the Apache-2.0 license.
+
 ---
 
 
@@ -4916,6 +5119,7 @@ and extraction from images. This repository serves as a valuable resource for
 developers and researchers interested in OCR technology, providing access to
 various implementations and solutions for text recognition tasks across
 different platforms and languages.
+
 ---
 
 
@@ -4938,6 +5142,7 @@ the application, users must execute 'python main.py' and ensure an 'output'
 folder is created for storing results. The project serves as an introductory
 implementation for document layout analysis, demonstrating basic computer vision
 techniques applied to textual data.
+
 ---
 
 
@@ -4961,6 +5166,7 @@ various formats, such as searchable PDFs, HOCR, and ALTO XML. The package
 requires Python 3.6+, the Python Imaging Library (PIL) or its fork Pillow, and
 the Google Tesseract OCR engine. Installation is available via pip or conda, and
 the package is Apache-2.0 licensed.
+
 ---
 
 
@@ -4988,6 +5194,7 @@ and output pixel format during execution. Additionally, it features advanced
 options for resampling filters, content rectangle skew detection, and output
 compression specifications. The tool is suitable for developers and users
 needing efficient text document image correction.
+
 ---
 
 
@@ -5011,6 +5218,7 @@ sequence length, and image dimensions. The project also offers Docker support
 for creating portable environments, though GPU training via Docker requires
 additional configuration. The repository provides a Python script for
 prediction, and users needing help can raise issues for support.
+
 ---
 
 
@@ -5035,6 +5243,7 @@ processing scanned books, notably visible in collections on Google Books and the
 Internet Archive. Installation guides, user manuals, and additional resources
 are available in the project's wiki for those interested in using or
 contributing to Scan Tailor.
+
 ---
 
 
@@ -5059,6 +5268,7 @@ efforts. The project is archived and has been superseded by a newer project,
 which offers more granular control over text recognition processes. It is
 licensed under the BSD-3-Clause license and was primarily tested on Linux
 systems.
+
 ---
 
 
@@ -5084,6 +5294,7 @@ blogs for implementing OCR solutions, especially for languages and complex
 scenarios such as scene text recognition and CAPTCHA solving. The repository is
 updated with daily OCR paper tracking and offers a platform for sharing and
 modifying keywords for research purposes.
+
 ---
 
 
@@ -5107,6 +5318,7 @@ under the same terms. The project is primarily written in Python and is hosted
 as a read-only mirror on GitHub, with its main repository on GitLab. The
 software does not provide any warranty, and its development involves multiple
 contributors.
+
 ---
 
 
@@ -5130,6 +5342,7 @@ interface. The project has garnered interest from the open-source community, as
 evidenced by its 2.4k stars and 149 forks on GitHub. Despite being archived on
 GitHub, development continues on GitLab, ensuring ongoing updates and community
 contributions.
+
 ---
 
 
@@ -5153,6 +5366,7 @@ supports Docker, allowing the application to run within a container. For Windows
 users, manual installation of dependencies is necessary. The project is licensed
 under the Apache-2.0 license and welcomes donations to support further
 development.
+
 ---
 
 

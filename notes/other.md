@@ -28,6 +28,7 @@ increase with the self-coupling gain and the external excitatory input. This may
 play a role in the enhanced response of densely connected networks to weak
 uniform inputs, such as the electric fields produced by non-invasive brain
 stimulation.
+
 ---
 
 ## A synaptic learning rule for exploiting nonlinear dendritic computation
@@ -43,6 +44,7 @@ neuron computation and learning. By deriving a plasticity rule that optimally
 adjusts the strengths of interacting synapses to control somatic spiking, they
 show that neurons can learn to harness the biophysical properties of their
 dendrites to perform nonlinear computations.
+
 ---
 
 ## Why AI is Harder Than We Think
@@ -65,6 +67,7 @@ itself. In this paper I describe four fallacies in common assumptions made by AI
 researchers, which can lead to overconfident predictions about the field. I
 conclude by discussing the open questions spurred by these fallacies, including
 the age-old challenge of imbuing machines with humanlike common sense.
+
 ---
 
 ## A two-compartment model of synaptic computation and plasticity
@@ -89,6 +92,7 @@ presynaptic plasticity enables presynaptic filtering to be optimally tuned to
 only transmit information relevant for postsynaptic firing. We end by discussing
 the advantages of having a presynaptic filter and propose future work to explore
 presynaptic function and plasticity in vivo.
+
 ---
 
 ## Hypercomputation and Negative Entropy
@@ -111,6 +115,7 @@ machine, can be realized in the physical world. This system is related with the
 negative entropy which was introduced by Erwin Schrödinger. In this article, the
 author shows that negative entropy will appear in the computational steps by
 using superluminal particles.
+
 ---
 
 ## A General Kinematic Modeling Framework for a 3D Compliant Micromechanism
@@ -138,6 +143,7 @@ derive the kinematic model of the AFAM using a computationally scalable
 constraint optimization approach that can be used equally effectively for both
 forward and inverse kinematics. Simulation results using the robot operating
 system (ROS) programming framework are presented in the paper.
+
 ---
 
 ## An epidemiological forecast model and software assessing interventions on COVID-19 epidemic in China
@@ -165,6 +171,7 @@ removed proportion, as well as the ending time of the epidemic. An R software is
 made available for the public, and examples on the use of this software are
 illustrated. Some possible extensions of our novel epidemiological models are
 discussed.
+
 ---
 
 ## Extended SIR prediction of the epidemics trend of COVID-19 in Italy and compared with Hunan, China
@@ -195,6 +202,7 @@ blockade is imposed 5 days later, the total number of infected cases would
 expand the infection scale 1.50 times. Conclusion: Italy's current strict
 measures can efficaciously prevent the further spread of COVID-19 and should be
 maintained.
+
 ---
 
 ## Efficient Runtimes for Gradual Typing
@@ -211,6 +219,7 @@ is a programming language feature that allows developers to choose between
 static and dynamic type checking. The work focuses on reducing the overhead
 associated with the runtime type checks that gradual typing introduces, thereby
 improving the performance of such languages.
+
 ---
 
 ## A robotic platform for flow synthesis of organic compounds informed by AI planning
@@ -234,6 +243,7 @@ target-oriented flow synthesis while substantially reducing the necessary
 information gathering and manual effort. The software and platform represent a
 milestone on the path toward fully autonomous chemical synthesis, where routes
 still require human input and process development.
+
 ---
 
 ## A New Approach Towards Fully Homomorphic Encryption Over Geometric Algebra
@@ -264,6 +274,7 @@ geometric product space of two dimensions, which allows us to export GA
 operations to other algebras and vice-versa. Our construction supports a variety
 of applications, from homomorphic obfuscation to general-purpose FHE
 computations.
+
 ---
 
 ## Millimeter-scale flexible robots with programmable three-dimensional magnetization and motions
@@ -293,6 +304,7 @@ creating previously unachievable shape changes and microrobotic locomotion
 mechanisms such as multi-arm power grasping and multi-legged paddle crawling. A
 physics-based model is also presented as a design tool to predict the shape
 changes under magnetic actuation.
+
 ---
 
 ## Laminated Micro-Machine: Design and Fabrication of a Flexure-based Delta Robot
@@ -318,6 +330,7 @@ system must accommodate so that constraints/limits on actuator torque/force can
 be satisfied while producing an operational system. The simplicity of the
 processes makes it a candidate for use in the emerging open-source hardware
 technologies for fabricating low-cost, complex, electromechanical systems.
+
 ---
 
 ## An Easy-to-Implement Toolkit to Create Versatile and High-Performance HASEL Actuators for Untethered Soft Robots
@@ -348,6 +361,7 @@ electronics. Inspired by the versatility of elephant trunks, the above
 capabilities are combined to create an untethered continuum robot for grasping
 and manipulating delicate objects, highlighting the wide potential of the
 introduced methods for soft robots with increasing sophistication.
+
 ---
 
 ## A robotic platform for flow synthesis of organic compounds informed by AI planning
@@ -372,6 +386,7 @@ target-oriented flow synthesis while substantially reducing the necessary
 information gathering and manual effort. The software and platform herein
 represent a milestone on the path toward fully autonomous chemical synthesis,
 where routes still require human input and process development.
+
 ---
 
 ## Markov Chain Monte Carlo for Dummies
@@ -388,6 +403,7 @@ details, which are skipped in most textbooks, are shown. The second half is
 written for hep-th and hep-lat audience. It explains specific methods needed for
 simulations with dynamical fermions, especially supersymmetric Yang-Mills. The
 examples include QCD and matrix integral, in addition to SYM.
+
 ---
 
 ## Precision Location of Additively Manufactured Components Using Integral Kinematic Couplings
@@ -404,6 +420,7 @@ challenges of ensuring the accurate placement and alignment of components
 produced through additive manufacturing. By developing and testing new coupling
 designs, the study aims to improve the assembly and functionality of these
 parts, contributing to advancements in manufacturing technology.
+
 ---
 
 ## A Case Study of Spherical Parallel Manipulators Fabricated via Laminate Processes
@@ -428,6 +445,7 @@ is able to track desired rotation with acceptable precision using open-loop
 model-based control. This indicates that parallel manipulators fabricated using
 lamination techniques can provide similar performance with prototypes made in
 conventional methods.
+
 ---
 
 ## Microrobot and Microrobotic Train Self-Assembly with End Effectors
@@ -446,6 +464,7 @@ wherein the holding zone holds one of the magnetic structures and the moving
 zone allows another of the magnetic structures to attach to the magnetic
 structure being held. The system may include a plate spaced above the substrate
 and rails to guide the moving magnetic structures.
+
 ---
 
 ## Micro Motion Amplifiers for Compact Out-of-Plane Actuation
@@ -461,6 +480,7 @@ of-plane actuation. This work explores the design, modeling, and experimental
 validation of these amplifiers, highlighting their potential applications in
 micro-electromechanical systems (MEMS) and other fields requiring precise motion
 control.
+
 ---
 
 ## High-precision modular microfluidics by micromilling of interlocking injection-molded blocks
@@ -492,6 +512,7 @@ cannot achieve the dimensional quality of molded bricks, yet 3D printing allows
 customized bricks to be integrated with standard LEGOs. Our approach enables a
 wide variety of modular microfluidic units to be built using a widely available,
 cost-effective platform, encouraging use in both research and education.
+
 ---
 
 ## Optimization of Indexing Based on k-Nearest Neighbor Graph for Proximity Search in High-dimensional Data
@@ -515,6 +536,7 @@ determined by the search accuracy users require, and path adjustment to remove
 edges that have alternative search paths to reduce outdegrees. We also show how
 to obtain optimal degree-adjustment parameters and that our methods outperformed
 previous methods for image and textual data.
+
 ---
 
 ## Accelerated Hierarchical Density Clustering
@@ -532,6 +554,7 @@ HDBSCAN* algorithm provides comparable performance to DBSCAN, while supporting
 variable density clusters, and eliminating the need for the difficult to tune
 distance scale parameter ϵ. This makes accelerated HDBSCAN* the default choice
 for density based clustering.
+
 ---
 
 ## Rate limits of additive manufacturing by fused filament fabrication and guidelines for high-throughput system design
@@ -565,6 +588,7 @@ rate versus resolution. This approach validates the build rate performance of
 current FFF systems, and suggests that significant enhancements in FFF build
 rate with targeted quality specifications are possible via mutual improvements
 to the extrusion and heating mechanism along with high-speed motion systems.
+
 ---
 
 ## Accelerated Hierarchical Density Clustering
@@ -582,6 +606,7 @@ HDBSCAN* algorithm provides comparable performance to DBSCAN, while supporting
 variable density clusters, and eliminating the need for the difficult to tune
 distance scale parameter ϵ. This makes accelerated HDBSCAN* the default choice
 for density based clustering.
+
 ---
 
 ## Automated point-neuron simplification of data-driven microcircuit models
@@ -611,6 +636,7 @@ integrates new data. The modularity of the approach makes it applicable also for
 other point-neuron and synapse models. The approach is demonstrated on a
 recently reported reconstruction of a neocortical microcircuit around an in
 vivo-like working point.
+
 ---
 
 ## Searching for Principles of Brain Computation
@@ -633,6 +659,7 @@ patterns in networks of neurons, high trial-to-trial variability of network
 responses, and functional stability in spite of permanently ongoing changes in
 the network. I am proposing that these constraints provide hints to underlying
 principles of brain computation and learning.
+
 ---
 
 ## Automatic Differentiation (or Differentiable Programming)
@@ -649,6 +676,7 @@ learning and scientific computing, enabling the computation of derivatives
 efficiently and accurately. The document likely covers the different methods of
 automatic differentiation, their applications, and potential benefits over
 traditional differentiation methods.
+
 ---
 
 ## Universal handheld micropipette
@@ -676,6 +704,7 @@ standards across the entire 104-fold volume range. The presence of the
 diaphragms introduces a nonlinear mechanical behavior and a time-dependency due
 to heat transfer, however, by model and experiment, these are redressed so as to
 maintain the pipette’s accuracy and precision.
+
 ---
 
 ## A framework for teaching the fundamentals of additive manufacturing and enabling rapid innovation
@@ -712,6 +741,7 @@ multidisciplinary, and that education programs must embrace this context. We
 also comment on student feedback, our experience as instructional staff, and our
 adaptation of this course to a manufacturing-focused master’s degree program and
 a one-week professional short program.
+
 ---
 
 ## Facilitating Deployable Mechanisms and Structures Via Developable Lamina Emergent Arrays
@@ -737,6 +767,7 @@ the developed structure. A specific technique for creating an array pattern for
 conical developable surfaces is described. Examples of developable structures
 and mechanisms, including curved-fold origami models transitioned to thick
 materials and two origami-inspired mechanisms, are examined.
+
 ---
 
 ## A Computation in a Cellular Automaton Collider Rule 110
@@ -752,6 +783,7 @@ dimensional cellular automata. We show how a computation can be performed on the
 collider by exploiting interactions between gliders (particles, localisations).
 The constructions proposed are based on universality of elementary cellular
 automaton rule 110, cyclic tag systems, supercolliders, and computing on rings.
+
 ---
 
 ## Facilitating Deployable Mechanisms and Structures Via Developable Lamina Emergent Arrays
@@ -777,6 +809,7 @@ the developed structure. A specific technique for creating an array pattern for
 conical developable surfaces is described. Examples of developable structures
 and mechanisms, including curved-fold origami models transitioned to thick
 materials and two origami-inspired mechanisms, are examined.
+
 ---
 
 ## Automatic Distributed Code Generation from Formal Models of Asynchronous Concurrent Processes
@@ -791,6 +824,7 @@ The document discusses a method for automatically generating distributed code
 from formal models of asynchronous concurrent processes. This approach
 facilitates the development of distributed systems by allowing developers to
 focus on modeling rather than implementation details.
+
 ---
 
 ## Verdi: A Framework for Implementing and Formally Verifying Distributed Systems
@@ -817,6 +851,7 @@ the first mechanically checked proof of linearizability of the Raft state
 machine replication algorithm, as well as verified implementations of a primary-
 backup replication system and a key-value store. These verified systems provide
 similar performance to unveriﬁed equivalents.
+
 ---
 
 ## Neural Information Processing with Dynamical Synapses
@@ -832,6 +867,7 @@ processing, examining how synaptic changes influence neural circuit behavior and
 contribute to information processing in the brain. The study integrates
 computational models with experimental data to provide insights into synaptic
 dynamics and their functional implications.
+
 ---
 
 ## Millions of Little Minions: Using Packets for Low Latency Network Programming and Visibility
@@ -853,6 +889,7 @@ line rate, and (b) end-hosts perform arbitrary (and easily updated) computation
 on network state. By implementing three different research proposals, we show
 that TPPs are useful. Using a hardware prototype on a NetFPGA, we show our
 design is feasible at a reasonable cost.
+
 ---
 
 ## Energy Efficiency in Wireless Networks: A Comprehensive Survey
@@ -870,6 +907,7 @@ for energy efficiency in wireless networks, highlighting the main trade-offs and
 design principles. We also discuss the challenges and future research directions
 in this field, aiming to offer insights and guidance for researchers and
 practitioners.
+
 ---
 
 ## Extensible-Link Kinematic Model for Characterizing and Optimizing Compliant Mechanism Motion
@@ -908,6 +946,7 @@ prescribed jaw stroke. This model serves to streamline the design process by
 identifying the load-dependent sources of trajectory error in a compliant
 mechanism, and thereby the limits with which this error may be redressed by
 topology modification.
+
 ---
 
 ## ARC: Analysis of Raft Consensus
@@ -924,6 +963,7 @@ alternative to existing consensus algorithms like Paxos. This report provides a
 detailed analysis of Raft, explaining its mechanisms, strengths, and weaknesses.
 It aims to make consensus more accessible to system builders and highlights
 potential areas for improvement in Raft's implementation and design.
+
 ---
 
 ## Density-Based Clustering Based on Hierarchical Density Estimates
@@ -943,6 +983,7 @@ formalize the problem of maximizing the overall stability of selected clusters,
 and formulate an algorithm that computes an optimal solution to this problem. We
 demonstrate that our approach outperforms the current, state-of-the-art,
 density-based clustering methods on a wide variety of real world data.
+
 ---
 
 ## Incremental Inspection for Microrobotic Quality Assurance
@@ -967,6 +1008,7 @@ over a range of 650-1215 Hz). These effective stiffness measurements are
 correlated with ultimate bond strength as well. The measurements are sufficient
 to distinguish between joints that do or do not have desired amounts of
 adhesive.
+
 ---
 
 ## Hypercomputation: Towards an extension of the classical notion of Computability?
@@ -984,6 +1026,7 @@ proposed for hypercomputational devices, examines their implications, and
 evaluates their feasibility and potential applications. The aim is to broaden
 the understanding of what can be computed beyond the traditional boundaries set
 by classical computational theory.
+
 ---
 
 ## On Soliton Collisions between Localizations in Complex Elementary Cellular Automata: Rules 54 and 110 and Beyond
@@ -1008,6 +1051,7 @@ paper satisfy the property of solitonic collisions. A specific ECA with memory
 solutions from any initial codification (including random initial conditions)
 for a kind of mobile self-localization because such an automaton is able to
 adjust any initial condition to soliton structures.
+
 ---
 
 ## Large-scale neural dynamics: Simple and complex
@@ -1033,6 +1077,7 @@ refractoriness, adaptive feedback, and inhomogeneous connectivity are described
 along with open challenges for the development of multi-scale models that can
 integrate macroscopic models at large spatial scales with models at the
 microscopic scale.
+
 ---
 
 ## Dependence Minimizing Regression with Model Selection for Non-Linear Causal Inference under Non-Gaussian Noise
@@ -1054,6 +1099,7 @@ regularization parameter can be naturally optimized by cross-validation,
 allowing us to avoid overfitting in a data-dependent fashion. Through
 experiments with real-world datasets, we show that LSIR compares favorably with
 the state-of-the-art causal inference method.
+
 ---
 
 ## Informatiktage 2009: Fachwissenschaftlicher Informatik-Kongress
@@ -1074,6 +1120,7 @@ and thematic volumes across research, development, teaching, and training in
 both theory and practice. The Editorial Committee ensures the high quality of
 contributions through an intensive review process. The volumes are published in
 German or English.
+
 ---
 
 ## Weyl–Heisenberg Representations in Communication Theory
@@ -1088,6 +1135,7 @@ The document is a dissertation submitted by Peter Jung for the degree of Doctor
 of Natural Sciences at the Technical University of Berlin. The dissertation
 discusses the application of Weyl–Heisenberg representations in the field of
 communication theory.
+
 ---
 
 ## Reading Perception – Perceiving Literature: an Interdisciplinary Approach
@@ -1112,6 +1160,7 @@ literary strategies concerning object occluding and required the development of
 new experiment approaches to identify the perspective taken by the reader, that
 c) the emotional response is quite idiosyncratic but can be roughly divided into
 two schemes (high or low response).
+
 ---
 
 ## High Performance RDMA Protocols in HPC
@@ -1141,6 +1190,7 @@ are not effectively reused while providing performance equal to that of existing
 techniques as demonstrated by both Linpack and NPB benchmark results. Several
 user level protocols are explored using Open MPI’s PML (Point to point messaging
 layer) and compared/contrasted to this ‘pipeline’ protocol.
+
 ---
 
 ## Gliders in rule 110
@@ -1156,6 +1206,7 @@ automaton rule. Gliders are important due to their capacity to transfer
 information and perform computation within the cellular automaton framework. The
 paper analyzes the behavior of gliders, their interactions, and their
 significance in the context of cellular automata and complex systems.
+
 ---
 
 ## Design of Large-Displacement Compliant Joints

@@ -1,0 +1,448 @@
+
+----------------------------------------
+
+# ocr/1908.07836v1
+
+# ONE SENTENCE SUMMARY:
+
+PubLayNet, the largest dataset for document layout analysis, automatically annotates over 1 million PubMed PDFs, enhancing deep learning model performance.
+
+# MAIN POINTS:
+
+1. PubLayNet is created by matching XML and PDF content of over 1 million PubMed articles.
+2. It contains over 360,000 annotated document images.
+3. Deep neural networks trained on PubLayNet accurately recognize scientific article layouts.
+4. Pre-trained models on PubLayNet improve transfer learning for different document domains.
+5. PubLayNet supports advanced document layout analysis model development and evaluation.
+6. The dataset includes layout elements like text, titles, lists, figures, and tables.
+7. Experiments show high mean average precision (MAP) for layout recognition using Faster-RCNN and Mask-RCNN.
+8. Fine-tuning pre-trained models on PubLayNet achieves state-of-the-art performance in table detection.
+9. PubLayNet’s models outperform others in recognizing layouts of unrelated document types.
+10. The dataset is publicly available for research and development.
+
+# TAKEAWAYS:
+
+1. PubLayNet significantly enhances model accuracy in document layout analysis.
+2. Automatically generated annotations ensure high-quality training data.
+3. The dataset aids in effective transfer learning across different document domains.
+4. Fine-tuned models on PubLayNet achieve superior results with less training data.
+5. PubLayNet is a valuable resource for advancing document layout analysis research.
+
+----------------------------------------
+
+# ocr/1911.10683v5
+
+# ONE SENTENCE SUMMARY:
+The paper introduces the PubTabNet dataset and a novel EDD model for improved image-based table recognition, outperforming existing methods.
+
+# MAIN POINTS:
+1. PubTabNet dataset includes 568k table images with HTML annotations.
+2. Tables extracted from PMCOA scientific articles in PDF format.
+3. EDD architecture features an encoder, structure decoder, and cell decoder.
+4. Structure decoder reconstructs table structure aiding cell content recognition.
+5. New Tree-Edit-Distance-based Similarity (TEDS) metric proposed for evaluation.
+6. EDD model achieves 9.7% higher TEDS score than state-of-the-art.
+7. Evaluation shows EDD model's superior performance on complex tables.
+8. PubTabNet dataset offers diverse table styles from over 6,000 journals.
+9. EDD model trained on PubTabNet demonstrates high accuracy in table recognition.
+10. EDD model's dual decoders enhance performance over single decoder models.
+
+# TAKEAWAYS:
+1. PubTabNet is the largest dataset for image-based table recognition.
+2. EDD model significantly outperforms existing table recognition methods.
+3. TEDS metric better captures table structure and OCR errors.
+4. Dual decoder approach in EDD improves table structure and content recognition.
+5. PubTabNet's diversity enhances model robustness and generalizability.
+
+----------------------------------------
+
+# ocr/1912.13318v5
+
+# ONE SENTENCE SUMMARY:
+LayoutLM integrates text, layout, and image embeddings to enhance document image understanding, achieving state-of-the-art results in several tasks.
+
+# MAIN POINTS:
+1. LayoutLM pre-trains on text and layout information jointly for document image understanding.
+2. Incorporates image features to capture visual information of words.
+3. Achieves state-of-the-art results in form understanding, receipt understanding, and document classification.
+4. Uses Masked Visual-Language Model (MVLM) and Multi-label Document Classification (MDC) as training objectives.
+5. Pre-trained on IIT-CDIP Test Collection with over 11 million scanned document images.
+6. Evaluated on FUNSD, SROIE, and RVL-CDIP datasets.
+7. Substantially outperforms BERT and RoBERTa models in document image tasks.
+8. Demonstrates effectiveness in low resource settings with limited labeled data.
+9. Future work includes expanding pre-training data and involving image embeddings in pre-training.
+10. The pre-trained models and code are publicly available for further research.
+
+# TAKEAWAYS:
+1. LayoutLM successfully combines text, layout, and image features for improved document understanding.
+2. Pre-training on large-scale document images enhances performance in downstream tasks.
+3. Achieves significant improvements over existing models like BERT and RoBERTa.
+4. Demonstrates strong performance in both in-domain and out-of-domain datasets.
+5. Future expansions aim to further enhance the model with more data and computational resources.
+
+----------------------------------------
+
+# ocr/2009.09941v3
+
+# ONE SENTENCE SUMMARY:
+PP-OCR is a lightweight OCR system optimized for efficiency and size, capable of recognizing multiple languages with open-source models.
+
+# MAIN POINTS:
+1. PP-OCR is an ultra lightweight OCR system with a model size of 3.5M for Chinese and 2.8M for alphanumeric symbols.
+2. It supports multiple languages, including Chinese, English, French, Korean, Japanese, and German.
+3. The system includes text detection, detected boxes rectification, and text recognition components.
+4. Utilizes strategies like light backbones, data augmentation, cosine learning rate decay, and PACT quantization.
+5. Text detection uses Differentiable Binarization, reducing model size to 1.4M.
+6. Text direction classification employs MobileNetV3 and data augmentation techniques.
+7. Text recognition uses CRNN and various optimization strategies to reduce model size to 1.6M.
+8. Extensive datasets were used for training, including 17.9M images for text recognition.
+9. The system is open-source, with codes available on GitHub.
+10. Ablation experiments demonstrate the effectiveness of different strategies in enhancing model performance.
+
+# TAKEAWAYS:
+1. PP-OCR achieves a balance between model size and performance through innovative strategies.
+2. The system is versatile, supporting multiple languages with high efficiency.
+3. Lightweight models enable deployment on embedded devices like smartphones.
+4. Open-source availability encourages further research and application development.
+5. Extensive datasets and ablation experiments validate the system's effectiveness.
+
+----------------------------------------
+
+# ocr/2012.14740v4
+
+# ONE SENTENCE SUMMARY:
+LayoutLMv2 is a multi-modal pre-training model designed to enhance visually-rich document understanding by integrating text, layout, and image information, achieving state-of-the-art results across multiple tasks.
+
+# MAIN POINTS:
+1. LayoutLMv2 integrates text, layout, and image in a single multi-modal framework.
+2. Uses a two-stream multi-modal Transformer encoder for better cross-modality interaction.
+3. Introduces text-image alignment and text-image matching pre-training tasks.
+4. Incorporates a spatial-aware self-attention mechanism for understanding text block positions.
+5. Outperforms LayoutLM and sets new state-of-the-art results in various tasks.
+6. Evaluated on benchmark datasets: FUNSD, CORD, SROIE, Kleister-NDA, RVL-CDIP, and DocVQA.
+7. LayoutLMv2BASE and LayoutLMv2LARGE models have 200M and 426M parameters, respectively.
+8. Pre-trained using IIT-CDIP dataset; fine-tuned on specific downstream tasks.
+9. Achieves significant accuracy improvements in entity extraction and document classification.
+10. Demonstrates strong performance in visual question answering on document images.
+
+# TAKEAWAYS:
+1. LayoutLMv2 effectively integrates multiple modalities for document understanding.
+2. New pre-training tasks improve model's ability to align text and image data.
+3. Spatial-aware self-attention enhances understanding of document layouts.
+4. Achieves superior results across various document understanding benchmarks.
+5. Publicly available model and code foster further research and application in the field.
+
+----------------------------------------
+
+# ocr/2108.02923v3
+
+# ONE SENTENCE SUMMARY:
+StrucTexT introduces a unified framework leveraging multi-modal transformers for structured text understanding, excelling in entity labeling and linking tasks on visually rich documents.
+
+# MAIN POINTS:
+1. StrucTexT addresses entity labeling and linking tasks in VRDs.
+2. Utilizes a segment-token aligned encoder for multi-granularity tasks.
+3. Introduces three self-supervised pre-training tasks for richer representation.
+4. Combines text, image, and layout information.
+5. Outperforms state-of-the-art methods on FUNSD, SROIE, and EPHOIE datasets.
+6. Pre-training tasks include Masked Visual Language Modeling, Sentence Length Prediction, and Paired Boxes Direction.
+7. Uses a transformer encoder inspired by vision-language transformers.
+8. Incorporates segment ID embedding for visual-text alignment.
+9. Evaluates model on three benchmark datasets.
+10. Demonstrates superior performance and significant improvements in document understanding tasks.
+
+# TAKEAWAYS:
+1. StrucTexT's unified framework effectively handles both token-level and segment-level tasks.
+2. Novel pre-training strategies enhance multi-modal feature representation.
+3. Segment ID embedding facilitates better visual-text alignment.
+4. The model significantly improves entity labeling and linking performance.
+5. Extensive experiments validate StrucTexT's superior performance over existing methods.
+
+----------------------------------------
+
+# ocr/2109.10282v5
+
+# ONE SENTENCE SUMMARY:
+TrOCR is an effective end-to-end OCR model leveraging pre-trained image and text Transformers, achieving state-of-the-art results in text recognition tasks.
+
+# MAIN POINTS:
+1. TrOCR is an end-to-end OCR model using pre-trained image and text Transformers.
+2. It replaces CNN backbones with image Transformers for visual understanding.
+3. Uses wordpiece-level text generation instead of character-level.
+4. Achieves state-of-the-art results on printed, handwritten, and scene text recognition tasks.
+5. Requires no external language model or complex pre/post-processing steps.
+6. Encoder uses pre-trained ViT-style models; decoder uses pre-trained BERT-style models.
+7. TrOCR models and code are publicly available for use and research.
+8. Efficiently handles multilingual text recognition with minimal effort.
+9. The architecture is simple, convolution-free, and easy to implement.
+10. The model's performance benefits significantly from pre-training and data augmentation.
+
+# TAKEAWAYS:
+1. TrOCR leverages the strengths of both CV and NLP pre-trained models for OCR tasks.
+2. It eliminates the need for CNNs and external language models, simplifying the architecture.
+3. The model achieves superior accuracy across various text recognition benchmarks.
+4. TrOCR's flexibility allows easy adaptation for multilingual text recognition.
+5. The publicly available models and code facilitate further research and application development.
+
+----------------------------------------
+
+# ocr/2111.15664v5
+
+# ONE SENTENCE SUMMARY:
+Donut, an OCR-free transformer model, offers efficient and accurate visual document understanding by directly mapping raw images to structured outputs.
+
+# MAIN POINTS:
+1. Donut eliminates OCR dependency, reducing computational cost and error propagation.
+2. Uses a Transformer-based architecture with cross-entropy loss for pre-training.
+3. Achieves state-of-the-art performance on various VDU tasks in speed and accuracy.
+4. Includes a synthetic data generator, SynthDoG, for multilingual and domain flexibility.
+5. Donut's encoder-decoder model processes images directly into structured formats like JSON.
+6. Pre-training involves reading text from document images using synthetic and real datasets.
+7. Fine-tuning adapts Donut to specific VDU tasks by generating structured JSON outputs.
+8. Donut outperforms traditional OCR-based methods in document classification and information extraction.
+9. Demonstrates robustness in low-resource scenarios and complex document structures.
+10. Visualization of attention maps shows meaningful text localization without explicit OCR.
+
+# TAKEAWAYS:
+1. Donut's OCR-free approach offers significant cost and accuracy benefits over traditional OCR-dependent models.
+2. Transformer-based architecture enables efficient end-to-end training and inference.
+3. SynthDoG generates high-quality synthetic data for robust multilingual model training.
+4. Donut's versatility is proven across various tasks like document classification, information extraction, and visual question answering.
+5. The model's performance in low-resource settings highlights its practical applicability in real-world scenarios.
+
+----------------------------------------
+
+# ocr/2206.03001v2
+
+# ONE SENTENCE SUMMARY:
+PP-OCRv3 is an enhanced ultra-lightweight OCR system that improves text detection and recognition accuracy by 5% over PP-OCRv2 through nine key upgrades.
+
+# MAIN POINTS:
+1. PP-OCRv3 enhances the text detection model with LK-PAN, RSE-FPN, and DML strategies.
+2. It introduces the SVTR-LCNet text recognition network combining SVTR and PP-LCNet.
+3. Guided training of CTC by attention improves accuracy without increasing prediction cost.
+4. TextConAug and TextRotNet strategies enhance data augmentation and pre-training.
+5. U-DML and UIM strategies optimize model training with unlabeled data.
+6. Experiments show PP-OCRv3 achieves 5% higher Hmean than PP-OCRv2.
+7. PP-OCRv3 maintains comparable inference speed despite the accuracy improvements.
+8. The system is open-sourced and available on GitHub under PaddleOCR.
+9. PP-OCRv3 is tested on extensive real-world and synthetic datasets.
+10. The system is designed to be efficient for deployment in constrained environments like mobile devices.
+
+# TAKEAWAYS:
+1. PP-OCRv3 significantly improves OCR accuracy while maintaining efficiency.
+2. New modules like LK-PAN and RSE-FPN enhance text detection capabilities.
+3. SVTR-LCNet combines advantages of transformers and lightweight CNNs for better text recognition.
+4. Data augmentation and self-supervised pre-training strategies boost model performance.
+5. The open-source nature of PP-OCRv3 makes it accessible for further research and practical applications.
+
+----------------------------------------
+
+# ocr/2212.02623v3
+
+# ONE SENTENCE SUMMARY:
+UDOP is a foundational Document AI model unifying text, image, and layout modalities for diverse document understanding and generation tasks.
+
+# MAIN POINTS:
+1. UDOP unifies text, image, and layout modalities with a Vision-Text-Layout Transformer.
+2. It leverages spatial correlations to model documents as a whole.
+3. Utilizes both self-supervised and supervised pretraining on large-scale document corpora.
+4. Achieves high-quality neural document editing and content customization.
+5. Sets state-of-the-art performance on 8 Document AI tasks.
+6. Pretrained on 11 million unlabeled documents and 1.8 million labeled examples.
+7. Evaluated on FUNSD, CORD, RVL-CDIP, DocVQA, and DUE-Benchmark datasets.
+8. Introduces innovative self-supervised objectives for holistic document learning.
+9. Includes curriculum learning to handle large image resolutions.
+10. Achieves customizable, high-quality document generation and editing for the first time in Document AI.
+
+# TAKEAWAYS:
+1. UDOP's unified representation enhances interaction between text, image, and layout modalities.
+2. It uses a novel Vision-Text-Layout Transformer for joint encoding and decoding.
+3. Sets new benchmarks in document understanding, ranking first on the DUE-Benchmark leaderboard.
+4. Demonstrates high-quality document generation and editing capabilities.
+5. Incorporates both self-supervised and supervised pretraining for robust performance.
+
+----------------------------------------
+
+# ocr/2305.07895v6
+
+# ONE SENTENCE SUMMARY:
+Large multimodal models show promise in text-related visual tasks but face challenges in handwritten, multilingual, and complex text recognition.
+
+# MAIN POINTS:
+1. Large models dominate NLP and multimodal vision-language learning.
+2. OCRBench evaluates OCR capabilities of large multimodal models.
+3. OCRBench includes 29 datasets, making it the most comprehensive OCR benchmark.
+4. Models show strengths and weaknesses in multilingual, handwritten, and mathematical text.
+5. Even state-of-the-art models struggle with blurry, non-semantic text, and handwritten expressions.
+6. Proposed OCRBench can guide improvements in multimodal techniques.
+7. Evaluation pipeline and benchmark available on GitHub.
+8. LMMs achieve promising results in text recognition but struggle with domain-specific tasks.
+9. Future research should enhance fine-grain perception and multilingual datasets.
+10. LMMs' OCR capabilities can be improved through domain-specific adaptations and optimizations.
+
+# TAKEAWAYS:
+1. Large multimodal models are effective but have limitations in complex text recognition.
+2. OCRBench is a comprehensive benchmark for evaluating OCR capabilities.
+3. Fine-grain perception and semantic reliance are key areas for improvement.
+4. High-resolution input is crucial for better performance in detailed text tasks.
+5. Enhancing OCR capabilities in LMMs requires domain-specific adaptations and more diverse training data.
+
+----------------------------------------
+
+# ocr/2305.17219v1
+
+# ONE SENTENCE SUMMARY:
+
+GVdoc, a graph-based visual document classification model, outperforms state-of-the-art models on out-of-distribution data by leveraging document layout and spatial relationships.
+
+# MAIN POINTS:
+
+1. Robust models must perform well on unseen and out-of-domain data.
+2. Visual document classifiers struggle with out-of-distribution examples.
+3. Image-based classifiers lack text components; transformer models face token serialization issues.
+4. GVdoc creates document graphs using layouts and trains a graph neural network.
+5. GVdoc outperforms state-of-the-art models on out-of-distribution data.
+6. Document AI models often fail on out-of-distribution data due to fixed training distributions.
+7. Previous methods use large models with high computational demands.
+8. GVdoc uses graph-based modeling to leverage reading order and spatial layout.
+9. GVdoc maintains performance with fewer parameters and better generalization.
+10. GVdoc’s graph-based approach combines both β skeleton and paragraph-level graphs.
+
+# TAKEAWAYS:
+
+1. GVdoc effectively addresses out-of-distribution challenges in visual document classification.
+2. The model uses a graph neural network to learn from document layouts and relationships.
+3. GVdoc achieves better generalization with fewer parameters compared to other models.
+4. Combining β skeleton and paragraph-level graphs enhances GVdoc's performance.
+5. GVdoc demonstrates robustness and accuracy across various document classification tasks.
+
+----------------------------------------
+
+# ocr/2306.14824v3
+
+# ONE SENTENCE SUMMARY:
+KOSMOS-2 is a multimodal large language model that integrates grounding capabilities, enabling it to link text to visual elements and perform various language and vision-language tasks.
+
+# MAIN POINTS:
+1. KOSMOS-2 integrates grounding capabilities to link text to visual elements.
+2. Uses Markdown-style links to represent refer expressions.
+3. Trained on a large-scale dataset of grounded image-text pairs called GRIT.
+4. Evaluated on tasks like multimodal grounding, referring expression comprehension, and phrase grounding.
+5. Demonstrates impressive performance on language and vision-language tasks.
+6. Enhances human-AI interaction through efficient vision-language tasks.
+7. Uses a Transformer-based causal language model architecture.
+8. Incorporates spatial location tokens to represent bounding boxes.
+9. Achieves competitive results on phrase grounding and referring tasks.
+10. Provides visual answers and grounds text outputs to the visual world.
+
+# TAKEAWAYS:
+1. KOSMOS-2 significantly improves multimodal grounding and referring capabilities.
+2. The model can handle complex vision-language tasks with higher accuracy.
+3. Grounding capability enhances human-AI interaction by linking text to image regions.
+4. KOSMOS-2's architecture builds on KOSMOS-1 with additional grounding features.
+5. The model's performance on various tasks highlights its potential for artificial general intelligence development.
+
+----------------------------------------
+
+# ocr/2308.13418v1
+
+# ONE SENTENCE SUMMARY:
+Nougat, a Visual Transformer model, improves OCR for scientific documents by converting PDFs into a machine-readable markup language, enhancing accessibility and searchability of scientific knowledge.
+
+# MAIN POINTS:
+1. PDFs are prevalent but obscure semantic information, especially in mathematical expressions.
+2. Existing OCR tools struggle with mathematical notation due to line-by-line processing.
+3. Nougat leverages a Visual Transformer model for end-to-end OCR without external tools.
+4. The model translates document images to formatted markup text.
+5. The Swin Transformer encoder processes document images, resized and padded for uniformity.
+6. The decoder uses cross-attention to convert encoded images into token sequences.
+7. Data augmentation simulates imperfections in scanned documents for better generalization.
+8. A new dataset pairs PDF pages with source code, enhancing training effectiveness.
+9. Nougat outperforms existing tools like GROBID in recognizing and formatting text and mathematical expressions.
+10. The model addresses repetition issues during inference through anti-repetition augmentation and detection.
+
+# TAKEAWAYS:
+1. Nougat bridges the gap between human-readable PDFs and machine-readable text, improving accessibility.
+2. The model's architecture allows processing of scanned documents and books, not just digital-born PDFs.
+3. Extensive data augmentation techniques ensure robust performance across various document types.
+4. Nougat's performance is comparable between its small and base versions, offering flexibility.
+5. Anti-repetition strategies significantly reduce errors in generated text, especially for out-of-domain documents.
+
+----------------------------------------
+
+# ocr/2309.11419v2
+
+# ONE SENTENCE SUMMARY:
+KOSMOS-2.5 is a multimodal literate model for machine reading of text-intensive images, excelling in document-level text recognition and image-to-markdown generation.
+
+# MAIN POINTS:
+1. KOSMOS-2.5 handles text-intensive images through spatially-aware text blocks and structured markdown text.
+2. The model uses a unified decoder-only autoregressive Transformer architecture with task-specific prompts.
+3. Fine-tuning KOSMOS-2.5 results in KOSMOS-2.5-CHAT for document understanding tasks.
+4. Pre-training corpus includes 357.4 million document pages from diverse domains.
+5. Evaluated on OCREval and MarkdownEval benchmarks, demonstrating strong literate capabilities.
+6. KOSMOS-2.5-CHAT performs competitively with larger models across nine text-rich visual question answering benchmarks.
+7. The model architecture combines a ViT-based vision encoder and a Transformer-based language decoder.
+8. KOSMOS-2.5 uses a resampler module to reduce image sequence length.
+9. The model is trained to predict outputs from both image context and task-specific prompts.
+10. KOSMOS-2.5's dataset includes various document types and is curated using an automated pipeline.
+
+# TAKEAWAYS:
+1. KOSMOS-2.5 excels in both document-level text recognition and image-to-markdown generation.
+2. The model achieves impressive results comparable to GPT-4o with fewer parameters.
+3. KOSMOS-2.5-CHAT offers robust performance across multiple document understanding benchmarks.
+4. A diverse and extensive pre-training corpus enhances the model’s adaptability and generalization.
+5. OCREval and MarkdownEval benchmarks provide comprehensive evaluations for document-level machine reading capabilities.
+
+----------------------------------------
+
+# ocr/2403.04473v2
+
+# ONE SENTENCE SUMMARY:
+TextMonkey is a novel large multimodal model enhancing text-centric task performance by improving image resolution processing, token reduction, and interpretability through various benchmarks and tasks.
+
+# MAIN POINTS:
+1. TextMonkey uses Shifted Window Attention to enhance cross-window connectivity and stabilize training.
+2. It filters redundant tokens using similarity criteria to improve model performance.
+3. Incorporates positional information into responses to enhance interpretability.
+4. Finetuning enables TextMonkey to perform screenshot tasks.
+5. Significant improvements were observed across 12 benchmarks: 5.2% in Scene Text-Centric tasks, 6.9% in Document-Oriented tasks, and 2.8% in Key Information Extraction tasks.
+6. Achieved a 10.9% increase in scene text spotting and set a new standard on OCRBench with a score of 561.
+7. Evaluated methods include OCR-Model-Driven and OCR-Free approaches.
+8. Shifted Window Attention integrates cross-window relationships while maintaining computational efficiency.
+9. Token Resampler compresses redundant tokens based on significance, enhancing model performance.
+10. Fine-tuned on structured data, demonstrating capabilities in text spotting, reading text, and responding to positional queries.
+
+# TAKEAWAYS:
+1. TextMonkey significantly enhances performance in text-centric tasks by improving image resolution processing and token reduction.
+2. The model achieves notable improvements across multiple benchmarks, setting a new standard in OCR-related assessments.
+3. Incorporating positional information into responses improves model interpretability and reliability.
+4. TextMonkey is versatile, capable of handling various tasks, including document analysis, scene text spotting, and screenshot commands.
+5. Future research can explore automating chain-of-thought reasoning to further enhance model performance and reasoning capabilities.
+
+----------------------------------------
+
+# ocr/2408.02034v2
+
+# ONE SENTENCE SUMMARY:
+Mini-Monkey introduces a multi-scale adaptive cropping strategy and scale compression mechanism to enhance lightweight multimodal large language models' high-resolution image processing capabilities.
+
+# MAIN POINTS:
+1. Mini-Monkey tackles object segmentation issues in MLLMs caused by traditional cropping methods.
+2. It employs a multi-scale adaptive cropping strategy (MSAC) to generate non-segmented object representations.
+3. MSAC adaptively selects different aspect ratios to prevent semantic incoherence.
+4. A Scale Compression Mechanism (SCM) is used to reduce computational overhead.
+5. Mini-Monkey achieves state-of-the-art performance among 2B-parameter MLLMs.
+6. Outperforms 8B-parameter models on OCRBench with a score of 802.
+7. Efficient training using only eight RTX 3090 GPUs.
+8. Demonstrates superior performance on both general multimodal and document understanding tasks.
+9. Combines features from different scales within the LLM for enhanced understanding.
+10. Code is available at https://github.com/Yuliang-Liu/Monkey.
+
+# TAKEAWAYS:
+1. Mini-Monkey significantly improves lightweight MLLMs' high-resolution image processing.
+2. MSAC prevents semantic incoherence by adaptive multi-scale cropping.
+3. SCM effectively reduces computational demands without additional parameters.
+4. Mini-Monkey sets new benchmarks in various multimodal and document understanding tasks.
+5. The model is highly efficient and easily trainable with limited hardware resources.

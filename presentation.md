@@ -331,6 +331,20 @@ Conclusions:
   - combine using boosting algorithm
   - needs to be extended to LLMs though
 
+# Summary "Boosting" with Language Models
+
+- Erroneously referred to as "boosting".
+- Utilizes existing LLM capabilities without retraining.
+- Weak predictors outperform random guessing
+- use these as part of training (here, table analysis)
+- Converts tabular data to natural language
+- Combines multiple LLM outputs for accuracy
+- Effective for small datasets and few-shot learning
+
+Actual boosting for LLMs remains to be done.
+
+"Language models are weak learners." Manikandan et al. 2023 [http://arxiv.org/2306.14101v1](http://arxiv.org/2306.14101v1)
+
 # What do Facts Look Like?
 
 ```YAML
@@ -355,6 +369,30 @@ wikidata_item:
       references:
         - {reference_property: Reference URL, reference_property_id: P854, value: "https://source.link"}  # Reference URL
 ```
+
+# Efficiency of Natural Language
+
+Facts like the above translate efficiently back and forth between English and
+knowledge representation languages:
+
+```
+Douglas Adams is an English writer and humorist, also known as Douglas Noel Adams.
+He is 185 cm tall. He was educated at St. John's College, Cambridge, UK from 1971 to 1974
+(according to http://source.link).
+```
+
+# Existing LLMs Already Understand Knowledge Representations
+
+![h:300](Figures/english-to-rdf.png)
+
+# Existing LLMs Already Understand Knowledge Representations (2)
+
+![h:500](Figures/adams-rdf.png)
+
+# Existing LLMs Already Understand Knowledge Representations (3)
+
+![h:50](Figures/wikidata-request.png)
+![h:500](Figures/wikidata-response.png)
 
 # Pre-training Data Augmentation
 
@@ -438,26 +476,13 @@ Interaction between LLM and Knowledge Graph:
 
 Sun, Z., et al. (2020). "Reasoning over Entity-Action-Relation Graphs for Open-Domain Question Answering." https://arxiv.org/abs/2012.15315
 
-
-
-
 # Utilizing Knowledge more Efficiently
-
-
 
 # What does Knowledge Look Like?
 
 # LLM Book Derived Knowledge vs Actual Knowledge
 
 # Wikidata Claims
-
-# Efficiency of Natural Language
-
-# RDF Triples
-
-# Logical Inference in LLMs?
-
-# Attempts: Integrate Knowledge Graphs into LLMs
 
 # Classical Problem: Term Resolution
 

@@ -1,5 +1,5 @@
 for p in */*.pdf; do
-    dest="$(dirname $p)/$(basename $p .pdf)-slides.md"
+    dest=$(dirname $p)/$(basename "$p" .pdf)-slides.md
     test -f "$dest" && continue
     echo "$p -> $dest"
     mutool draw -F txt "$p" | fabric -p paper2slides > "$dest"

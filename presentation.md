@@ -2,9 +2,10 @@
 marp: true
 theme: default
 paginate: true
+html: true
 footer: 'OCR and LLMs Presentation'
 
-headingDivider: 1
+headingDivider: 2
 ---
 
 <!--
@@ -13,31 +14,55 @@ Notes:
 -- vlms for image categorization, segmentation via backprop etc
 -->
 
-# OCR and LLMs
+# Document Analysis in the time of LLMs
 
-# Overview
+Thomas Breuel
+NVIDIA Research
 
-- LLMs/VLMs have replaced most NLP/vision models. OCR?
-- Objectives and uses of document analysis in this new world.
-- Low/high accuracy worlds.
-- Using low accuracy to bootstrap high accuracy.
+# Talk Outline
 
-# REVOLUTION IN MACHINE LEARNING / AI
+- AI Revolution
+- Three Types of Document Analysis Systems
+- Documents as Sources of Facts for LLMs
 
-# LLMs / VLMs Have been Eating Machine Learning
+## REVOLUTION IN MACHINE LEARNING / AI
+
+## LLMs / VLMs Have been Eating Machine Learning
 
 - tasks that used to require extensive, specialized training...
 - ... are now handled by foundation models
 - ... or with minimal fine tuning
 
-# Foundation Models
+## Big Changes over the Last Decade
 
-- self-supervised training on vast amounts of unlabeled data (images, text)
-- multitask learning
-- task specifications in natural language
-- generalization to new tasks and classes through natural language
+- broad, general models that work across many tasks and modalities
+- very large scale unsupervised pretraining
+- multitask training and multitask models
+- efficient and simple fine-tuning on small datasets
+- many problems solved with zero-shot or few-shot methods
+- task specifications through natural language
 
-# Example: Zero-Shot Document Classification
+## Zero/Few Shot with LLMs and VLMs
+
+| LLMs                           | VLMs                          |
+|--------------------------------|-------------------------------|
+| Named Entity Recognition (NER) | Object Recognition/Classification |
+| Document Categorization        | Object Detection              |
+| Sentiment Analysis             | Scene Understanding           |
+| Text Summarization             | Action Recognition            |
+| Machine Translation            | ...                           |
+| ...                            |                               |
+
+## Example: Zero-Shot VLM Tasks
+
+- "Is there a dog in the image?"
+- "What is the bounding box for the dog in the image?"
+- "How many balls are there in the image?"
+- "Is Marylin Monroe in the picture?"
+- "Caption the picture."
+- "Is the picture in focus?"
+
+## Example: Zero-Shot Document Classification
 
 ```Python
 prompt = """
@@ -62,41 +87,109 @@ classifier = OpenAIClient(prompt)
 result = classifier.json_query(text)
 ```
 
-# Zero/Few Shot with LLMs
+## Some Tasks Still Require Specialized Custom Models
+(For now)
 
-- Named Entity Recognition (NER)
-- Document Categorization
-- Sentiment Analysis
-- Text Summarization
-- Machine Translation
+- Stereo -- two image input, specialized preprocessing
+- Gaze Estimation -- high precision, specialized datasets
+- Anomaly Detection -- specialized statistics
+- 3D Pose Estimation for Articulated Objects -- complex structured outputs
 - ...
 
-# Zero/Few Shot with VLMs
+# Current State of OCR
 
-- Object Recognition/Classification
-- Object Detection
-- Scene Understanding
-- Action Recognition
-- ...
+# Users & Use Cases
 
-# Require Specialized Custom Models
+- Personal Library of Biomedical Researcher (>10⁶ users)
+  - Digital PDFs, some scanned.
+  - Use LLMs for categorization, retrieval; not high accuracy.
+  - Combo of OCR, pdf2text, and existing LLMs adequate.
 
-- Photometric Stereo
-- Gaze Estimation
-- Anomaly Detection
-- 3D Pose Estimation for Articulated Objects
-- ...
+- Financial Data Services Provider (<1000 users)
+  - Native digital PDFs; specialized layouts
+  - Avoids image-based OCR, prefers text extraction
+  - Mix of manual keying, OCR, digital formats; incremental improvements possible.
 
-# FOUNDATION MODELS IN OCR
+# Users & Use Cases (2)
 
-# Traditional OCR
+- Large Academic/Non-Profit Archives (<100 users)
+  - Large diverse collections of scanned docs
+  - Requires low error, high quality markupt, reading order.
+  - Often used by academics interested in the details of the text.
+  - Not currently well-served.
+
+- Companies Training Foundation Models (<100 users)
+  - Large, scanned datasets for LLM training.
+  - Unclear how much OCR errors affect LLM quality.
+
+## "Traditional" OCR Pipeline
+
+![h:500px](Figures/ocr-diagram.png)
+
+## OCR
 
 - high accuracy scanned-to-text conversion
+- fast on high resolution images
 - $<0.5%$ character error
-- high quality reading order, layout
+- substantial problems with reading order, logical layout :exclamation:
 - ideally, recover markup (LaTeX, etc.)
 
-# "OCR-Free" Transformers
+## OCR + LLM
+
+![h+500px](Figures/ocr+llm.png)
+
+## OCR + LLM
+
+- LLMs can solve many traditional retrieval and information extraction tasks
+- LLMs are remarkably robust to OCR errors and layout errors
+- LLMs also are good at OCR error correction ("correct the OCR errors in this text")
+- combination of Traditional OCR + LLM works pretty well
+- e.g. Tesseract + GPT-4o
+
+## OCR + Multimodal Model
+
+- substantial information is contained in the visual layout of documents
+- traditional OCR systems are not very good at high level layout analysis
+
+Examples: LayoutLMv3, UDOP, TILT, DocFormer, StrucText, ...
+
+## OCR + Multimodal Model
+
+![h:280px](Figures/hybrid-multimodal.png)
+
+## OCR + Multimodal Model
+
+- OCR system can operate efficiently at high image resolutions
+- multimodal model can handle layout analysis, reading order, etc.
+- modularity of the system makes training, testing, and fine-tuning easier
+- currently the most popular approach
+
+## OCR-Free Approaches
+
+- attempt to solve document understanding tasks without separate OCR step
+- usually, a single transformer model performs both text recognition and layout analysis
+- may perform full page recognition
+
+Examples: Donut, DAN, TrOCR, ...
+
+## OCR-Free
+
+![h:200px](Figures/ocr-free.png)
+
+## Transformer-Based "Traditional" OCR
+
+Most "OCR-free" transformers cannot perform full OCR. A few can:
+
+- TrOCR (CER 2.89% handwriting only)
+- UDOP (CER 2.56%, IOU 91.62%)
+- Nougat (CER 25.5%)
+- Kosmos 2.5 (CER 9.2%, IOU 82.1%)
+
+Note:
+- These are not particularly good results by OCR standards.
+- Unknown how much is due to language modeling and even memorization.
+
+## Current Benchmarks and Leaderboards
 
 - text localization (receipts, etc)
 - page segmentation and reading order (PubLayNet, PubTables-1M)
@@ -104,184 +197,73 @@ result = classifier.json_query(text)
 - key information extraction (KIE on SROIE)
 - no widely used end-to-end OCR benchmarks
 
-# Transformer-Based "Traditional" OCR
-
-Some transformer-based systems capable of converting full page
-scans to text with bounding boxes:
-
-- UDOT (CER 2.56%, IOU 91.62%)
-- Nougat (CER 25.5%)
-- Kosmos 2.5 (CER 9.2%, IOU 82.1%)
-
-(Other systems run "on top of" traditional OCR.)
-
-# NVIDIA OCR Efforts and Foundation Models
+## NVIDIA OCR Efforts and Foundation Models
 
 Ambitious all-in-one effort:
 
 - VLMs that handle vision, scenes, and documents
+- prompted responses
 - document capabilities:
   - high accuracy image-to-text for books, articles
   - outputs logical and physical markup (headers, footnotes, etc.)
   - handles math and other special content
 - massive training and data management effort due to generality of model
 
-# FUTURE OF OCR AND LLMS
+## NVIDIA Architecture
 
-# OCR Future
+![h:500px](Figures/nvidia-1.png)
 
-Three different possible scenarios:
+## NVIDIA Results
 
-1. all in one models: vision+documents $\rightarrow$ text/structure
-2. traditional OCR + transformer for logical layout
-3. all-in-one transformer with post-processing/correction by specific models
+![h:400px](Figures/nvidia-results.png)
 
-# What do we actually want?
+## What's Missing
 
-- high quality/accuracy conversions of traditional documents
-- high accuracy information extraction
-- retrieval, summarization, etc.
-- conversion as input to LLM training
-- conversion as input to LLM inference
+- Need better end-to-end OCR benchmarks, not just task-specific benchmarks.
+- Need more dense and diverse annotated dataset and benchmarks with complete annotation
+- Better coverage (training+benchmarks) of mathematical equations, chemistry, etc.
+- More diversity: different set of layout, languages, fonts, etc.
+- Better coverage of uncommon layouts.
 
-# LLMs and Noise
+## OCR Future
 
-- traditional NLP was fragile: grammar, ambiguities, etc.
-- LLMs are robust to noise in training data and questions
-- robustness to OCR errors can be enhanced by augmenting training data with OCR errors
-- redundancy of training data likely partially responsible (facts are represented many times)
+Two different OCR approaches:
 
-# LLMs and Noise (2)
+- High performance self-contained OCR as input to LLMs and multimodal models
 
-- OCR is also used for LLM input, e.g.:
-  - data extraction from financial documents
-  - question answering from biomed papers
-- high accuracy (e.g., correct numbers) much more important
-- LLMs may still have some robustness to layout errors
-- LLM-related semantic errors may dominate
-  - VQA performance may be limited by LLM performance
-  - that's why so-so "OCR-free" CER may be acceptable
+- Multimodal models that perform basic OCR/layout and invoke specialized agents.
 
-# Where do we stand?
+Both will likely co-exist for some time.
 
-- traditional OCR _may_ be adequate for both training and inference of LLMs
-- "OCR-free" VQA _may_ have advantages because it can refer to visual content
-- transformer based OCR system have not yet clearly demonstrated superior performance
-- very high accuracy OCR (image $\rightarrow$ markup) still needed
+# What do we need OCR for?
 
-<!--
+## What do we need OCR for?
 
-# HTML Microdata / Microformats
+- largely already converted (e.g. Gutenberg)
+  - important pre-1924 books
+  - important scientific papers
+- good alternatives to OCR / good custom solutions
+  - business, legal, government communications
+  - scene text (camera based translation, self-driving cars, etc.)
+- largely available in digital format
+  - open source textbooks and other publications
+  - scientific publications (tagged PDF/A will have large impact)
 
-```html
-  <div itemscope itemtype="http://xbrl.org/TotalRevenue">
-      <span>Total Revenue: </span>
-      <span itemprop="amount" content="1300000000">$1.3 bn</span>
-      <meta itemprop="currency" content="USD">
-  </div>
-```
+## Objective?
 
-- seamless embedding of metadata in HTML
-- easy to implement, easy to make consistent
-- common standards (XBRL)
-- example of high quality semantic embedding
-- also a good _target_ format for OCR systems (hOCR)
+<br>
+<br>
+<br>
+<br>
+<center>
+<font size=48px>We are trying to translate texts into <em>facts</em></font>
+</center>
+<br>
+<br>
+<br>
+<br>
 
-# The PDF Disaster
-
-PDF has been disastrous from the point of view of moving to a paperless society:
-
-- originated (via PS) as a printer page language
-- most documents have no reading order, layout information
-- huge variety of actual PDF file contents for the same appearance
-- almost no semantic information standards
-- the few that exist simply embed XML along with the PDF
-- not even LaTeX generates tagged PDF by default
-- Word is not much better, but at least has reading order
-
--->
-
-
-# MATERIALS, USERS AND MARKETS
-
-# Example: Internet Archive (<10 users)
-
-- large collection of scanned books
-- both pre-1924 and post-1924
-- can't easily get digital data even when available
-- requires very low error rates, high quality markup
-- requires high quality image-based OCR
-
-# Example: Biomedical Researcher (> 100000000 users)
-
-- collection of papers
-- most native digital PDF (post 2000), some scanned
-- wants to use LLMs to help with categorization, retrieval
-- does not require high accuracy, just enough to do retrieval
-- mix of approaches:
-  - typical OCR for scanned docs (Tesseract is likely sufficient)
-  - pdf2text tools for PDFs (occasional reading order problems acceptable)
-  - also served by OCR-free VQA (but may be more expensive/slow)
-
-# Example: Financial Services Provider (< 1000 users)
-
-- large, steady influx of native digital PDFs
-- typical, specialized layouts and contents
-- approaches:
-  - image-based OCR _undesirable_ because of potential for character errors
-  - requires high throughput, low computational cost
-  - use text from native digital PDF
-  - combine with Transformer-based information extraction
-  - fine tuned models for high domain specific performance
-  - "OCR-free VQA" currently very far from meeting performance requirements
-
-# Example: Companies Training Foundation Models (< 100 users)
-
-- large collection of scanned materials (hopefully licensed)
-- need large amounts of training data for LLMs
-- LLM training is robust to character/layout errors
-- information is redundant across many books
-- approaches:
-  - use an existing off-the-shelf OCR system
-  - train a transformer-based OCR system
-  - directly train a VQA model
-
-  # Users, Use Cases, and Systems
-
-- many use cases adequately taken care of by existing systems
-  - low CER/WER, moderate IOU layout errors
-- still needed, in development
-  - very high accuracy end-to-end OCR
-  - text from native digital, layout/semantics from transformers
-
-# LLMS AND KNOWLEDGE
-
-# MMLU Question Design and Types
-- **Subject Selection**: Questions cover a wide range of subjects (humanities, social sciences, hard sciences, professional fields) with varying difficulty levels (Elementary, High School, College, Professional) 
-- **Source Collection**: Manually collected from freely available sources, including standardized test practice questions and educational resources 
-- **Question Format**: Designed as multiple-choice questions to facilitate assessment, each with one correct answer and several distractors 
-- **Knowledge-Based Questions**: Approximately **60%** of questions require recall of factual information.
-- **Inference and Reasoning Questions**: About **40%** of questions require applying knowledge, making connections, or solving problems 
-
-# MMLU Examples of Multiple-Choice Questions
-## **Mathematics Example**:
-If 4 daps = 7 yaps, and 5 yaps = 3 baps, how many daps equal 42 baps? 
-(A) 28 (B) 21 (C) 40 (D) 30
-(**Answer**: (C) 40)
-## **Biology Example**:
-What is the powerhouse of the cell? 
-(A) Nucleus (B) Mitochondria (C) Ribosome (D) Endoplasmic Reticulum
-(**Answer**: (B) Mitochondria)
-
-# MMLU Model Performance on the Benchmark
-## **Human Performance**:
-- Unspecialized humans: **34.5%** accuracy.
-- Expert-level (95th percentile) for US Medical Licensing Exams: **87%** accuracy.
-## **Language Model Performance**:
-- Largest GPT-3 model (175 billion parameters): Improved by almost **20 percentage points** over smaller models.
-- Estimated expert-level accuracy across subjects: **89.8%** 
-
-# Types of Tasks involved in LLM Answers
+## Types of Tasks involved in LLM Answers
 
 - knowledge of facts ("Lincoln was president")
 - knowledge of meta-facts ("this fact is true according to...")
@@ -289,63 +271,17 @@ What is the powerhouse of the cell?
   - reasoning can be imitated with factual knowledge
 - ability to recall verbating ("please quote ...")
 
-# Scaling Laws for Neural Language Models
+## MMLU Examples of Multiple-Choice Questions
 
-![Scaling Laws](Figures/scaling-laws.png)
+### **Biology Example**: (fact, knowledge)
+What is the powerhouse of the cell? 
+(A) Nucleus (B) Mitochondria (C) Ribosome (D) Endoplasmic Reticulum
 
-Kaplan et al. 2021
+### **Mathematics Example**: (inference)
+If 4 daps = 7 yaps, and 5 yaps = 3 baps, how many daps equal 42 baps? 
+(A) 28 (B) 21 (C) 40 (D) 30
 
-# Source of these Scaling Laws: Simple Model
-
-Simple Model:
-- sequence of training samples
-- collection of facts $F_i$ to be learned
-- occurrence of facts is determined by exponential distributions with parameters $\lambda_i$
-- the $\lambda_i$ follow a power law / Zipf's law distribution
-- we assume that a fact is known once it is seen
-
-Prediction:
-- what percentage of facts have been seen after $x$ samples?
-
-# Simple Model Scaling Laws
-
-![h:500px](Figures/order-distribution-exponential.png){height=50%}
-
-# Note on Scaling Laws
-
-Observations:
-- it takes many times the number of facts for the model to learn most
-- the time it takes to learn is highly dependent on the exponent in the power law
-
-Conclusions:
-- massive scanning combined with ever larger models is probably not efficient
-
-# Machine Learning Approaches
-
-- use umbrella sampling
-  - sample with an emphasis on documents containing rare facts
-  - how do we know which documents contain rare facts and which are redundant?
-  - we can simply ask: "hey, LLM, do you already know most of what's in this book?"
-- use boosting
-  - resample the dataset based on prediction errors
-  - combine using boosting algorithm
-  - needs to be extended to LLMs though
-
-# Summary "Boosting" with Language Models
-
-- Erroneously referred to as "boosting".
-- Utilizes existing LLM capabilities without retraining.
-- Weak predictors outperform random guessing
-- use these as part of training (here, table analysis)
-- Converts tabular data to natural language
-- Combines multiple LLM outputs for accuracy
-- Effective for small datasets and few-shot learning
-
-Actual boosting for LLMs remains to be done.
-
-"Language models are weak learners." Manikandan et al. 2023 [http://arxiv.org/2306.14101v1](http://arxiv.org/2306.14101v1)
-
-# What do Facts Look Like?
+## What do Facts Look Like?
 
 ```YAML
 wikidata_item:
@@ -370,123 +306,115 @@ wikidata_item:
         - {reference_property: Reference URL, reference_property_id: P854, value: "https://source.link"}  # Reference URL
 ```
 
-# Efficiency of Natural Language
+## What do Facts Look Like?
 
-Facts like the above translate efficiently back and forth between English and
-knowledge representation languages:
+![h:200px](Figures/adams-graph.png)
+
+## What do Facts Look Like?
 
 ```
-Douglas Adams is an English writer and humorist, also known as Douglas Noel Adams.
-He is 185 cm tall. He was educated at St. John's College, Cambridge, UK from 1971 to 1974
-(according to http://source.link).
+<"Q42 (Douglas Adams)", "name", "Douglas Adams">
+<"Q42 (Douglas Adams)", "alias", "Douglas Noel Adams">
+<"Q42 (Douglas Adams)", "P31 (instance of)", "Q5 (human)">
+<"Q42 (Douglas Adams)", "P22 (father)", "_:b0 (educational period)">
+<"Q42 (Douglas Adams)", "P50 (author)", "Q148882 (The Hitchhiker's Guide to the Galaxy)">
+
+<"_:b0 (educational period)", "startTime", "1971">
+<"_:b0 (educational period)", "endTime", "1974">
+<"_:b0 (educational period)", "P69 (educated at)", "Q131305 (St John's College, Cambridge)">
+<"_:b0 (educational period)", "P31 (instance of)", "Q39562 (educational stage)">
+<"_:b0 (educational period)", "P854 (reference URL)", "http://example/...">
+
+<"Q131305 (St John's College, Cambridge)", "P27 (country)", "Q145 (United Kingdom)">
+<"Q131305 (St John's College, Cambridge)", "P31 (instance of)", "Q3918 (college of the University of Cambridge)">
+
+<"Q148882 (The Hitchhiker's Guide to the Galaxy)", "title", "The Hitchhiker's Guide to the Galaxy">
+<"Q148882 (The Hitchhiker's Guide to the Galaxy)", "firstPublished", "1979">
+<"Q148882 (The Hitchhiker's Guide to the Galaxy)", "P31 (instance of)", "Q7725634 (novel)">
 ```
 
-# Existing LLMs Already Understand Knowledge Representations
+## What do facts look like?
 
-![h:300](Figures/english-to-rdf.png)
+<br>
+<br>
+Douglas Adams, also known as Douglas Noel Adams, was a human. He authored the novel "The Hitchhiker's Guide to the Galaxy", first published in 1979. From 1971 to 1974, he was educated at St John's College, Cambridge, which is a college of the University of Cambridge in the United Kingdom. 
+<br>
+<br>
 
-# Existing LLMs Already Understand Knowledge Representations (2)
+## Classical Problems with Symbolic AI
 
-![h:500](Figures/adams-rdf.png)
+- term resolution
+  - "Douglas Adams" - "Douglas Noel Adams"
+- disambiguation
+  - "John Smith (actor)" vs "John Smith (politician)"
+- ontology mapping
+  - Wikidata "educated at" vs. DBpedia "alma mater"
+- LLMs are good at resolving these problems
 
-# Existing LLMs Already Understand Knowledge Representations (3)
+## Facts and Documents
 
-![h:50](Figures/wikidata-request.png)
-![h:500](Figures/wikidata-response.png)
+Documents can be understood as collections of facts:
+- simple statements of facts ("Hydrogen is the lightest element")
+- context-dependent facts ("Lincoln was president from 1861 to 1865")
+- meta-facts ("According to ... Lincoln was president from 1861 to 1865")
+- textual facts ("'Shall I compare thee to a summer's day?' is the first line of a sonnet by Shakespeare")
 
-# Pre-training Data Augmentation
+## A Statistical Model of Facts
 
-How it works:  
-- Large-scale knowledge graphs like Wikidata or Freebase provide structured triples (e.g., "Paris is the capital of France").
-- These triples are converted into natural language statements or incorporated directly into the pre-training corpus.
-- By exposing the LLM to these factual statements during training, the model learns to associate entities and their relationships, enhancing its knowledge of world facts.
+Model:
+- facts are distributed across texts in a power law distribution
+- LLMs need to be exposed to each fact approximately $k$ times to learn it
+- performance on fact-based benchmarks reflects the percentage of facts learned
 
-Interaction between LLM and Knowledge Graph:  
-- The knowledge graph provides structured, factual data that the LLM integrates during training.
-- This leads to the model acquiring a richer understanding of relationships between entities (e.g., people, places, concepts), which it can then apply during inference.
+Prediction:
+- how long does it take to learn $x$% of facts in a corpus?
 
-Petroni, F., et al. (2019). "Language Models as Knowledge Bases?" https://arxiv.org/abs/1909.01066
+## Predictions of Learning Behavior
 
-# Knowledge Injection
+![h:500px](Figures/order-distribution-exponential.png)
 
-How it works:  
-- Knowledge injection involves incorporating structured data from knowledge graphs (e.g., Cyc, ConceptNet) into the training process of the LLM. This is done in multiple ways:
-- Knowledge-Enhanced Data as Augmented Text: Facts from the knowledge graph are converted into natural language and added to training data. Example: "Paris, the capital of France, is a beautiful city."
-- Entity Linking and Fact Tagging: Entities in the training data are linked to their corresponding nodes in the knowledge graph and tagged with relevant facts.
-- Graph Embeddings as Input Features: Knowledge graph embeddings are fed into the model alongside text embeddings to inject structured knowledge.
 
-Interaction between LLM and Knowledge Graph:  
-- The LLM incorporates graph-based facts during training via enriched text data or additional features like graph embeddings. This helps the model generate text that reflects known facts and relationships.
+## Actual Observations
 
-Bosselut, A., et al. (2019). "COMET: Commonsense Transformers for Automatic Knowledge Graph Construction." https://arxiv.org/abs/1906.05317
+Scaling Laws for Neural Language Models
 
-# Post-processing for Query Refinement
+![Scaling Laws](Figures/scaling-laws.png)
 
-How it works:  
-- After the LLM generates a response, the output is checked against a knowledge graph to ensure factual accuracy. If discrepancies are found, the response is refined by incorporating correct information from the knowledge graph.
+Kaplan et al. 2021
 
-Interaction between LLM and Knowledge Graph:  
-- The knowledge graph acts as a post-generation filter, ensuring that the model's responses are consistent with known facts. This validation step corrects or refines generated text based on real-time graph data.
+## Observations
 
-Logan IV, R. L., et al. (2019). "Barack’s Wife Hillary: Using Knowledge Graphs for Fact-Aware Language Modeling." https://arxiv.org/abs/1906.07241
+- learning itself is a power law process
+- the exponent of the power law is critical in determining learning time
+- we can potentially achieve great improvements by achieving a more uniform distribution of facts
 
-# Graph-based Reasoning
+## Approaches to Achieving Uniform Fact Distribution
 
-How it works:  
-- The LLM queries the knowledge graph to retrieve relevant facts or perform multi-hop reasoning, allowing it to infer new information based on known relationships in the graph.
+- machine learning approaches
+  - use umbrella sampling of documents
+  - use boosting
+- data driven approaches
+  - careful manual selection of training data (e.g., textbooks)
+  - small LLMs + utilize facts directly during inference
+  - train directly on facts instead of documents
 
-Interaction between LLM and Knowledge Graph:  
-- The LLM interacts with the knowledge graph in real-time, querying it to assist with reasoning tasks that require understanding complex relationships between entities. This provides logical deductions beyond the model’s static training data.
+# Summary
 
-Xiong, W., et al. (2020). "Answering Complex Open-Domain Questions with Multi-Hop Dense Retrieval." https://arxiv.org/abs/2009.12756
+## State of OCR
 
-# Embedding Alignment
+- Traditional OCR: high text accuracy, layout issues
+- Three approaches: OCR+LLM, OCR+VLM, OCR-free
+- Likely will continue to co-exist: different strengths/weaknesses.
+- High performance image-to-markup desirable for many applications.
+- Need:
+  - Improve coverage: diverse layouts, math, formulas, etc.
+  - Better end-to-end OCR benchmarks
 
-How it works:  
-- Knowledge graph embeddings (vector representations of entities and relationships) are aligned with LLM embeddings during training. This alignment allows the LLM to better understand and integrate structured knowledge from graphs with natural language.
+## State of Knowledge and Reasoning
 
-Interaction between LLM and Knowledge Graph:  
-- The LLM uses the aligned embeddings to bridge the gap between structured knowledge and unstructured text. This improves performance on tasks like entity linking and relationship extraction.
-
-Wang, X., et al. (2021). "KEPLER: A Unified Model for Knowledge Embedding and Pre-trained Language Representation." https://arxiv.org/abs/1911.06136
-
-# Contextual Retrieval
-
-How it works:  
-- During text generation, the LLM retrieves relevant facts from a knowledge graph based on the current context (e.g., a question or prompt). This real-time retrieval ensures that the generated text is accurate and contextually relevant.
-
-Interaction between LLM and Knowledge Graph:  
-- The LLM queries the knowledge graph in real-time to retrieve information that enhances the generated response. The knowledge graph serves as a dynamic source of factual data that the model incorporates into its output.
-
-Guu, K., et al. (2020). "REALM: Retrieval-Augmented Language Model Pre-Training." https://arxiv.org/abs/2002.08909
-
-# SPARQL Query Generation for Knowledge Retrieval
-
-How it works:  
-- The LLM generates SPARQL queries to retrieve specific information from a knowledge graph. For example, a question like "What is the capital of France?" would lead the LLM to generate a SPARQL query such as:
-  """
-  SELECT ?capital WHERE {
-    wd:Q142 wdt:P36 ?capital .
-  }
-  """
-  This query retrieves the capital of France from the knowledge graph.
-
-Interaction between LLM and Knowledge Graph:  
-- The LLM generates SPARQL queries based on natural language input and retrieves information from the knowledge graph in real-time. This method leverages the structured nature of the knowledge graph for precise information retrieval during inference.
-
-Sun, Z., et al. (2020). "Reasoning over Entity-Action-Relation Graphs for Open-Domain Question Answering." https://arxiv.org/abs/2012.15315
-
-# Utilizing Knowledge more Efficiently
-
-# What does Knowledge Look Like?
-
-# LLM Book Derived Knowledge vs Actual Knowledge
-
-# Wikidata Claims
-
-# Classical Problem: Term Resolution
-
-# Classical Problem: Disambiguation
-
-# Classical Problem: Ontology Mapping
-
+- LLMs learn and reason from facts
+- LLMs are primarily benchmarked on facts and inference
+- Making facts explicit helps with acquisition, testing, reasoning
+- Power law governs learning efficiency
+- Scaling laws crucial for fact acquisition
+- Uniform fact distribution potentially improves learning

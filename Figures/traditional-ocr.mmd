@@ -1,0 +1,27 @@
+```mermaid
+%%{init: {'theme': 'light'}}%%
+graph LR
+    A[Preprocessing] --> B[Page Segmentation]
+    B --> C[Text Line Recognition]
+    C --> D[Post-processing]
+
+    subgraph A[Preprocessing]
+    direction TB
+    A1[Denoising] --> A2[Resolution enhancement] --> A3[Page orientation] --> A4[Deskewing] --> A5[Binarization]
+    end
+
+    subgraph B[Page Segmentation]
+    direction TB
+    B1[Text/image segmentation] --> B2[Text line detection]
+    end
+
+    subgraph C[Text Line Recognition]
+    C1[LSTM]
+    end
+
+    subgraph D[Post-processing]
+    direction TB
+    D1[Reading order] --> D2[Semantic layout analysis] --> D3[Error correction] --> D4[Markup generation]
+    end
+  ```
+  

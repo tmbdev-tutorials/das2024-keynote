@@ -14,14 +14,14 @@ Notes:
 -- vlms for image categorization, segmentation via backprop etc
 -->
 
-# Document Analysis in the time of LLMs
+# Document Analysis in the Era of LLMs
 
 Thomas Breuel
 NVIDIA Research
 
 # Talk Outline
 
-- AI Revolution
+- The AI Revolution
 - Three Types of Document Analysis Systems
 - Documents as Sources of Facts for LLMs
 
@@ -29,9 +29,9 @@ NVIDIA Research
 
 ## LLMs / VLMs Have been Eating Machine Learning
 
-- tasks that used to require extensive, specialized training...
-- ... are now handled by foundation models
-- ... or with minimal fine tuning
+- tasks that used to require extensive, specialized training
+  - are now handled by foundation models
+  - or with minimal fine tuning
 
 ## Big Changes over the Last Decade
 
@@ -69,7 +69,7 @@ prompt = """
 ### Instructions
 
 You are given the text of the first page of a PDF document. Please extract the title,
-author, year, and abstract. Then assign a category to the document
+author, year, and abstract. Then assign a category to the document chosen
 from the following list of categories:
 
 - ocr: text recognition, layout analysis, page segmentation
@@ -102,7 +102,7 @@ result = classifier.json_query(text)
 
 - Personal Library of Biomedical Researcher (>10⁶ users)
   - Digital PDFs, some scanned.
-  - Use LLMs for categorization, retrieval; not high accuracy.
+  - Use LLMs for categorization, retrieval; not high-accuracy.
   - Combo of OCR, pdf2text, and existing LLMs adequate.
 
 - Financial Data Services Provider (<1000 users)
@@ -114,7 +114,7 @@ result = classifier.json_query(text)
 
 - Large Academic/Non-Profit Archives (<100 users)
   - Large diverse collections of scanned docs
-  - Requires low error, high quality markupt, reading order.
+  - Requires low error, high quality markup, reading order.
   - Often used by academics interested in the details of the text.
   - Not currently well-served.
 
@@ -259,7 +259,7 @@ Ambitious all-in-one effort:
   - business, legal, government communications
   - scene text (camera based translation, self-driving cars, etc.)
 - largely available in digital format
-  - open source textbooks and other publications
+  - open-source textbooks and other publications
   - scientific publications (tagged PDF/A will have large impact)
 
 The "paperless future" is gradually happening...
@@ -278,13 +278,14 @@ The "paperless future" is gradually happening...
 <br>
 <br>
 
-## Types of Tasks involved in LLM Answers
+## Types of Tasks Involved in LLM Answers
 
 - knowledge of facts ("Lincoln was president")
 - knowledge of meta-facts ("this fact is true according to...")
+- knowledge of erroneous/counterfactual beliefs ("The Prussian Army cannot reach Waterloo in time, according to Napoleon in 1815.")
 - ability to reason ("Lincoln was a US citizen because he was president.")
   - reasoning can be imitated with factual knowledge
-- ability to recall verbating ("please quote ...")
+- ability to recall verbatim ("please quote ...")
 
 ## MMLU Examples of Multiple-Choice Questions
 
@@ -391,6 +392,7 @@ Documents can be understood as collections of facts:
 Model:
 - facts are distributed across texts in a power law distribution
 - LLMs need to be exposed to each fact approximately $k$ times to learn it
+  - $k$ depends on number of parameters: the more parameters, the smaller $k$
 - performance on fact-based benchmarks reflects the percentage of facts learned
 
 Prediction:

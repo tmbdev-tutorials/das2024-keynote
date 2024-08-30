@@ -169,6 +169,7 @@ Examples: LayoutLMv3, UDOP, TILT, DocFormer, StrucText, ...
 - attempt to solve document understanding tasks without separate OCR step
 - usually, a single transformer model performs both text recognition and layout analysis
 - may perform full page recognition
+- may be prompted multitask or prompt-free recognition-only models
 
 Examples: Donut, DAN, TrOCR, ...
 
@@ -195,7 +196,7 @@ Note:
 - page segmentation and reading order (PubLayNet, PubTables-1M)
 - visual question answering (VQA, DocVQA)
 - key information extraction (KIE on SROIE)
-- no widely used end-to-end OCR benchmarks
+- no widely used, complete end-to-end OCR benchmarks
 
 ## NVIDIA OCR Efforts and Foundation Models
 
@@ -224,6 +225,19 @@ Ambitious all-in-one effort:
 - Better coverage (training+benchmarks) of mathematical equations, chemistry, etc.
 - More diversity: different set of layout, languages, fonts, etc.
 - Better coverage of uncommon layouts.
+
+## Complex Tradeoffs
+
+- separation of concerns during development
+- access to training data for different domains
+- overall speed and efficiency of the system
+- training costs and training dataset size and complexity
+- achievable and required accuracy for...
+  - character recognition
+  - reading order
+  - semantic labeling
+  - special content (math, etc.)
+- maximum resolution that can be processed on current hardware
 
 ## OCR Future
 
@@ -359,6 +373,18 @@ Documents can be understood as collections of facts:
 - context-dependent facts ("Lincoln was president from 1861 to 1865")
 - meta-facts ("According to ... Lincoln was president from 1861 to 1865")
 - textual facts ("'Shall I compare thee to a summer's day?' is the first line of a sonnet by Shakespeare")
+
+## Understanding the Impact of OCR Errors on LLM Performance
+
+- how do OCR errors affect facts
+  - named entity errors
+  - reading order errors
+  - ...
+- how does redundancy in fact coverage affect LLM performance
+  - many facts are repeated across documents
+  - OCR errors that destroy one fact statement may not destroy another
+  - OCR errors that lead to false facts are more problematic
+  - ...
 
 ## A Statistical Model of Facts
 

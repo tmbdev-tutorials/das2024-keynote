@@ -413,8 +413,8 @@ Kaplan et al. 2021
 
 ## State of Knowledge and Reasoning
 
-- LLMs learn and reason from facts
-- LLMs are primarily benchmarked on facts and inference
+- LLMs learn and reason from facts, and are benchmarked on facts
+- OCR and document analysis crucial step in deriving facts from documents
 - Making facts explicit helps with acquisition, testing, reasoning
 - Power law governs learning efficiency
 - Scaling laws crucial for fact acquisition

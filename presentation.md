@@ -227,17 +227,16 @@ Ambitious all-in-one effort:
 
 ## OCR Future
 
-Two different OCR approaches:
-
-- High performance self-contained OCR as input to LLMs and multimodal models
-
-- Multimodal models that perform basic OCR/layout and invoke specialized agents.
-
-Both will likely co-exist for some time.
+- Two different OCR approaches (will likely co-exist):
+  - High performance self-contained OCR as input to LLMs and multimodal models
+  - Multimodal models that perform basic OCR/layout and invoke specialized agents.
+- LLMs and VLMs help tremendously with training:
+  - LLMs for data prepration, synthetic data, and quality evaluation
+  - VLMs+multitask learning for dealing with variety of training datasets (DocVQA, text-to-html, text-to-LaTeX, etc.)
 
 # What do we need OCR for?
 
-## What do we need OCR for?
+## What do we still need OCR for?
 
 - largely already converted (e.g. Gutenberg)
   - important pre-1924 books
@@ -249,14 +248,16 @@ Both will likely co-exist for some time.
   - open source textbooks and other publications
   - scientific publications (tagged PDF/A will have large impact)
 
-## Objective?
+The "paperless future" is gradually happening...
+
+## Higher-Level Purpose of OCR
 
 <br>
 <br>
 <br>
 <br>
 <center>
-<font size=48px>We are trying to translate texts into <em>facts</em></font>
+<font size=48px>We are trying to obtain <em>facts</em></font>
 </center>
 <br>
 <br>

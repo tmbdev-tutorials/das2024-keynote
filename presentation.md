@@ -130,7 +130,7 @@ result = classifier.json_query(text)
 
 - high accuracy scanned-to-text conversion
 - fast on high resolution images
-- $<0.5%$ character error
+- $<0.5$% character error
 - substantial problems with reading order, logical layout :exclamation:
 - ideally, recover markup (LaTeX, etc.)
 

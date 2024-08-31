@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 html: true
-footer: 'OCR and LLMs Presentation'
+footer: 'Document Analysis in the Era of LLMs'
 
 headingDivider: 2
 ---
@@ -22,7 +22,7 @@ NVIDIA Research
 # Talk Outline
 
 - The AI Revolution
-- Three Types of Document Analysis Systems
+- Three Types of OCR and Document Analysis Systems
 - Documents as Sources of Facts for LLMs
 
 ## REVOLUTION IN MACHINE LEARNING / AI
@@ -32,15 +32,6 @@ NVIDIA Research
 - tasks that used to require extensive, specialized training
   - are now handled by foundation models
   - or with minimal fine tuning
-
-## Big Changes over the Last Decade
-
-- broad, general models that work across many tasks and modalities
-- very large scale unsupervised pretraining
-- multitask training and multitask models
-- efficient and simple fine-tuning on small datasets
-- many problems solved with zero-shot or few-shot methods
-- task specifications through natural language
 
 ## Zero/Few Shot with LLMs and VLMs
 
@@ -88,13 +79,23 @@ result = classifier.json_query(text)
 ```
 
 ## Some Tasks Still Require Specialized Custom Models
-(For now)
 
 - Stereo -- two image input, specialized preprocessing
 - Gaze Estimation -- high precision, specialized datasets
 - Anomaly Detection -- specialized statistics
 - 3D Pose Estimation for Articulated Objects -- complex structured outputs
 - ...
+
+(For now)
+
+## Big Changes over the Last Decade
+
+- broad, general models that work across many tasks and modalities
+- very large scale unsupervised pretraining
+- multitask training and multitask models
+- efficient and simple fine-tuning on small datasets
+- many problems solved with zero-shot or few-shot methods
+- task specifications through natural language
 
 # Current State of OCR
 
@@ -124,15 +125,39 @@ result = classifier.json_query(text)
 
 ## "Traditional" OCR Pipeline
 
-![h:500px](Figures/ocr-diagram.png)
+![h:450px](Figures/ocr-diagram.png)
 
 ## OCR
 
 - high accuracy scanned-to-text conversion
+- outputs some kind of markup (hOCR, Abbyy, XML, TEI, etc.)
 - fast on high resolution images
-- $<0.5$% character error
+- $<0.5$% CER (character error rate)
 - substantial problems with reading order, logical layout :exclamation:
-- ideally, recover markup (LaTeX, etc.)
+
+## OCR Output
+
+- search/indexing
+- electronic publishing
+- training data for LLM training
+- NLP, LLM and RAG pipelines ⬅
+
+## Three Types of OCR and LLM Combinations
+
+- OCR + LLM
+- OCR + multimodal model
+- OCR-free multimodal model
+
+## Current Benchmarks and Leaderboards for OCR + LLM Tasks
+
+What these combos do is indicated by benchmarks:
+
+- text localization (receipts, etc)
+- full handwriting and scene text recognition (IAM, ICDAR)
+- page segmentation and reading order (PubLayNet, PubTables-1M)
+- question answering (DocVQA)
+- key information extraction (KIE on SROIE)
+- no widely used, complete end-to-end OCR benchmarks
 
 ## OCR + LLM
 
@@ -162,14 +187,14 @@ Examples: LayoutLMv3, UDOP, TILT, DocFormer, StrucText, ...
 - OCR system can operate efficiently at high image resolutions
 - multimodal model can handle layout analysis, reading order, etc.
 - modularity of the system makes training, testing, and fine-tuning easier
-- currently the most popular approach
+- currently the most popular approach: good tradeoffs
 
 ## OCR-Free Approaches
 
-- attempt to solve document understanding tasks without separate OCR step
+- attempt to solve document understanding tasks without separate OCR system
 - usually, a single transformer model performs both text recognition and layout analysis
 - may perform full page recognition
-- may be prompted multitask or prompt-free recognition-only models
+- may be _prompted multitask_ or _prompt-free recognition-only_ models
 
 Examples: Donut, DAN, TrOCR, ...
 
@@ -177,7 +202,7 @@ Examples: Donut, DAN, TrOCR, ...
 
 ![h:200px](Figures/ocr-free.png)
 
-## Transformer-Based "Traditional" OCR
+## Transformer-Based Image → Markup
 
 Most "OCR-free" transformers cannot perform full OCR. A few can:
 
@@ -189,14 +214,6 @@ Most "OCR-free" transformers cannot perform full OCR. A few can:
 Note:
 - These are not particularly good results by OCR standards.
 - Unknown how much is due to language modeling and even memorization.
-
-## Current Benchmarks and Leaderboards
-
-- text localization (receipts, etc)
-- page segmentation and reading order (PubLayNet, PubTables-1M)
-- visual question answering (VQA, DocVQA)
-- key information extraction (KIE on SROIE)
-- no widely used, complete end-to-end OCR benchmarks
 
 ## NVIDIA OCR Efforts and Foundation Models
 
@@ -226,7 +243,7 @@ Ambitious all-in-one effort:
 - More diversity: different set of layout, languages, fonts, etc.
 - Better coverage of uncommon layouts.
 
-## Complex Tradeoffs
+## Complex Tradeoffs in OCR Systems
 
 - separation of concerns during development
 - access to training data for different domains
@@ -241,12 +258,19 @@ Ambitious all-in-one effort:
 
 ## OCR Future
 
-- Two different OCR approaches (will likely co-exist):
-  - High performance self-contained OCR as input to LLMs and multimodal models
-  - Multimodal models that perform basic OCR/layout and invoke specialized agents.
+- Different OCR approaches will likely co-exist:
+  - High performance self-contained OCR as input to LLMs and multimodal models (easier to integrate)
+  - Multimodal models that perform basic OCR/layout and invoke specialized agents. (potentially more accurate)
+
+## OCR Training Future
+
 - LLMs and VLMs help tremendously with training:
   - LLMs for data prepration, synthetic data, and quality evaluation
   - VLMs+multitask learning for dealing with variety of training datasets (DocVQA, text-to-html, text-to-LaTeX, etc.)
+- new OCR systems build on old systems
+  - Tesseract has been a workhorse for many efforts
+  - self-supervised training and improvement of OCR models
+  - distillation and model combination for better+faster models
 
 # What do we need OCR for?
 
@@ -289,6 +313,8 @@ The "paperless future" is gradually happening...
 
 ## MMLU Examples of Multiple-Choice Questions
 
+Typical LLM benchmark.
+
 ### **Biology Example**: (fact, knowledge)
 What is the powerhouse of the cell? 
 (A) Nucleus (B) Mitochondria (C) Ribosome (D) Endoplasmic Reticulum
@@ -296,6 +322,14 @@ What is the powerhouse of the cell?
 ### **Mathematics Example**: (inference)
 If 4 daps = 7 yaps, and 5 yaps = 3 baps, how many daps equal 42 baps? 
 (A) 28 (B) 21 (C) 40 (D) 30
+
+## What do facts look like?
+
+<br>
+<br>
+Douglas Adams, also known as Douglas Noel Adams, was a human. He authored the novel "The Hitchhiker's Guide to the Galaxy", first published in 1979. From 1971 to 1974, he was educated at St John's College, Cambridge, which is a college of the University of Cambridge in the United Kingdom. 
+<br>
+<br>
 
 ## What do Facts Look Like?
 
@@ -349,23 +383,16 @@ wikidata_item:
 <"Q148882 (The Hitchhiker's Guide to the Galaxy)", "P31 (instance of)", "Q7725634 (novel)">
 ```
 
-## What do facts look like?
-
-<br>
-<br>
-Douglas Adams, also known as Douglas Noel Adams, was a human. He authored the novel "The Hitchhiker's Guide to the Galaxy", first published in 1979. From 1971 to 1974, he was educated at St John's College, Cambridge, which is a college of the University of Cambridge in the United Kingdom. 
-<br>
-<br>
-
 ## Classical Problems with Symbolic AI
 
-- term resolution
+- term resolution, aliases
   - "Douglas Adams" - "Douglas Noel Adams"
 - disambiguation
   - "John Smith (actor)" vs "John Smith (politician)"
 - ontology mapping
   - Wikidata "educated at" vs. DBpedia "alma mater"
 - LLMs are good at resolving these problems
+- LLMs can bridge the gap between natural language and structured data
 
 ## Facts and Documents
 

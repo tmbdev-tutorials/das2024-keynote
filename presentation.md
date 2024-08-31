@@ -27,7 +27,7 @@ NVIDIA Research
 
 ## REVOLUTION IN MACHINE LEARNING / AI
 
-## LLMs / VLMs Have been Eating Machine Learning
+## LLMs / VLMs Have been Fundamentally Transforming ML/AI
 
 - tasks that used to require extensive, specialized training
   - are now handled by foundation models
@@ -426,6 +426,17 @@ Kaplan et al. 2021
   - careful manual selection of training data (e.g., textbooks)
   - small LLMs + utilize facts directly during inference
   - train directly on facts instead of documents
+
+## More Far Reaching Consequences of Documents as Facts
+
+- consider documents-to-facts as the primary purpose of document analysis
+  - easier to benchmark, evaluate, and improve than overall OCR+LLM performance
+- documents = collection of fact enables...
+  - better quality control, dataset composition, alignment
+- caveats
+  - some subtlety and nuances are lost in natural language $\rightarrow$ facts
+  - context and meta-facts can become overwhelming for some documents
+- best suited for encyclopedic knowledge, scientific literature, reference materials, etc.
 
 # Summary
 
